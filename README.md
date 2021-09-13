@@ -47,12 +47,9 @@ A través del NFT, ahora podemos digitalizar esa experiencia y financiar la merc
 
 <blockquote>
     <h3><strong>5 - Descripción de los integrantes:</strong></h3>
-    <br>
     <h3><strong><center>Enrique Laffranconi</center></strong></h3>
         <p> Hola, soy Enrique, tengo 34 años,  trabaje los últimos diez  en un festival de cine de Mexico como director de programación y ediciones audio visuales . Manejo una empresa de creado de subtitulaje y Paquetes digitales de cine y actualmente estoy tratando de cambiar de rubro así que acá estamos, investigando esto. Me gusta mucho la escalada y el ciclismo. </p>
-        <br>
     <h3><strong><center>Alejandro Faundes</center></strong></h3>
         <p>Hello stranger. Soy Alejandro, 30 años - I know. Trabajo en el área de Cash Management para un banco extranjero. Toda la tecnología que nos rodea está construida con un lenguaje; y descubrir lo que se puede lograr ejecutando líneas de código fue lo que me atrajo a aprender a programar. Britney Spears stan since 1998. </p>
-        <br>
     <h3><strong><center>Nicolas Albarracin</center></strong></h3>
 </blockquote>
