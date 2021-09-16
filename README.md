@@ -6,6 +6,10 @@
 <h3><strong> 1 - Repositorio:</strong></h3>
 
 <a href= "https://github.com/QuiqueLaff/grupo_10_NFT.git">https://github.com/QuiqueLaff/grupo_10_NFT.git</a>
+
+<h3><strong> 2 - Link Trello:</strong></h3>
+
+<a href= "https://trello.com/b/IlrFOypA/dh">https://trello.com/b/IlrFOypA/dh</a>
 </blockquote>
 <br>
 

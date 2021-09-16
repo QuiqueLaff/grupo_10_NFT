@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding:0
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: #0f0f0f;
+    color: white;
+}
+
+.brand-title{
+    text-align: left;
+    display:inline-block;
+    width:100%;
+    font-size: 1.4rem;
+    margin: .5rem;
+}
+
+.navbar-links{
+    text-align: left;
+    display:inline-block;
+    width:1000%;
+}
+
+.navbar-links ul{
+    margin:0;
+    padding: 0;
+    display: flex;
+}
+.navbar-links li{
+    list-style: none;
+    
+
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: flex;    
+}
+
+.navbar-links li :hover{
+    background-color: #555;
+}
