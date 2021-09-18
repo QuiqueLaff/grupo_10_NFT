@@ -3,40 +3,40 @@
 ## *Comenzar a hacer:*
 
 <ul>   
-  Juntarnos más
-  Organizar la distribución de las tareas
-  Animarse a ROMPER
-  Establecer prioridades
-  Diagramar las dinámicas
+  <li>Juntarnos más<li>
+  <li>Organizar la distribución de las tareas<li>
+  <li>Animarse a ROMPER<li>
+  <li>Establecer prioridades<li>
+  <li>Diagramar las dinámicas<li>
 </ul>
 
 ## *Hacer más:*
 
 <ul>
-  Practicar
-  Ver tutoriales
-  Sacarse dudas
-  Comunicación continua
+  <li>Practicar<li>
+  <li>Ver tutoriales<li>
+  <li>Sacarse dudas<li>
+  <li>Comunicación continua<li>
 </ul>
 
 ## *Continuar haciendo:*
 
 <ul>
-  Mantener la buena comunicación y predisposición
-  Trabajar como equipo
+  <li>Mantener la buena comunicación y predisposición<li>
+  <li>Trabajar como equipo<li>
 </ul>
 
 ## *Hacer menos:*
 
 <ul>
-  Distraernos
-  Dejar pasar el tiempo
+  <li>Distraernos<li>
+  <li>Dejar pasar el tiempo<li>
 </ul>
 
 ## *Dejar de hacer:*
 
 <ul>
-  Dejar de procrastinar tareas
-  Subestimar las tareas
-  Dejar de querer hacer todo
+  <li>Dejar de procrastinar tareas</li>
+  <li>Subestimar las tareas</li>
+  <li>Dejar de querer hacer todo<li>
 </ul>
