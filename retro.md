@@ -13,24 +13,24 @@
 ## *Hacer más:*
 
 <ul>
-  <li>Practicar<li>
-  <li>Ver tutoriales<li>
-  <li>Sacarse dudas<li>
-  <li>Comunicación continua<li>
+  <li>Practicar</li>
+  <li>Ver tutoriales</li>
+  <li>Sacarse dudas</li>
+  <li>Comunicación continua</li>
 </ul>
 
 ## *Continuar haciendo:*
 
 <ul>
-  <li>Mantener la buena comunicación y predisposición<li>
-  <li>Trabajar como equipo<li>
+  <li>Mantener la buena comunicación y predisposición</li>
+  <li>Trabajar como equipo</li>
 </ul>
 
 ## *Hacer menos:*
 
 <ul>
-  <li>Distraernos<li>
-  <li>Dejar pasar el tiempo<li>
+  <li>Distraernos</li>
+  <li>Dejar pasar el tiempo</li>
 </ul>
 
 ## *Dejar de hacer:*
@@ -38,5 +38,5 @@
 <ul>
   <li>Dejar de procrastinar tareas</li>
   <li>Subestimar las tareas</li>
-  <li>Dejar de querer hacer todo<li>
+  <li>Dejar de querer hacer todo</li>
 </ul>
