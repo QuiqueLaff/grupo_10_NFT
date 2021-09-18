@@ -3,11 +3,11 @@
 ## *Comenzar a hacer:*
 
 <ul>   
-  <li>Juntarnos más<li>
-  <li>Organizar la distribución de las tareas<li>
-  <li>Animarse a ROMPER<li>
-  <li>Establecer prioridades<li>
-  <li>Diagramar las dinámicas<li>
+  <li>Juntarnos más</li>
+  <li>Organizar la distribución de las tareas</li>
+  <li>Animarse a ROMPER</li>
+  <li>Establecer prioridades</li>
+  <li>Diagramar las dinámicas</li>
 </ul>
 
 ## *Hacer más:*
