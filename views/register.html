@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/register.css">   
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+
+    <title>NFT</title>
+</head>
+<body>
+    <main>
+      <form class="form-register" action="/register" method="POST">
+       <h4>REGISTRARSE</h4>
+       <p class= "asd">¿Ya estás registrado? <a href="#">Inicia sesión</a></p>
+       <div class="form-control">
+        <label for="">Nombre</label>
+        <i class="fas fa-id-card"></i>
+        <input type="text" name="nombre">
+        <label for="">Apellido</label>
+        <i class="far fa-id-card"></i>
+        <input type="text" name="apellido">
+       </div>
+       <div class="form-control">
+        <label for="">Email</i></label>
+        <i class="fas fa-envelope"></i>
+        <input type="email" name="email">
+       </div>
+       <div class="form-control">
+         <label for="">Contraseña</label>  
+         <i class="fas fa-key"></i>
+         <input type="password" name="contraseña">
+         <label for="">Confirma tu contraseña</label>
+         <i class="fas fa-key"></i>
+         <input type="password" name="contraseña">
+       </div>
+       <div class="form-control">
+        <input type="checkbox" name="politica" value="politica-privacidad" id="politica-privacidad">
+        <label for="politica-privacidad">Acepto los <a href="#">Terminos y Condiciones</a></label>
+        <div class="form-control">
+            <input type="checkbox" name="mails" value="mails-promocinales" id="mails-promocionales">
+            <label for="mails-promocionales">Acepto que me manden mails promocionales</label>
+        </div>
+        <div class="form-control">
+            <input type="checkbox" name="sesión" value="sesión-iniciada" id="sesión-iniciada">
+            <label for="sesión-iniciada">Mantener la sesión iniciada</label>
+        </div>
+        <button type="submit" class="button">Registrarse</button>
+      </form>
+    </main>
+</body>
+</html>
+

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+/*.form-register {
+    width: 100%;
+    padding: 15%;
+    box-sizing: border-box;
+    font-family: Verdana; 
+}
+*/
+
+form {
+    font-family: verdana;
+    background-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0 0 6px 0 rgba(231, 49, 49, 0.8);
+    border-radius: 10px;
+}
+
+.asd {
+    text-align: center;
+    margin-top: 1%;
+}
+
+.form-control {
+    position: relative;
+    margin: 3%;
+}
+
+.form-register h4 {
+    text-align: center;
+    font-weight: 700;
+}
+
+.fa-id-card {
+    color: #ff3333;
+}
+
+.fa-envelope {
+    color: #ff3333;
+}
+
+.fa-key{
+    color: #ff3333;
+}
+
+.button {
+    position: relative;
+	background-color:#ff3333;
+	border-radius:28px;
+	border:1px solid #ff3333;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+    transition: all 450ms;
+}
+
+.button:hover {
+    color: #ff3333;
+    background-color: #ffffff;
+}
+
+
+a {
+    color: #FF3333;
+}
