@@ -30,7 +30,7 @@ body{
     font-size: 1.4rem;
     margin-left: 1rem;
 }
-/* Links */
+    /* Links */
 .navbar-links{
     text-align: center;
     display:inline-block;
@@ -60,7 +60,7 @@ body{
     background-color: #555;
 }
 
-/* iconos */
+    /* iconos de login, singin y carrito */
 .iconos{
     list-style: none;
     display: flex;
@@ -87,7 +87,7 @@ body{
     color:aqua;
 }
 
-/* Background image */
+/* fondo de pantalla */
 .background{
     background: blue;
     height: 90vh;
@@ -99,48 +99,72 @@ body{
     /* background-attachment: fixed; */
     position: relative;
 }
+/* titulo producto destacado */
+.producto-destacado h3{
+    font-size: 30px;
+    background-color: whitesmoke;
+    color: #0f0f0f;
+    text-align: center;
+    padding-top: 30px;
+}
 
-/* Producto destacado */
-.producto-destacado{
-    width: 100%;
-    height: 100vh;
+    /* productos destacados */
+.box-conteiner{
     display: flex;
-    flex-direction: column;
     align-items: center;
-
-    
+    justify-content: center;
+    flex-wrap: wrap;
+    background: whitesmoke;
 }
-
-.producto1{
-    margin-bottom: 48px;
-    padding: 50px;
-    background-color: whitesmoke;
-
+.box{
+    flex: 1 1 300px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, .3);
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
 }
-.producto2{
-    margin-bottom: 48px;
-    padding: 50px;
-    background-color: whitesmoke;
-
-}
-
- h4{
+.box .image{
+    padding: 10px;
+    background: #eee;
     text-align: center;
-    color: tomato;
-
 }
-
-h5{
+.box .image img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    filter: drop-shadow(0 3px 5px rgba(0,0,0,.7 ));
+}
+.box .info .title {
+    padding: 10px;
+    color: #666;
+    font-size: 20px;
     text-align: center;
-    color: violet;
+
+}
+.box .info .subInfo{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 15px 10px;
+border-top: 1px solid rgba(0, 0, 0, .3);
+
+}
+.box .info .subInfo .price{
+    color:rgba(0, 0, 0, .3);
+    font-size: 20px;
 }
 
+.box .info .subInfo .price span{
+    font-size: 15px;
+    color: #999;
+    text-decoration: line-through;
 
-
-
-
-
-
+}
+.box .info .subInfo .stars i{
+    color: orange;
+    font-size: 17px;
+}
 
 /* footer */
 
@@ -164,8 +188,9 @@ h5{
     justify-content:center;
     bottom: 40px;
     
+    
 }
-/* footer links */
+    /* footer links */
 .footer-links li{
     display: flex;
     display:inline-block;
@@ -185,7 +210,7 @@ h5{
     justify-content: start;
 
 }
-/* redes sociales */
+    /* social media */
 .socials{
     list-style: none;
     display: flex;
@@ -234,13 +259,7 @@ h5{
 }
 
 
-
-
-
-
-
-
-
+/* Medias */
 @media (min-width: 361px){
     .footer-content{
         background-color: #0f0f0f;
