@@ -11,24 +11,35 @@ body{
     padding:0
 }
 
-
-
-
 /* Barra de navegación */
 .navbar{
     display: flex;
     width: 100% ;
     align-items:center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: #0f0f0f;
     color: white;
     height: 15vh;
+
 }
     /* NFT text */
 .brand-title{
-
     font-size: 1.4rem;
-    margin-left: 1rem;
+    margin-left: 30px;
+}
+
+.logotipo{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}
+.logotipo img{
+    flex: 1 1 300px;
+    position: relative;
+    overflow: hidden;
+    
 }
     /* Links */
 .navbar-links{
@@ -60,6 +71,28 @@ body{
     background-color: #555;
 }
 
+/* boton de menú */
+div.burger-menu{
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 50px;
+
+    
+}
+
+div.burger-menu i{
+    background-color: #0f0f0f;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+    
+
+}
+
     /* iconos de login, singin y carrito */
 .iconos{
     list-style: none;
@@ -70,6 +103,7 @@ body{
 
 }
 .iconos li{
+    display: none;
     margin: 0 10px;
 
 }
@@ -96,8 +130,39 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /* background-attachment: fixed; */
     position: relative;
+
+
+}
+
+.contein{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.contein h1{
+    margin: 0;
+    font-size: 66px;
+    
+}
+
+.contein h1 span{
+    border: 6px solid whitesmoke;
+    padding: 6px 14px; 
+    display: inline-block;
+
+    
+}
+.cen{
+    margin: 20px;
+    display: block;
+    font-size: 16px;
 }
 /* titulo producto destacado */
 .producto-destacado h3{
@@ -166,6 +231,14 @@ border-top: 1px solid rgba(0, 0, 0, .3);
     font-size: 17px;
 }
 
+/* banner */
+.banner{
+    display: flex;
+    
+}
+section.banner img{
+    width: 100%;
+}
 /* footer */
 
 .footer{
@@ -185,7 +258,7 @@ border-top: 1px solid rgba(0, 0, 0, .3);
     background-color: #0f0f0f;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content:space-around;
     bottom: 40px;
     
     
@@ -282,5 +355,9 @@ border-top: 1px solid rgba(0, 0, 0, .3);
 
 
 @media (min-width: 769px){
+    div.burger-menu{
+        display: none;
+                
+    }
 
 }
