@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: gainsboro;
+}
+
+
+
+
+/* Main Product */
+
+.container-product {
+    display: flex;
+    border-bottom: 5px solid lightgrey;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+.product-img {
+    width: 35%;
+    height: vh;
+    padding: 30px;
+    border-top: 6px solid #ebebeb;
+    border-right: 6px solid #ebebeb;
+    border-left: 6px solid #ebebeb;
+}
+
+
+article.container-product .product-name {
+    align-items: center;
+    width: 60%;
+    margin: 15px;
+    position:absolute;
+    left: 500px;
+    border-bottom: 4px solid #ebebeb;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+article.container-product .ranking {
+    padding: 10px;
+    color: black;
+    transition: color 700ms;
+    font-size: 23px;
+}
+
+
+article.container-product .ranking:hover{
+    color: white;
+}
+
+
+.product-name h3{
+    font-size: 30px;
+    justify-content: center;
+}
+
+
+article.container-product .box-price{
+    position: absolute;
+    bottom: 275px;
+    left: 525px;
+    font-size: 50px;
+}
+
+
+article.container-product .box-description {
+    font-size: 20px;
+    border-top: 4px solid #ebebeb;
+    border-bottom: 4px solid #ebebeb;
+    margin-bottom: 130px;
+    align-self: flex-end;
+    padding: 25px;
+    width: 60%;
+    position: absolute;
+    left: 520px;
+}
+
+
+.add-button {
+	box-shadow:inset 0px 6px 14px -3px #f2fadc;
+	background:linear-gradient(to bottom, #dbe6c4 5%, #9ba892 100%);
+	background-color:#dbe6c4;
+	border-radius:5px;
+	border:1px solid #b2b8ad;
+	display:inline-block;
+	cursor:pointer;
+	color:#757d6f;
+	font-family:Arial;
+	font-size:19px;
+	font-weight:bold;
+	padding:16px 48px;
+	text-decoration:none;
+	text-shadow:0px 1px 18px #ced9bf;
+    position: absolute;
+    bottom: 35px;
+    left: 530px;
+}
+
+.add-button:hover {
+	background:linear-gradient(to bottom, #9ba892 5%, #dbe6c4 100%);
+	background-color:#9ba892;
+}
+
+.add-button:active {
+	position:relative;
+	top:1px;
+}
+
+/* Artist */
+
+.container-artist {
+    border-bottom: 5px solid #ebebeb; 
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.container-artist .artist-img {
+    width: 10%;
+    height: vh;
+    border: 6px solid white;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    margin-left: 35px;
+}
+
+h3.artist-name{
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+p.artist-code {
+    font-weight: bold;
+    position: absolute;
+    bottom: 72px;
+    left: 200px;
+    font-size: 27px;
+}
+
+.container-artist .ranking {
+    color: black;
+    transition: color 700ms;
+    position: absolute;
+    top: 90px;
+    left: 185px;
+}
+
+.container-artist .ranking:hover{
+    color: white;
+}
+
+p.artist-description {
+    font-size: 20px;
+    align-self: flex-end;
+    width: 60%;
+    position: absolute;
+    left: 510px;
+    bottom: 40px;
+}
+
+/* Similar Products */
+
+h3.similar-products-title{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.container-similar-products {
+    border-bottom: 5px solid #ebebeb; 
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    justify-content: space-evenly;
+}
+
+.container-similar-products .similar-products-img {
+    width: 10%;
+    height: vh;
+    border: 6px solid white;
+    margin-bottom: 15px;
+    margin-left: 35px;
+}
+
+
+h3.similar-album{
+    font-size: 20px;
+    margin-right: 120px;
+}
+
+p.similar-price {
+    font-weight: bold;
+    position: absolute;
+    font-size: 27px;
+}
+
+.container-similar-products .ranking {
+    color: black;
+    transition: color 700ms;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container-similar-products .ranking:hover{
+    color: white;
+}
