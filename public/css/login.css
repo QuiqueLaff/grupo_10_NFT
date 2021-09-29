@@ -1,13 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
 
-* {
+body {
     margin: 0;
     padding: 0;
+    background: #2A2A2A;
+}
+
+form {
+    color: #2A2A2A;
+    width: 450px;
+    margin: auto;
+    font-family: verdana;
+    background-color: #ffffff;
+    padding: 30px 10px;
+    box-shadow: 0 0 6px 0 rgba(231, 49, 49, 0.8);
     box-sizing: border-box;
+    border-radius: 10px;
 }
 
 .form-container {
-    height: 39.05rem;
+    margin-top: 120px;
     width: auto;
     display: flex;
     justify-content: center;
@@ -16,40 +28,25 @@
     color: #2A2A2A;
 }
 
-form {
-    font-family: verdana;
-    background-color: #ffffff;
-    padding: 40px 20px;
-    box-shadow: 0 0 6px 0 rgba(231, 49, 49, 0.8);
-    box-sizing: border-box;
-    border-radius: 10px;
-}
-
-.form-input {
-    width: 90%;
-    padding: 0.4rem;
-    margin: 0.15rem;
-    text-align: center;
-}
-
-.form-input:focus {
-    outline: none;
-}
-
-.asd {
-    text-align: center;
-    margin-top: 1%;
-    text-decoration: none;
-}
-
 .form-control {
     position: relative;
     margin: 3%;
 }
 
-.form-register h4 {
+h4 {
     text-align: center;
     font-weight: 700;
+}
+
+.form-input {
+    width: 85%;
+    padding: 0.3rem;
+    margin: 0.30rem;
+    text-align: center;
+}
+
+.form-input:focus {
+    outline: none;
 }
 
 .icons {
@@ -58,8 +55,7 @@ form {
 
 .button {
     position: relative;
-    left: 32%;
-    bottom: 5%;
+    left: 10rem;
 	background-color:#ff3333;
 	border-radius:28px;
 	border:1px solid #ff3333;
@@ -72,7 +68,7 @@ form {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffffff;
     transition: all 450ms;
-}
+} 
 
 .button:hover {
     color: #ff3333;
@@ -80,12 +76,10 @@ form {
 }
 
 
+.hipervinculo {
+    text-align: center;
+}
+
 a {
-    color: #FF3333;
-}
-
-@media (min-width: 361px) {
-}
-
-@media (min-width: 769px){
+    color: #ff3333;
 }
