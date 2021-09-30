@@ -1,14 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
 
-* {
+body {
     margin: 0;
     padding: 0;
+    background: #2A2A2A;
+}
+
+form {
+    color: #2A2A2A;
+    height: 362px;
+    width: 400px;
+    margin: auto;
+    margin-bottom: 10vh;
+
+    font-family: verdana;
+    background-color: #ffffff;
+    padding: 30px 10px;
+    box-shadow: 0 0 6px 0 #0F0F0F;
     box-sizing: border-box;
+    border-radius: 10px;
 }
 
 .form-container {
-    margin-top: 7vh;
-    height: 39.05rem;
+    margin-top: 120px;
     width: auto;
     display: flex;
     justify-content: center;
@@ -17,19 +31,20 @@
     color: #2A2A2A;
 }
 
-form {
-    font-family: verdana;
-    background-color: #ffffff;
-    padding: 40px 20px;
-    box-shadow: 0 0 6px 0 #0F0F0F;
-    box-sizing: border-box;
-    border-radius: 10px;
+.form-control {
+    position: relative;
+    margin: 3%;
+}
+
+h4 {
+    text-align: center;
+    font-weight: 700;
 }
 
 .form-input {
-    width: 90%;
-    padding: 0.4rem;
-    margin: 0.15rem;
+    width: 85%;
+    padding: 0.3rem;
+    margin: 0.30rem;
     text-align: center;
 }
 
@@ -37,30 +52,13 @@ form {
     outline: none;
 }
 
-.asd {
-    text-align: center;
-    margin-top: 1%;
-    text-decoration: none;
-}
-
-.form-control {
-    position: relative;
-    margin: 3%;
-}
-
-.form-register h4 {
-    text-align: center;
-    font-weight: 700;
-}
-
 .icons {
-    color: #2A2A2A;
+    color: #0F0F0F;
 }
 
 .button {
     position: relative;
-    left: 32%;
-    bottom: 5%;
+    left: 8.3rem;
 	background-color:#2A2A2A;
 	border-radius:28px;
 	border:1px solid #2A2A2A;
@@ -73,19 +71,19 @@ form {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffffff;
     transition: all 450ms;
-}
+} 
 
 .button:hover {
     background-color: #0F0F0F;
 }
 
 
+.hipervinculo {
+    position: relative;
+    bottom: -50px;
+    text-align: center;
+}
+
 a {
-    color: #FF3333;
-}
-
-@media (min-width: 361px) {
-}
-
-@media (min-width: 769px){
+    color: #ff3333;
 }

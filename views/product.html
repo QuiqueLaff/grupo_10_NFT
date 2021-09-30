@@ -6,17 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Product</title>
 </head>
 <body>
+    <header>
+        <!-- barra de navegación -->
+        <nav class="navbar">
+            <div class="logotipo">
+            <img src="images/NFT-logo.ico" width="80" alt="Logo" >
+            </div>
+            <div class="brand-title"><h1>NFT</h1></div>
+            <div class="burger-menu">
+                <i class="fa fa-bars burger"></i>
+            </div>
+        <!-- links -->
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="./">HOME</a></li>
+                    <li><a href="#"> SECTION1</a></li>
+                    <li><a href="#">SECTION2</a></li>
+                    <li><a href="#">SECTION3</a></li>
+                </ul>
+            </div>
+         <!-- iconos de login, singin y carrito -->
+            <div class="iconos">
+            <li><a href="/register"> <i class="fas fa-user"></i></a></li>
+            <li><a href="/login"> <i class="fas fa-sign-in-alt"></i></a></li>
+            <li><a href="/cart"> <i class="fas fa-shopping-cart"></i></a></li>
+            </div>
+        </nav>
+    </header>
     <main>
 
         <!-- Product -->
         <section>
             <article class="container-product">
-                <img src="images/jessie-ware.jpg" class="product-img" alt="WYP">
+                <img src="images/NFT1.png" class="product-img" alt="WYP">
                 <div class="product-name">
-                    <h3>What's Your Pleasure?</h3>
+                    <h3>Pear Bitch</h3>
                         <div class="ranking">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -27,10 +55,10 @@
                 </div>
 
                 <div class="box-price">
-                    <p class="price">$1232</p>
+                    <p class="price">$7000</p>
                 </div>
                 <div class="box-description">
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum recusandae fugit beatae quas nam hic reiciendis assumenda, in voluptates eius laudantium, excepturi nobis sit nostrum adipisci repellendus molestiae error tempora.</p>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum recusandae fugit beatae quas nam hic reiciendis assumenda, in voluptates eius laudantium, excepturi nobis sit nostrum adipisci repellendus molestiae error tempora. Lorem ipsum dolor sit amet consectetur, adipisicing elit. At natus aliquid fugiat soluta neque, delectus quae ut animi labore, omnis tenetur qui nemo iste atque quia inventore architecto vitae quos!</p>
                 </div>
                 
                 <a href="#" class="add-button">Añadir</a>
@@ -50,7 +78,7 @@
                     <i class="fas fa-star"></i>
                 </div>
                 <p class="artist-code">0208</p>
-                <p class="artist-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quo tempore sunt repellat blanditiis maiores, reprehenderit aliquid, delectus et distinctio earum pariatur excepturi est non eum voluptatum dolor fuga neque.</p>
+                <p class="artist-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda sequi facilis laudantium architecto quo explicabo consequuntur vel, tempore quod eveniet qui recusandae voluptatem est, autem, possimus quos nesciunt dolorum quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quo tempore sunt repellat blanditiis maiores, reprehenderit aliquid, delectus et distinctio earum pariatur excepturi est non eum voluptatum dolor fuga neque.</p>
             </div>
             </section>
         </div>    
@@ -59,9 +87,9 @@
         <section>
             <h3 class="similar-products-title">Productos Similares</h3>
              <article class="container-similar-products">
-                    <img src="images/roisin-machine.jpg" class="similar-products-img" alt="RM">
+                    <img src="images/nft-artwork-2.jfif" class="similar-products-img" alt="RM">
                     <div class="similar-products-name">
-                        <h3 class="similar-album">Róisín Machine</h3>
+                        <h3 class="similar-album">Lolita</h3>
                             <div class="ranking">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -72,9 +100,9 @@
                             <p class="similar-price">$1000</p>
                     </div>
 
-                    <img src="images/kylie-disco.jpg" class="similar-products-img" alt="KM">
+                    <img src="images/nft-shades-of-blue.jpg" class="similar-products-img" alt="KM">
                         <div class="similar-products-name">
-                            <h3 class="similar-album">Kylie Disco</h3>
+                            <h3 class="similar-album">Shades of Blue</h3>
                                 <div class="ranking">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
@@ -85,9 +113,9 @@
                                 <p class="similar-price">$980</p>
                         </div>
 
-                        <img src="images/future-nostalgia.jpg" class="similar-products-img" alt="FN">
+                        <img src="images/nft-artwork-1.jpg" class="similar-products-img" alt="FN">
                             <div class="similar-products-name">
-                                <h3 class="similar-album">Future Nostalgia</h3>
+                                <h3 class="similar-album">Behind The Mask</h3>
                                     <div class="ranking">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -100,5 +128,29 @@
                 </article>
             </section>
     </main>
+
+        <!-- footer -->
+    <footer>
+         <div class="footer-content">
+            <img class= "logo-footer" src="images/NFT-logo.ico" width="70" alt="Logo">
+                <!-- footer links -->
+                <ul class="footer-links">
+                    <li><a href="/contacto">Contacto</a></li>
+                    <li><a href="/privacidad">Privacidad</a></li>
+                    <li><a href="/news">News</a></li>
+                </ul>
+                <!-- social media -->
+                <ul class="socials">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google"></i></a></li>
+                </ul>
+                <!-- copyright -->
+            </div>
+            <div class="footer-bottom">
+                <p>copiright &copy;2020 NFT. designed by <span> equipo-10</span></p>
+            </div>
+        </footer>
 </body>
 </html>
