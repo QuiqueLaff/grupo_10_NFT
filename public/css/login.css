@@ -8,12 +8,15 @@ body {
 
 form {
     color: #2A2A2A;
-    width: 450px;
+    height: 362px;
+    width: 400px;
     margin: auto;
+    margin-bottom: 10vh;
+
     font-family: verdana;
     background-color: #ffffff;
     padding: 30px 10px;
-    box-shadow: 0 0 6px 0 rgba(231, 49, 49, 0.8);
+    box-shadow: 0 0 6px 0 #0F0F0F;
     box-sizing: border-box;
     border-radius: 10px;
 }
@@ -50,15 +53,15 @@ h4 {
 }
 
 .icons {
-    color: #2A2A2A;
+    color: #0F0F0F;
 }
 
 .button {
     position: relative;
-    left: 10rem;
-	background-color:#ff3333;
+    left: 8.3rem;
+	background-color:#2A2A2A;
 	border-radius:28px;
-	border:1px solid #ff3333;
+	border:1px solid #2A2A2A;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -71,12 +74,13 @@ h4 {
 } 
 
 .button:hover {
-    color: #ff3333;
-    background-color: #ffffff;
+    background-color: #0F0F0F;
 }
 
 
 .hipervinculo {
+    position: relative;
+    bottom: -50px;
     text-align: center;
 }
 

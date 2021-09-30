@@ -3,13 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/register.css">   
+    <link rel="stylesheet" href="/css/register.css"> 
+    <link rel="stylesheet" href="/css/style.css">  
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
 
-    <title>NFT</title>
+    <title>Register</title>
 </head>
 <body>
+        <!-- barra de navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="logotipo">
+            <img src="images/NFT-logo.ico" width="80" alt="Logo" >
+            </div>
+            <div class="brand-title"><h1>NFT</h1></div>
+            <div class="burger-menu">
+                <i class="fa fa-bars burger"></i>
+            </div>
+        <!-- links -->
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#"> SECTION1</a></li>
+                    <li><a href="#">SECTION2</a></li>
+                    <li><a href="#">SECTION3</a></li>
+                </ul>
+            </div>
+         <!-- iconos de login, singin y carrito -->
+            <div class="iconos">
+            <li><a href="/register"> <i class="fas fa-user"></i></a></li>
+            <li><a href="/login"> <i class="fas fa-sign-in-alt"></i></a></li>
+            <li><a href="/carrito"> <i class="fas fa-shopping-cart"></i></a></li>
+            </div>
+        </nav>
+    </header>
     <main>
         <div class="form-container">
             <form class="form-register" action="/register" method="POST">
@@ -51,5 +79,27 @@
             </form>
         </div>
     </main>
+    <footer>
+        <div class="footer-content">
+            <img class= "logo-footer" src="images/NFT-logo.ico" width="70" alt="Logo">
+            <!-- footer links -->
+            <ul class="footer-links">
+                <li><a href="/contacto">Contacto</a></li>
+                <li><a href="/privacidad">Privacidad</a></li>
+                <li><a href="/news">News</a></li>
+            </ul>
+            <!-- social media -->
+            <ul class="socials">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-google"></i></a></li>
+            </ul>
+            <!-- copyright -->
+        </div>
+        <div class="footer-bottom">
+            <p>copiright &copy;2020 NFT. designed by <span> equipo-10</span></p>
+        </div>
+    </footer>
 </body>
 </html>
