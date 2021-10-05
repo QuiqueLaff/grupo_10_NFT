@@ -472,10 +472,10 @@ section.banner img{
     .navbar-links li :hover{
         background-color: #555;
     }
-.brand-title h1{
-    text-align: left;
-    width: 100px;
-    color: whitesmoke;
+    .brand-title h1{
+        text-align: left;
+        width: 100px;
+        color: whitesmoke;
 
 }
 
@@ -511,8 +511,8 @@ section.banner img{
 
     /* Staff */
     .card{
-        height: 80vh;
-        width: 45vh;
+        height: 900px;
+        width: 23vw;
         margin: 35px;
         box-shadow:rgba(0, 3, 5, #0f0f0f);
         /* border-radius: 50px; */
