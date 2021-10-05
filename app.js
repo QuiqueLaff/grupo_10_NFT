@@ -8,7 +8,7 @@ app.get('/register', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'views/register.html'));
 })
 
-app.listen(3050, () => console.log('Server corriendo en el puerto 3050'));
+app.listen(process.env.PORT || 3050, ()=> console.log('Servidor funcionando en el 3050'));
 
 app.get('/', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'views/home.html'));
@@ -25,3 +25,5 @@ app.get('/login', (req, res) => {
 app.get('/cart', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'views/cart.html'));
 })
+
+
