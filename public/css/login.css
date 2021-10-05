@@ -8,6 +8,16 @@ body {
     
 }
 
+.form-container {
+    margin-top: 120px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: blue;
+    color: blue;
+}
+
 form {
     color: #2A2A2A;
     height: 362px;
@@ -22,15 +32,6 @@ form {
     margin-top: 120px;
 }
 
-.form-container {
-    margin-top: 120px;
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    background-color: blue;
-    color: blue;
-}
 
 .form-control {
     position: relative;
