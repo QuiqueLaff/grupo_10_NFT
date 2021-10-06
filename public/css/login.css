@@ -3,6 +3,7 @@
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     background: #2A2A2A;
 }
 
@@ -11,8 +12,7 @@ form {
     height: 362px;
     width: 400px;
     margin: auto;
-    margin-bottom: 10vh;
-
+    margin-bottom: 12vh;
     font-family: verdana;
     background-color: #ffffff;
     padding: 30px 10px;
@@ -22,7 +22,7 @@ form {
 }
 
 .form-container {
-    margin-top: 120px;
+    margin-top: 18vh;
     width: auto;
     display: flex;
     justify-content: center;
