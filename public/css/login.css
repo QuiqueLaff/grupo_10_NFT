@@ -1,44 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
-
-body {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: hsl(0, 0%, 16%);
-    
+}
+body{
+    margin: 0;
+    padding:0
+}
+
+.background-login1{
+    height: 68vh;
+    width: 100%;
+    background-image: url("/images/background-image3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-top: 10vh;
+
 }
 
 .form-container {
-    margin-top: 120px;
     width: auto;
     display: flex;
     justify-content: center;
     align-items:center;
-    background-color: blue;
-    color: blue;
 }
 
 form {
-    color: #2A2A2A;
-    height: 362px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     margin: 0 auto;
-    margin-bottom: 20px;
-    font-family: verdana;
     background-color: #ffffff;
     padding: 30px 10px;
     box-shadow: 0 0 6px 0 #0F0F0F;
     border-radius: 10px;
-    margin-top: 120px;
+    margin-top: 10vh;
 }
 
-
-.form-control {
-    position: relative;
-    margin: 3%;
-}
-
-h4 {
+ h4 {
     text-align: center;
     font-weight: 700;
 }
@@ -60,7 +60,7 @@ h4 {
 
 .button {
     position: relative;
-    left: 8.3rem;
+    left: 6.3rem;
 	background-color:#2A2A2A;
 	border-radius:28px;
 	border:1px solid #2A2A2A;
@@ -68,8 +68,8 @@ h4 {
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Verdana;
-	font-size:17px;
-	padding:9px 18px;
+	font-size: 15px;
+	padding:7px 14px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffffff;
     transition: all 450ms;
@@ -82,10 +82,35 @@ h4 {
 
 .hipervinculo {
     position: relative;
-    bottom: -50px;
     text-align: center;
+    margin-top: 20px;
 }
 
 a {
     color: #ff3333;
+}
+
+.form-control {
+    position: relative;
+    margin: 3%;
+}
+
+@media (min-width: 361px){
+    .background-login1{
+        height: 76vh;
+    }
+    form {
+        margin-top: 18vh;
+    }
+
+
+}
+
+@media (min-width: 769px){
+    .background-login1{
+        height: 77vh;
+    }
+    form {
+        margin-top: 18vh;
+    }
 }
