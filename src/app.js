@@ -10,7 +10,6 @@ app.use(express.static(path.resolve(__dirname, '../public')));
 const mainRouter = require('./routes/main');
 const usersRouter = require('./routes/users');
 const productRouter = require('./routes/product');
-const cartRouter = require('./routes/cart');
 
 
 
@@ -27,11 +26,6 @@ app.use('/users', usersRouter);
 /* Product */
 
 app.use('/product', productRouter);
-
-
-/* Cart */ 
-
-app.use('/cart', cartRouter);
 
 
 
