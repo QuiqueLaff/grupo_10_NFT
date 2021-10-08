@@ -1,28 +1,27 @@
 const express = require('express');
+const app = express();
 const path = require('path');
 
-const app = express();
-app.use(express.static(path.resolve(__dirname, 'public')));
+app.use(express.static(path.resolve(__dirname, '../public')));
 
-app.get('/register', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'views/register.html'));
-})
 
-app.listen(process.env.PORT || 3050, ()=> console.log('Servidor funcionando en el 3050'));
+/* Routes */
 
-app.get('/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'views/home.html'));
-})
+const mainRouter = require('./routes/main');
+const usersRouter = require('./routes/users');
+const productRouter = require('./routes/product');
+const cartRouter = require('./routes/cart');
 
-app.get('/product', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'views/product.html'));
-})
 
-app.get('/login', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'views/login.html'));
-})
+app.use('/', mainRouter);
 
-app.get('/cart', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'views/cart.html'));
-})
+app.use('/users', usersRouter);
+
+app.use('/product', productRouter);
+
+app.use('/cart', cartRouter);
+
+
+
+app.listen(process.env.PORT || 3050, () => console.log('Servidor funcionando en el 3050'));
 
