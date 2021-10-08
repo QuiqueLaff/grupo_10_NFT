@@ -13,11 +13,23 @@ const productRouter = require('./routes/product');
 const cartRouter = require('./routes/cart');
 
 
+
+/* Main Router */ 
+
 app.use('/', mainRouter);
+
+
+/* Users */
 
 app.use('/users', usersRouter);
 
+
+/* Product */
+
 app.use('/product', productRouter);
+
+
+/* Cart */ 
 
 app.use('/cart', cartRouter);
 

@@ -10,5 +10,8 @@ module.exports = {
     },
     editProduct: function(){
         
+    },
+    listOfProducts: function(){
+
     }
 }
