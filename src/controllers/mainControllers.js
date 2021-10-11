@@ -3,9 +3,9 @@ const path = require('path');
 
 module.exports = {
     home: (req, res) => {
-        res.sendFile(path.resolve('src/views/home.html'));
+        res.render(path.resolve('src/views/home.ejs'));
     },
     cart: (req, res) => {
-        res.sendFile(path.resolve('src/views/cart.html'));
+        res.render(path.resolve('src/views/cart.ejs'));
     }
 }

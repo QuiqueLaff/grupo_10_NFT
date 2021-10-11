@@ -13,31 +13,8 @@
     <title>NFT</title>
 </head>
 <body>
-    <!-- barra de navegación -->
-    <nav class="navbar">
-        <div class="logotipo">
-        <img src="images/NFT-logo.ico" width="80" alt="Logo" >
-        </div>
-        <div class="brand-title"><h1>NFT</h1></div>
-        <div class="burger-menu">
-            <i class="fa fa-bars burger"></i>
-        </div>
-    <!-- links -->
-        <div class="navbar-links">
-            <ul>
-                <li><a href=".././">HOME</a></li>
-                <li><a href="#"> TOP SELLERS</a></li>
-                <li><a href="#">STAFF</a></li>
-                <li><a href="#">COLECTIONS</a></li>
-            </ul>
-        </div>
-     <!-- iconos de login, singin y carrito -->
-        <div class="iconos">
-        <li><a href="/users/register"> <i class="fas fa-user"></i></a></li>
-        <li><a href="/users/login"> <i class="fas fa-sign-in-alt"></i></a></li>
-        <li><a href="/cart"> <i class="fas fa-shopping-cart"></i></a></li>
-        </div>
-    </nav>
+  <!--header  -->
+  <%-include('./partials/header')%>
 
     <!-- cuerpo de la pagina -->
     <main>
@@ -74,28 +51,6 @@
         </div>
     </main>
     <!-- footer -->
-    <footer>
-        <div class="footer-content">
-            <img class= "logo-footer" src="images/NFT-logo.ico" width="70" alt="Logo">
-            <!-- footer links -->
-            <ul class="footer-links">
-                <li><a href="/contacto">Contacto</a></li>
-                <li><a href="/privacidad">Privacidad</a></li>
-                <li><a href="/news">News</a></li>
-            </ul>
-            <!-- social media -->
-            <ul class="socials">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-google"></i></a></li>
-            </ul>
-            <!-- copyright -->
-        </div>
-        <div class="footer-bottom">
-            <p>copiright &copy;2021 NFT. designed by <span> equipo-10</span></p>
-        </div>
-    </footer>
+    <%-include('./partials/footer')%>
 </body>
 </html>
-

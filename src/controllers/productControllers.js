@@ -3,7 +3,7 @@ const path = require('path');
 
 module.exports = {
     productDetail: (req, res) => {
-        res.sendFile(path.resolve('src/views/product.html'));
+        res.render(path.resolve('src/views/product.ejs'));
     },
     addProduct: function(){
 
