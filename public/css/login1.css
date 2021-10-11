@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding:0
+}
+
+.background-login1{
+    height: 68vh;
+    width: 100%;
+    background-image: url("/images/background-image3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-top: 10vh;
+
+}
+
+.form-container {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+form {
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px 10px;
+    box-shadow: 0 0 6px 0 #0F0F0F;
+    border-radius: 10px;
+    margin-top: 10vh;
+}
+
+ h4 {
+    text-align: center;
+    font-weight: 700;
+}
+
+.form-input {
+    width: 85%;
+    padding: 0.3rem;
+    margin: 0.30rem;
+    text-align: center;
+}
+
+.form-input:focus {
+    outline: none;
+}
+
+.icons {
+    color: #0F0F0F;
+}
+
+.button {
+    position: relative;
+    left: 6.3rem;
+	background-color:#2A2A2A;
+	border-radius:28px;
+	border:1px solid #2A2A2A;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size: 15px;
+	padding:7px 14px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+    transition: all 450ms;
+} 
+
+.button:hover {
+    background-color: #0F0F0F;
+}
+
+
+.hipervinculo {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+
+a {
+    color: #ff3333;
+}
+
+.form-control {
+    position: relative;
+    margin: 3%;
+}
+
+@media (min-width: 361px){
+    .background-login1{
+        height: 76vh;
+    }
+    form {
+        margin-top: 18vh;
+    }
+
+
+}
+
+@media (min-width: 769px){
+    .background-login1{
+        height: 77vh;
+    }
+    form {
+        margin-top: 18vh;
+    }
+}
