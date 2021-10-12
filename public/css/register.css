@@ -1,51 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    margin: 0;
+    padding:0
+}
+
+.background-login1{
+    height: 68vh;
+    width: 100%;
+    background-image: url("/images/background-image3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-top: 10vh;
+
+}
 
 .form-container {
-    margin-top: 7vh;
-    height: 39.05rem;
-    width: auto;
     display: flex;
     justify-content: center;
     align-items:center;
-    background-color: #2A2A2A;
-    color: #2A2A2A;
-}
 
-form {
-    font-family: verdana;
-    background-color: #ffffff;
-    padding: 40px 20px;
-    box-shadow: 0 0 6px 0 #0F0F0F;
-    box-sizing: border-box;
-    border-radius: 10px;
-}
-
-.form-input {
-    width: 90%;
-    padding: 0.4rem;
-    margin: 0.15rem;
-    text-align: center;
-}
-
-.form-input:focus {
-    outline: none;
-}
-
-.asd {
-    text-align: center;
-    margin-top: 1%;
-    text-decoration: none;
-}
-
-.form-control {
-    position: relative;
-    margin: 3%;
 }
 
 .form-register h4 {
@@ -53,26 +33,45 @@ form {
     font-weight: 700;
 }
 
-.icons {
-    color: #2A2A2A;
+form {
+    width: 300px;
+    height: 400px;
+    margin-top: 3vh;
+    font-family: verdana;
+    background-color: #ffffff;
+    padding: 5px 2.5px;
+    box-shadow: 0 0 6px 0 #0F0F0F;
+    box-sizing: border-box;
+    border-radius: 10px;
 }
 
-.button {
+.form-input {
+    width: 90%;
+    padding: 10px;
+    margin: 1px;
+    text-align: center;
+}
+
+.form-input:focus {
+    outline: none;
+}
+
+.estas-registrado {
+    text-align: center;
+    margin-top: 1%;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.form-control {
     position: relative;
-    left: 32%;
-    bottom: 5%;
-	background-color:#2A2A2A;
-	border-radius:28px;
-	border:1px solid #2A2A2A;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Verdana;
-	font-size:17px;
-	padding:9px 18px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffffff;
-    transition: all 450ms;
+    margin: 3%;
+}
+
+
+
+.icons {
+    color: #2A2A2A;
 }
 
 .button:hover {
@@ -80,10 +79,38 @@ form {
 }
 
 
+label {
+    text-align: center;
+    font-size: 13px;
+    
+} 
+ 
+input {
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin-left: 15px;
+}
+
 a {
     color: #FF3333;
 }
-
+.button {
+    position: relative;
+    left: 85px;
+	background-color:#2A2A2A;
+	border-radius:28px;
+	border:1px solid #2A2A2A;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size: 15px;
+	padding:7px 14px;
+	text-decoration:none;
+    transition: all 450ms;
+    margin-top: 30px;
+} 
 @media (min-width: 361px) {
 }
 

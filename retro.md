@@ -40,3 +40,22 @@
   <li>Subestimar las tareas</li>
   <li>Dejar de querer hacer todo</li>
 </ul>
+
+## *Comenzar a hacer:*
+
+<ul>   
+  <li>Usar metodología del faro</li>
+  <li>2 reuniones semanales (martes y jueves)</li>
+</ul>
+
+## *Hacer más:*
+
+<li>Hablar con Uri y Leo respecto a dudas</li>
+
+## *Continuar haciendo:*
+
+  <li>Practicar</li>
+  <li>Ver tutoriales</li>
+  <li>Sacarse dudas</li>
+  <li>Comunicación continua</li>
+  <li>Confiar en nosotros</li>

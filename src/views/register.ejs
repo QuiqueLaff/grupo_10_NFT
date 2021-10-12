@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">   
+    <link rel="stylesheet" href="/css/register.css">   
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">    
+    <link rel= "shortcut icon" type="image/png" href="images/NFT-logo.png">
+    <title>NFT</title>
+</head>
+<body>
+    <!--header  -->
+      <%-include('./partials/header')%>
+
+    <!-- cuerpo de la pagina -->
+    <main>
+        <div class= "register1">
+            <div class="background-login1">
+                <div class="form-container">
+                <form class="form-register" action="/register" method="POST">
+                    <h4>REGISTRARSE</h4>
+                    <p class= "estas-registrado">¿Ya estás registrado? <a href="#">Inicia sesión</a></p>
+                    <div class="form-control">           
+                        <i class="fas fa-id-card icons"></i>
+                        <input type="text" name="nombre" class="form-input" placeholder="Nombre"> 
+                    </div>
+                    <div class="form-control">        
+                        <i class="far fa-id-card icons"></i>
+                        <input type="text" name="apellido" class="form-input" placeholder="Apellido">
+                    </div>
+                    <div class="form-control">    
+                        <i class="fas fa-envelope icons"></i>
+                        <input type="email" name="email" class="form-input" placeholder="Email">
+                    </div>
+                    <div class="form-control">      
+                        <i class="fas fa-key icons"></i>
+                        <input type="password" name="contraseña" class="form-input" placeholder="Contraseña"> 
+                    </div>  
+                    <div class="form-control">     
+                        <i class="fas fa-key icons"></i>
+                        <input type="password" name="contraseña" class="form-input" placeholder="Confirma tu constraseña">
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="politica" value="politica-privacidad" id="politica-privacidad">
+                        <label for="politica-privacidad">Acepto los <a href="#">Terminos y Condiciones</a></label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="mails" value="mails-promocinales" id="mails-promocionales">
+                        <label for="mails-promocionales">Acepto que me manden mails promocionales</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="sesión" value="sesión-iniciada" id="sesión-iniciada">
+                        <label for="sesión-iniciada">Mantener la sesión iniciada</label>
+                    </div>
+                    
+                    <button type="submit" class="button">Registrarse</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <%-include('./partials/footer')%>
+</body>
+</html>
