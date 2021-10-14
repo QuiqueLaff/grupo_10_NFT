@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -80,6 +81,11 @@ form {
 }
 
 
+.checkbox label {
+    font-size: 13px;
+    text-align: center;
+} 
+ 
 label {
     text-align: center;
     font-size: 13px;
@@ -96,6 +102,7 @@ input {
 a {
     color: #FF3333;
 }
+
 .button {
     position: relative;
     left: 85px;
@@ -112,6 +119,11 @@ a {
     transition: all 450ms;
     margin-top: 30px;
 } 
+
+.checkbox {
+    margin-left: 20px;
+}
+
 @media (min-width: 361px) {
     .background-login1{
         height: 76vh;

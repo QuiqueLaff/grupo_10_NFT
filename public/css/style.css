@@ -115,7 +115,6 @@ body{
 
 /* fondo de pantalla */
 .background{
-    background: blue;
     height: 90vh;
     width: 100%;
     background-image: url("/images/background-image.png");
@@ -124,8 +123,6 @@ body{
     background-size: cover;
     position: relative;
     margin-top: 10vh;
-
-
 }
 
 .contein{
@@ -477,8 +474,11 @@ section.banner img{
         text-align: left;
         width: 100px;
         color: whitesmoke;
-
+        text-decoration: none;
 }
+ .navbar a{
+    text-decoration: none;
+ }
 
 
         /* iconos de login, singin y carrito */

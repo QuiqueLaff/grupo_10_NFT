@@ -3,9 +3,9 @@ const path = require('path');
 
 module.exports = {
     home: (req, res) => {
-        res.render(path.resolve('src/views/home.ejs'));
+        res.render('home')
     },
     cart: (req, res) => {
-        res.render(path.resolve('src/views/cart.ejs'));
+        res.render('cart');
     }
 }
