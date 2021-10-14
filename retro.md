@@ -1,4 +1,4 @@
-# Retrospectiva tercer sprit. 
+# Retrospectiva tercer sprint.
 
 ## *Comenzar a hacer:*
 
