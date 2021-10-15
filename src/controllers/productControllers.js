@@ -5,11 +5,11 @@ module.exports = {
     productDetail: (req, res) => {
         res.render(path.resolve('src/views/product.ejs'));
     },
-    addProduct: function(){
-
+    addProduct: (req, res) => {
+        res.render(path.resolve('src/views/addProduct.ejs'));
     },
-    editProduct: function(){
-        
+    editProduct: (req, res) => {
+        res.render(path.resolve('src/views/editProduct.ejs'));
     },
     listOfProducts: function(){
 
