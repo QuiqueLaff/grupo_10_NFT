@@ -11,34 +11,31 @@
     </head>
         <body>
         <%-include('./partials/header')%>
-            <section>
+        <div class="background-edit-add"></div>
+
+                <section class="form-gral">
                 <div class="add-product-form">
-                    <header class="main-header">Add new product</header>
+                    <header class="main-header">Here you can add a new product!</header>
                     <div class="data">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" placeholder="Item name..."/>
-                        <div>
-                            <h3 class="upload">Upload image:</h3>
-                            <input type="file" id="file-uploader">
-                            <p>Upload your NFT to sale</p>
-                            <p id="feedback">Thanks!</p>
-                        </div>
-                        <label for="category">Description:</label>
-                        <input type="text" id="description" placeholder="Description..."/>
-                        <label for="price">Price:</label>
-                        <input type="text" id="price" placeholder="0.00"/>
-                        <label for="category">Name Artist:</label>
-                        <input type="text" id="name-artist" placeholder="Name artist..."/>
-                        <label for="category">Bio:</label>
-                        <input type="text" id="bio" placeholder="Bio..."/>
-                        <div>
-                            <h3 class="upload">Upload avatar:</h3>
-                            <input type="file" id="file-uploader">
-                            <p>Upload a profile image</p>
-                            <p id="feedback">Thanks!</p>
-                        </div>
-                        <label for="category">Code:</label>
+                        <label for="name"></label>
+                        <input type="text" id="name" placeholder="Product name:"/>
+                        
+                        <label for="category"></label>
+                        <input type="text" id="description" placeholder="Description:"/>
+                        <label for="price"></label>
+                        <input type="text" id="price" placeholder="Price:"/>
+                        <label for="category"></label>
+                        <input type="text" id="name-artist" placeholder="Artist name:"/>
+                        <label for="category"></label>
+                        <input type="text" id="bio" placeholder="Bio:"/>
+                        <label for="category"></label>
                         <input type="text" id="code" placeholder="Code..."/>
+                        <div class="file-select" id="src-file2" >
+                            <input type="file" name="src-file2" aria-label="Archivo">
+                          </div>                        
+                        <div class="file-select" id="src-file1" >
+                            <input type="file" name="src-file1" aria-label="Archivo">
+                          </div>               
                     </div>
                     <div class="panel">
                         <button id="add-product-button" class="button">Add</button>
