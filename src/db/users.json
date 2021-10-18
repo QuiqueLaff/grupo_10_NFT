@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "first_name": "Cody",
+        "last_name": "Heinicke",
+        "email": "cheinicke0@independent.co.uk",
+        "password": "REhEsNde8Rl"
+    },
+    {
+        "id": 2,
+        "first_name": "Jarvis",
+        "last_name": "Driffield",
+        "email": "jdriffield1@people.com.cn",
+        "password": "WAJ01kdUC"
+    },
+    {
+        "id": 3,
+        "first_name": "Mayor",
+        "last_name": "Cleveley",
+        "email": "mcleveley2@sphinn.com",
+        "password": "yiSvLMQe"
+    },
+    {
+        "id": 4,
+        "first_name": "Carla",
+        "last_name": "Hayesman",
+        "email": "chayesman3@forbes.com",
+        "password": "TLUEtnQp"
+    },
+    {
+        "id": 5,
+        "first_name": "Doralin",
+        "last_name": "MacEvilly",
+        "email": "dmacevilly4@nba.com",
+        "password": "XjBWEBL2I"
+    },
+    {
+        "id": 6,
+        "first_name": "Bonnee",
+        "last_name": "Calken",
+        "email": "bcalken5@state.gov",
+        "password": "yXS6n8OJzI"
+    },
+    {
+        "id": 7,
+        "first_name": "Thorin",
+        "last_name": "Cumpton",
+        "email": "tcumpton6@csmonitor.com",
+        "password": "ALbVOu34s"
+    },
+    {
+        "id": 8,
+        "first_name": "Olwen",
+        "last_name": "Beton",
+        "email": "obeton7@reference.com",
+        "password": "R7ihiW8x"
+    },
+    {
+        "id": 9,
+        "first_name": "Leontyne",
+        "last_name": "Cullen",
+        "email": "lcullen8@yelp.com",
+        "password": "kLbrzFla"
+    },
+    {
+        "id": 10,
+        "first_name": "Truda",
+        "last_name": "Fost",
+        "email": "tfost9@phpbb.com",
+        "password": "rvsOCDC"
+    }
+]
