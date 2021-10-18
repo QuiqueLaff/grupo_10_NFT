@@ -10,12 +10,12 @@ router.get('/', productControllers.productDetail);
 
 /* Agregar Producto */
 
-router.get('/', productControllers.addProduct);
+router.get('/addProduct', productControllers.addProduct);
 
 
 /* Editar Producto */
 
-router.get('/', productControllers.editProduct);
+router.get('/editProduct', productControllers.editProduct);
 
 
 /* Lista de Productos */

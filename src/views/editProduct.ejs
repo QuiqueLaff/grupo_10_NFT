@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />   
+        <link rel="stylesheet" href="/css/add-edit.css">
+        <link rel="stylesheet" href="/css/style.css">   
+        <title>Login</title>
+    </head>
+    <body>
+        <%-include('./partials/header')%>
+            <section>
+                <div class="edit-product-form">
+                    <header class="main-header">Edit product</header>
+                    <div class="data">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" placeholder="Item name..."/>
+                        <div>
+                            <h3 class="upload">Upload image:</h3>
+                            <input type="file" id="file-uploader">
+                            <p>Edit your NFT picture</p>
+                            <p id="feedback">Thanks!</p>
+                        </div>
+                        <label for="category">Description:</label>
+                        <input type="text" id="description" placeholder="Description..."/>
+                        <label for="price">Price:</label>
+                        <input type="text" id="price" placeholder="0.00"/>
+                        <label for="category">Name Artist:</label>
+                        <input type="text" id="name-artist" placeholder="Name artist..."/>
+                        <label for="category">Bio:</label>
+                        <input type="text" id="bio" placeholder="Bio..."/>
+                        <div>
+                            <h3 class="upload">Edit your avatar:</h3>
+                            <input type="file" id="file-uploader">
+                            <p>Upload a profile image</p>
+                            <p id="feedback">Thanks!</p>
+                        </div>
+                        <label for="category">Code:</label>
+                        <input type="text" id="code" placeholder="Code..."/>
+                    </div>
+                    <div class="panel">
+                        <button id="edit-product-button" class="button" data-id="{{objectId}}">Edit</button>
+                        <a href="#/products">
+                            <button class="button">Cancel</button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        <%-include('./partials/footer')%>
+    </body>
+</html>
