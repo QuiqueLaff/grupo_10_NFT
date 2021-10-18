@@ -1,18 +1,162 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-html {
-    height: 100%;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding:0
+}
   
-  body {
-    background: #000000;
-    color: #FFFFFF;
-  }
+.form-gral{
+height: 100vh;
+background-image: url("/images/soft-gradient.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-top: 10vh;
+}
+
+.add-product-form{
+  padding-top:80px;
+  text-align: center;
   
-  div {
-    display: flex;
+  
+}
+
+.main-header{
+  font-size: 3vh;
+  text-align: center;
+  
+
+}
+  
+.data{
+    display: grid;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     font-family: 'Roboto', monospace;
+    margin-top: 20px;
+    
   }
+
+
+  input 				{
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:300px;
+    border:none;
+    border-bottom:1px solid #757575;
+    text-align: left; 
+    background: rgba(0,0,0,0);
+
+  }
+
+  input:focus { 
+    outline:none; 
+    
+    
+  }
+
+#file-uploader{
+  border-bottom: none
+  
+}
+
+.upload{
+  padding-top: 20px;
+  border-bottom: none
+  
+}
+
+.file-select {
+  position: relative;
+  display: inline-block;
+}
+
+.file-select::before {
+  background-color: #0F0F0F;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  content: 'Seleccionar'; /* testo por defecto */
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.file-select input[type="file"] {
+  opacity: 0;
+  width: 200px;
+  height: 32px;
+  display: inline-block;
+}
+
+#src-file1::before {
+  content: 'Upload avatar';
+}
+
+#src-file2::before {
+  content: 'Upload NFT';
+}
+
+#src-file2{
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.button {
+  margin-top: 30px;
+	box-shadow:inset 0px 1px 0px 0px #0F0F0F;
+	background:linear-gradient(to bottom, #0F0F0F 5%, #0F0F0F 100%);
+	background-color:#0F0F0F;
+	border-radius:3px;
+	border:1px solid #0F0F0F;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Roboto';
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #0F0F0F;
+}
+.button:hover {
+	background:linear-gradient(to bottom, #0F0F0F 5%, #0F0F0F 100%);
+	background-color:#0F0F0F;
+}
+.button:active {
+	position:relative;
+	top:1px;
+
+}
+
+@media (min-width: 361px){
+  .add-product-form{
+    padding-top:25vw;
+    text-align: center;
+  }
+
+}
+
+
+@media (min-width: 769px){
+  .add-product-form{
+    padding-top:10vw;
+    text-align: center;
+  }
+}
+
+
+

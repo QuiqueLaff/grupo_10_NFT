@@ -9,45 +9,41 @@
         <link rel="stylesheet" href="/css/style.css">   
         <title>Login</title>
     </head>
-    <body>
+        <body>
         <%-include('./partials/header')%>
-            <section>
-                <div class="edit-product-form">
-                    <header class="main-header">Edit product</header>
+        <div class="background-edit-add"></div>
+            <section class="form-gral">
+                <div class="add-product-form">
+                    <header class="main-header">Here you can edit your product!</header>
                     <div class="data">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" placeholder="Item name..."/>
-                        <div>
-                            <h3 class="upload">Upload image:</h3>
-                            <input type="file" id="file-uploader">
-                            <p>Edit your NFT picture</p>
-                            <p id="feedback">Thanks!</p>
-                        </div>
-                        <label for="category">Description:</label>
-                        <input type="text" id="description" placeholder="Description..."/>
-                        <label for="price">Price:</label>
-                        <input type="text" id="price" placeholder="0.00"/>
-                        <label for="category">Name Artist:</label>
-                        <input type="text" id="name-artist" placeholder="Name artist..."/>
-                        <label for="category">Bio:</label>
-                        <input type="text" id="bio" placeholder="Bio..."/>
-                        <div>
-                            <h3 class="upload">Edit your avatar:</h3>
-                            <input type="file" id="file-uploader">
-                            <p>Upload a profile image</p>
-                            <p id="feedback">Thanks!</p>
-                        </div>
-                        <label for="category">Code:</label>
-                        <input type="text" id="code" placeholder="Code..."/>
+                        <label for="name"></label>
+                        <input type="text" id="name" placeholder="Edit product name:"/>
+                        
+                        <label for="category"></label>
+                        <input type="text" id="description" placeholder="Edit description:"/>
+                        <label for="price"></label>
+                        <input type="text" id="price" placeholder="Edit price:"/>
+                        <label for="category"></label>
+                        <input type="text" id="name-artist" placeholder="Edit name:"/>
+                        <label for="category"></label>
+                        <input type="text" id="bio" placeholder="Edit Bio:"/>
+                        <label for="category"></label>
+                        <input type="text" id="code" placeholder="Edit artist code"/>
+                        <div class="file-select" id="src-file2" >
+                            <input type="file" name="src-file2" aria-label="Archivo">
+                          </div>                        
+                        <div class="file-select" id="src-file1" >
+                            <input type="file" name="src-file1" aria-label="Archivo">
+                          </div>               
                     </div>
                     <div class="panel">
-                        <button id="edit-product-button" class="button" data-id="{{objectId}}">Edit</button>
+                        <button id="add-product-button" class="button">Edit</button>
                         <a href="#/products">
-                            <button class="button">Cancel</button>
+                            <button class="button" id="cancel-button">Cancel</button>
                         </a>
                     </div>
                 </div>
             </section>
-        <%-include('./partials/footer')%>
-    </body>
+            <%-include('./partials/footer')%>
+        </body>
 </html>
