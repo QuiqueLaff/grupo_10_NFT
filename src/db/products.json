@@ -4,66 +4,66 @@
         "product_name": "Pear Bitch",
         "product_detail": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.",
         "product_price": 7000,
-        "product_img": null,
+        "product_img": "pear-bitch.png",
         "artist_name": "Jessie Ware",
         "artist_bio": "Fusce consequat. Nulla nisl. Nunc nisl.\n\nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.",
         "artist_code": 2820,
-        "artist_img": ""
+        "artist_img": "jessie-ware-artist.jpg"
     },
     {
         "id": 2,
         "product_name": "Dream Cube",
         "product_detail": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.",
         "product_price": 6800,
-        "product_img": null,
+        "product_img": "dream-cube.jpg",
         "artist_name": "Jessie Ware",
         "artist_bio": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\n\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.\n\nCurabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",
         "artist_code": 2820,
-        "artist_img": null
+        "artist_img": "jessie-ware-artist.jpg"
     },
     {
         "id": 3,
         "product_name": "Behind The Mask",
         "product_detail": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
         "product_price": 6500,
-        "product_img": null,
+        "product_img": "behind-the-mask.jpg",
         "artist_name": "Jessie Ware",
         "artist_bio": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
         "artist_code": 2820,
-        "artist_img": null
+        "artist_img": "jessie-ware-artist.jpg"
     },
     {
         "id": 4,
         "product_name": "Emojicon",
         "product_detail": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
         "product_price": 6600,
-        "product_img": null,
+        "product_img": "emojicon.png",
         "artist_name": "Bianca Carey",
         "artist_bio": "Fusce consequat. Nulla nisl. Nunc nisl.\n\nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.",
-        "artist_code": 8731,
-        "artist_img": null
+        "artist_code": 5836,
+        "artist_img": "bianca-carey-artist.jpg"
     },
     {
         "id": 5,
         "product_name": "Messi",
         "product_detail": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\n\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
         "product_price": 7300,
-        "product_img": null,
+        "product_img": "messi.jpeg",
         "artist_name": "Bianca Carey",
         "artist_bio": "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
         "artist_code": 5836,
-        "artist_img": null
+        "artist_img": "bianca-carey-artist.jpg"
     },
     {
         "id": 6,
         "product_name": "NBA Top Shots",
         "product_detail": "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.",
         "product_price": 7500,
-        "product_img": null,
+        "product_img": "nba.gif",
         "artist_name": "Emily Nelson",
         "artist_bio": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.",
         "artist_code": 9276,
-        "artist_img": null
+        "artist_img": "emily-nelson-artist.jpg"
     },
     {
         "id": 7,
@@ -71,42 +71,42 @@
         "product_detail": "In congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
         "product_price": 6700,
         "product_img": null,
-        "artist_name": "Emily Nelson",
+        "artist_name": "game-boy-gif",
         "artist_bio": "In congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
-        "artist_code": 2091,
-        "artist_img": null
+        "artist_code": 9276,
+        "artist_img": "emily-nelson-artist.jpg"
     },
     {
         "id": 8,
         "product_name": "Apple",
         "product_detail": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
         "product_price": 7300,
-        "product_img": null,
+        "product_img": "apple.gif",
         "artist_name": "Bright Light Bright Light",
         "artist_bio": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
-        "artist_code": 4688,
-        "artist_img": null
+        "artist_code": 7543,
+        "artist_img": "bright-light-artist.jpg"
     },
     {
         "id": 9,
         "product_name": "Lolita",
         "product_detail": "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
         "product_price": 6400,
-        "product_img": null,
+        "product_img": "lolita.jfif",
         "artist_name": "Bright Light Bright Light",
         "artist_bio": "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\n\nIn congue. Etiam justo. Etiam pretium iaculis justo.",
-        "artist_code": 5203,
-        "artist_img": null
+        "artist_code": 7543,
+        "artist_img": "bright-light-artist.jpg"
     },
     {
         "id": 10,
         "product_name": "Shades of Blue",
         "product_detail": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
         "product_price": 6900,
-        "product_img": null,
+        "product_img": "shades-of-blue.jpg",
         "artist_name": "Bright Light Bright Light",
         "artist_bio": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\n\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\n\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
         "artist_code": 7543,
-        "artist_img": null
+        "artist_img": "bright-light-artist.jpg"
     }
 ]
