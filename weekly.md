@@ -19,3 +19,6 @@ Se trabajo en conjunto con Uriel la revisión del segundo sprint y detalles para
 Se volvieron a dividir tareas pendientes (Retrospectiva, weekly, formularios y bases de datos). 
 Se organizo una nueva reunión para el día miércoles o jueves antes de la entrega del tercer sprint. 
 
+Weekly Viernes 15.
+
+Se leyó el contenido del cuarto sprint. Nos dividimos las tareas, respetando las prioridades de cada una y las complicaciones de los integrantes. Respecto al liderazgo del sprint, hemos visto que funcionamos mejor simplemente comunicandonos a que uno lleve la vara.

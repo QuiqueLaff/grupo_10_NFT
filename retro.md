@@ -1,3 +1,40 @@
+# Retrospectiva cuarto sprint.
+
+## *Comenzar a hacer:*
+
+<ul>   
+  <li>Hacer las tareas con la mayor anticipación posible</li>
+  <li>Respetar lo hablado en sprints anteriores</li>
+  <li>Revisar en conjunto el sprint con antelación</li>
+</ul>
+
+## *Hacer más:*
+
+<ul>   
+  <li>Comunicar los problemas que se le presenten a alguno</li>
+  <li>Apoyarnos más en los profesores</li>
+</ul>
+
+## *Continuar haciendo:*
+
+<ul>   
+  <li>Las Daily/Weekly</li>
+  <li>Juntarse en zoom para resolver tareas</li>
+</ul>
+
+## *Hacer menos:*
+
+<ul>   
+  <li>Dejar pasar el tiempo</li>
+</ul>
+
+## *Dejar de hacer:*
+
+<ul>   
+  <li></li>
+</ul>
+
+
 # Retrospectiva tercer sprint.
 
 ## *Comenzar a hacer:*
@@ -43,7 +80,7 @@
 </ul>
 
 
-# Retrospectiva segundo sprit. 
+# Retrospectiva segundo sprint. 
 
 ## *Comenzar a hacer:*
 
@@ -85,3 +122,22 @@
   <li>Subestimar las tareas</li>
   <li>Dejar de querer hacer todo</li>
 </ul>
+
+## *Comenzar a hacer:*
+
+<ul>   
+  <li>Usar metodología del faro</li>
+  <li>2 reuniones semanales (martes y jueves)</li>
+</ul>
+
+## *Hacer más:*
+
+<li>Hablar con Uri y Leo respecto a dudas</li>
+
+## *Continuar haciendo:*
+
+  <li>Practicar</li>
+  <li>Ver tutoriales</li>
+  <li>Sacarse dudas</li>
+  <li>Comunicación continua</li>
+  <li>Confiar en nosotros</li>

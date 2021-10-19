@@ -144,19 +144,30 @@ background-image: url("/images/soft-gradient.jpeg");
 
 @media (min-width: 361px){
   .add-product-form{
-    padding-top:25vw;
+    padding-top:17vw;
     text-align: center;
   }
+  .form-gral{
+    height: 70vh;
+    margin-top: 5vh;
+    }
+
+
 
 }
 
 
 @media (min-width: 769px){
   .add-product-form{
-    padding-top:10vw;
+    padding-top:5vw;
     text-align: center;
   }
 }
+
+.form-gral{
+  height: 73vh;
+  margin-top: 10vh;
+  }
 
 
 
