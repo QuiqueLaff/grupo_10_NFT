@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
 
 
@@ -8,7 +8,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
+
 body{
     margin: 0;
     padding:0
@@ -32,8 +34,10 @@ body{
     color: whitesmoke;
     text-align: center;
     text-decoration: none;
-
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
 }
+
 .logotipo img{
     justify-content: center;
     width: 100px;
@@ -132,8 +136,8 @@ body{
     transform: translate(-50%, -50%);
     text-align: center;
     color: whitesmoke;
-    font-weight: 700;
     text-transform: uppercase;
+    font-weight: 700;
 
 }
 
@@ -237,7 +241,6 @@ body{
     color: whitesmoke;
     left: 50%;
     top: 50%;
-    font-weight: 700;
     transform: translate(-50%, -50%);
     text-transform: uppercase;
     width: 100%;
@@ -258,7 +261,7 @@ section.banner img{
 
 .staff h3{
     font-size: 4vh;
-    font-family: 'Oswald' Regular 500
+    font-family: 'Oswald'
     , sans-serif;
     padding-top: 20px;
     color: #0f0f0f;
