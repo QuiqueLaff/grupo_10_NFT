@@ -9,7 +9,12 @@ let products = JSON.parse(jsonProducts);
 
 module.exports = {
     productDetail: (req, res) => {
-        res.render(path.resolve('src/views/product.ejs'));
+        let id = req.params.id;
+        let productoDetalle = products.find(product => {
+            return product.id == id;
+        })
+        console.log(productoDetalle)
+        res.render('product', { product: productoDetalle });
     },
     addProduct: (req, res) => {
         res.render(path.resolve('src/views/addProduct.ejs'));
@@ -19,7 +24,6 @@ module.exports = {
     },
     listOfProducts: (req, res) => {
         res.render('listOfProducts', { products })
-
     }
 }
 

@@ -5,10 +5,10 @@
         "detail": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.",
         "price": 7000,
         "img": "pear-bitch.png",
-        "artist-name": "Jessie Ware",
-        "artist-bio": "Fusce consequat. Nulla nisl. Nunc nisl.\n\nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.",
-        "artist-code": 2820,
-        "artist-img": "jessie-ware-artist.jpg"
+        "artistname": "Jessie Ware",
+        "artistbio": "Fusce consequat. Nulla nisl. Nunc nisl.\n\nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.",
+        "artistcode": 2820,
+        "artistimg": "jessie-ware-artist.jpg"
     },
     {
         "id": 2,
@@ -16,10 +16,10 @@
         "detail": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.",
         "price": 6800,
         "img": "dream-cube.jpeg",
-        "artist-name": "Jessie Ware",
-        "artist-bio": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\n\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.\n\nCurabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",
-        "artist-code": 2820,
-        "artist-img": "jessie-ware-artist.jpg"
+        "artistname": "Jessie Ware",
+        "artistbio": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\n\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.\n\nCurabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",
+        "artistcode": 2820,
+        "artistimg": "jessie-ware-artist.jpg"
     },
     {
         "id": 3,
@@ -27,10 +27,10 @@
         "detail": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
         "price": 6500,
         "img": "behind-the-mask.jpg",
-        "artist-name": "Jessie Ware",
-        "artist-bio": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
-        "artist-code": 2820,
-        "artist-img": "jessie-ware-artist.jpg"
+        "artistname": "Jessie Ware",
+        "artistbio": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
+        "artistcode": 2820,
+        "artistimg": "jessie-ware-artist.jpg"
     },
     {
         "id": 4,
@@ -38,10 +38,10 @@
         "detail": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
         "price": 6600,
         "img": "emojicon.png",
-        "artist-name": "Bianca Carey",
-        "artist-bio": "Fusce consequat. Nulla nisl. Nunc nisl.\n\nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.",
-        "artist-code": 5836,
-        "artist-img": "bianca-carey-artist.jpg"
+        "artistname": "Bianca Carey",
+        "artistbio": "Fusce consequat. Nulla nisl. Nunc nisl.\n\nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.",
+        "artistcode": 5836,
+        "artistimg": "bianca-carey-artist.jpg"
     },
     {
         "id": 5,
@@ -49,10 +49,10 @@
         "detail": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\n\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
         "price": 7300,
         "img": "messi.jpeg",
-        "artist-name": "Bianca Carey",
-        "artist-bio": "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
-        "artist-code": 5836,
-        "artist-img": "bianca-carey-artist.jpg"
+        "artistname": "Bianca Carey",
+        "artistbio": "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
+        "artistcode": 5836,
+        "artistimg": "bianca-carey-artist.jpg"
     },
     {
         "id": 6,
@@ -60,21 +60,21 @@
         "detail": "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.",
         "price": 7500,
         "img": "nba.gif",
-        "artist-name": "Emily Nelson",
-        "artist-bio": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.",
-        "artist-code": 9276,
-        "artist-img": "emily-nelson-artist.jpg"
+        "artistname": "Emily Nelson",
+        "artistbio": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.",
+        "artistcode": 9276,
+        "artistimg": "emily-nelson-artist.jpg"
     },
     {
         "id": 7,
         "name": "Game Boy",
         "detail": "In congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
         "price": 6700,
-        "img": null,
-        "artist-name": "game-boy-gif",
-        "artist-bio": "In congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
-        "artist-code": 9276,
-        "artist-img": "emily-nelson-artist.jpg"
+        "img": "apple.gif",
+        "artistname": "game-boy-gif",
+        "artistbio": "In congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
+        "artistcode": 9276,
+        "artistimg": "emily-nelson-artist.jpg"
     },
     {
         "id": 8,
@@ -82,10 +82,10 @@
         "detail": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
         "price": 7300,
         "img": "apple.gif",
-        "artist-name": "Bright Light Bright Light",
-        "artist-bio": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
-        "artist-code": 7543,
-        "artist-img": "bright-light-artist.jpg"
+        "artistname": "Bright Light Bright Light",
+        "artistbio": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
+        "artistcode": 7543,
+        "artistimg": "bright-light-artist.jpg"
     },
     {
         "id": 9,
@@ -93,10 +93,10 @@
         "detail": "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
         "price": 6400,
         "img": "lolita.jfif",
-        "artist-name": "Bright Light Bright Light",
-        "artist-bio": "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\n\nIn congue. Etiam justo. Etiam pretium iaculis justo.",
-        "artist-code": 7543,
-        "artist-img": "bright-light-artist.jpg"
+        "artistname": "Bright Light Bright Light",
+        "artistbio": "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\n\nIn congue. Etiam justo. Etiam pretium iaculis justo.",
+        "artistcode": 7543,
+        "artistimg": "bright-light-artist.jpg"
     },
     {
         "id": 10,
@@ -104,9 +104,9 @@
         "detail": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
         "price": 6900,
         "img": "shades-of-blue.jpg",
-        "artist-name": "Bright Light Bright Light",
-        "artist-bio": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\n\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\n\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
-        "artist-code": 7543,
-        "artist-img": "bright-light-artist.jpg"
+        "artistname": "Bright Light Bright Light",
+        "artistbio": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\n\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\n\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
+        "artistcode": 7543,
+        "artistimg": "bright-light-artist.jpg"
     }
 ]

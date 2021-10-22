@@ -6,7 +6,7 @@ const productControllers = require('../controllers/productControllers');
 
 
 /* Detalle del Producto */
-router.get('/', productControllers.productDetail);
+router.get('/:id', productControllers.productDetail);
 
 
 /* Agregar Producto */
@@ -22,5 +22,8 @@ router.get('/editProduct', productControllers.editProduct);
 /* Lista de Productos */
 
 router.get('/listOfProducts', productControllers.listOfProducts);
+
+
+
 
 module.exports = router;
