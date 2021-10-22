@@ -21,6 +21,6 @@ router.get('/editProduct', productControllers.editProduct);
 
 /* Lista de Productos */
 
-router.get('/', productControllers.listOfProducts);
+router.get('/listOfProducts', productControllers.listOfProducts);
 
 module.exports = router;

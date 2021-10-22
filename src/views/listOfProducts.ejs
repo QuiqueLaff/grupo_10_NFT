@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <!-- head -->
+    <<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">  
+        <link rel="stylesheet" href="/css/listofproducts.css">    
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">    
+        <link rel= "shortcut icon" type="image/png" href="images/solapa.png">
+        <title>NFT</title>
+    </head>
+    
+    <body>
+    <!-- header  -->
+    <%-include('./partials/header')%>
+    
+    <!-- products -->
+    
+    <% products.forEach(product => { %>
+        <div class="box">
+            <div class="image">
+                <img src="/images/<%= product.img %>" alt="emojicon">
+            </div>
+
+            <div class="info">
+                <h3 class="title"><%= product.name %></h3>
+                <div class="subInfo">
+                <div class= "price">$<%= product.price %><span>$600</span></div>
+                <div class="stars">
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star"></i>
+                </div>
+
+               </div>
+            </div>
+        </div>
+    <% }) %>
+    <!-- footer -->
+    <%-include('./partials/footer')%>
+</body>
+</html>
+
