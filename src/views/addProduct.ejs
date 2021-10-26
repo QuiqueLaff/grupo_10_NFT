@@ -18,24 +18,24 @@
                 <div class="add-product-form">
                     <header class="main-header">Here you can add a new product!</header>
                     <div class="data">
+                        <form action="/product" method="POST" enctype="multipart/form-data" class="formulario">
                         <label for="name"></label>
-                        <input type="text" id="name" placeholder="Product name:"/>
-                        
+                        <input type="text" name="name" placeholder="Product name:"/>
                         <label for="category"></label>
-                        <input type="text" id="description" placeholder="Description:"/>
+                        <input type="text" name="detail" placeholder="Description:"/>
                         <label for="price"></label>
-                        <input type="text" id="price" placeholder="Price:"/>
+                        <input type="text" name="price" placeholder="Price:"/>
                         <label for="category"></label>
-                        <input type="text" id="name-artist" placeholder="Artist name:"/>
+                        <input type="text" name="artistname" placeholder="Artist name:"/>
                         <label for="category"></label>
-                        <input type="text" id="bio" placeholder="Bio:"/>
+                        <input type="text" name="artistbio" placeholder="Bio:"/>
                         <label for="category"></label>
-                        <input type="text" id="code" placeholder="Code..."/>
-                        <div class="file-select" id="src-file2" >
-                            <input type="file" name="src-file2" aria-label="Archivo">
+                        <input type="text" name="artistcode" placeholder="Code..."/>
+                        <div class="file-select" id="img" >
+                            <input type="file" name="img" aria-label="Archivo">
                           </div>                        
-                        <div class="file-select" id="src-file1" >
-                            <input type="file" name="src-file1" aria-label="Archivo">
+                        <div class="file-select" id="artistimg" >
+                            <input type="file" name="artistimg" aria-label="Archivo">
                           </div>               
                     </div>
                     <div class="panel">

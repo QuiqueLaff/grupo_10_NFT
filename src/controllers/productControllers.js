@@ -5,6 +5,15 @@ const res = require('express/lib/response');
 let jsonProducts = fs.readFileSync(path.resolve(__dirname, '../db/products.json'), 'utf-8');
 let products = JSON.parse(jsonProducts); 
 
+const nuevoId = () => {
+    let ultimo = 0;
+    products.forEach(product => {
+        if (product.id > ultimo) {
+            ultimo = product.id;
+        }
+    });
+    return ultimo + 1;
+}
 
 
 module.exports = {
@@ -13,17 +22,36 @@ module.exports = {
         let productoDetalle = products.find(product => {
             return product.id == id;
         })
-        console.log(productoDetalle)
         res.render('product', { product: productoDetalle });
     },
+
     addProduct: (req, res) => {
-        res.render(path.resolve('src/views/addProduct.ejs'));
+        res.render('addProduct');
     },
+
+    store(req, res) {
+        // return res.send(req.files[0].filename)
+        let images = [ req.files[0].filename, req.files[1].filename]
+        let newProduct = {
+            id: nuevoId(),
+            ...req.body,
+             image: images || 'default-image.png',
+        }
+        // console.log(req.files);
+        // console.log(req.body);
+        products.push(newProduct);
+    
+        let jsonDeProducts = JSON.stringify(products, null, 4);
+        fs.writeFileSync(path.resolve(__dirname, '../db/products.json'), jsonDeProducts);
+    
+        res.redirect('/');
+    },
+    
     editProduct: (req, res) => {
-        res.render(path.resolve('src/views/editProduct.ejs'));
+        res.render('editProduct');
     },
+
     listOfProducts: (req, res) => {
         res.render('listOfProducts', { products })
-    }
+    },
 }
-

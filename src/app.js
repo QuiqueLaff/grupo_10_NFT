@@ -2,17 +2,23 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-app.use(express.static(path.resolve(__dirname, '../public')));
 
 /* view engine */
 app.set("view engine", "ejs");
 app.set("views", path.resolve(__dirname, "views"));
 
+
+/* Config express */
+app.use(express.static(path.resolve(__dirname, '../public')));
+app.use(express.urlencoded({extended: false}))
+app.use (express.json());
 /* Routes */
 
 const mainRouter = require('./routes/main');
 const usersRouter = require('./routes/users');
 const productRouter = require('./routes/product');
+const { application } = require('express');
+const methodOverride = require('method-override');
 
 /* Main Router */ 
 
@@ -25,6 +31,8 @@ app.use('/users', usersRouter);
 /* Product */
 
 app.use('/product', productRouter);
+
+
 
 app.listen(process.env.PORT || 3050, () => console.log('Servidor funcionando en el 3050'));
 

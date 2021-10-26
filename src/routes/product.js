@@ -4,9 +4,21 @@ const path = require('path');
 const multer = require ('multer');
 const productControllers = require('../controllers/productControllers');
 
+// MULTER
+const storage = multer.diskStorage({
+    destination:function(req,file,cb){
+        cb(null, path.resolve(__dirname, '../../public/images'))
+    },
+    filename: function(req,file,cb){
+        cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname))
+    }
+})
+const upload = multer({storage: storage})
+// 
 
-/* Detalle del Producto */
-router.get('/:id', productControllers.productDetail);
+router.post('/', upload.any(),  productControllers.store);
+
+router.get('/', productControllers.listOfProducts);
 
 
 /* Agregar Producto */
@@ -19,9 +31,10 @@ router.get('/addProduct', productControllers.addProduct);
 router.get('/editProduct', productControllers.editProduct);
 
 
-/* Lista de Productos */
+/* Detalle del Producto */
 
-router.get('/listOfProducts', productControllers.listOfProducts);
+router.get('/:id', productControllers.productDetail);
+
 
 
 
