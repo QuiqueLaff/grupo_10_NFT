@@ -115,7 +115,6 @@
             "lolita.jfif",
             "bright-light-artist.jpg"
         ]
-        
     },
     {
         "id": 10,
@@ -129,19 +128,6 @@
         "image": [
             "shades-of-blue.jpg",
             "bright-light-artist.jpg"
-        ]
-    },
-    {
-        "id": 11,
-        "name": "Pintura",
-        "detail": "Es una cosa de locos",
-        "price": "7000",
-        "artistname": "Benito",
-        "artistbio": "Un loco lindo",
-        "artistcode": "8887",
-        "image": [
-            "img-1635271595024.png",
-            "artistimg-1635271595027.jpg"
         ]
     }
 ]

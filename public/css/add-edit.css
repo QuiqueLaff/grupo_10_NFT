@@ -13,8 +13,8 @@ body{
 }
   
 .form-gral{
-height: 100vh;
-background-image: url("/images/soft-gradient.jpeg");
+    height: 100%;
+    background-image: url("/images/soft-gradient.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -88,12 +88,20 @@ background-image: url("/images/soft-gradient.jpeg");
   justify-content: center;
   align-items: center;
   border-radius: 3px;
-  content: 'Seleccionar'; /* testo por defecto */
+  content: 'subir'; 
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
+}
+#img::before {
+  content: 'Upload Avatar';
+  
+}
+
+#artistimg::before {
+  content: 'Upload NFT';
 }
 
 .file-select input[type="file"] {
@@ -103,15 +111,7 @@ background-image: url("/images/soft-gradient.jpeg");
   display: inline-block;
 }
 
-#src-file1::before {
-  content: 'Upload avatar';
-}
-
-#src-file2::before {
-  content: 'Upload NFT';
-}
-
-#src-file2{
+#img{
   margin-bottom: 20px;
   margin-top: 30px;
 }

@@ -17,6 +17,7 @@ const nuevoId = () => {
 
 
 module.exports = {
+
     productDetail: (req, res) => {
         let id = req.params.id;
         let productoDetalle = products.find(product => {
@@ -29,16 +30,14 @@ module.exports = {
         res.render('addProduct');
     },
 
-    store(req, res) {
-        // return res.send(req.files[0].filename)
+    store (req, res) {
         let images = [ req.files[0].filename, req.files[1].filename]
         let newProduct = {
             id: nuevoId(),
             ...req.body,
              image: images || 'default-image.png',
         }
-        // console.log(req.files);
-        // console.log(req.body);
+     
         products.push(newProduct);
     
         let jsonDeProducts = JSON.stringify(products, null, 4);
@@ -54,4 +53,17 @@ module.exports = {
     listOfProducts: (req, res) => {
         res.render('listOfProducts', { products })
     },
+   
+    delete (req, res) {
+        let productosRestantes = products.filter(product => {
+            return product.id != req.params.id;
+        })
+
+        let jsonDeProducts = JSON.stringify(productosRestantes, null, 4);
+        fs.writeFileSync(path.resolve(__dirname, '../db/products.json'), jsonDeProducts);
+    
+        res.redirect('/');
+    }
+    
+
 }

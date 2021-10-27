@@ -35,6 +35,11 @@ router.get('/editProduct', productControllers.editProduct);
 
 router.get('/:id', productControllers.productDetail);
 
+/* Borrar Producto */
+
+router.delete('/:id', productControllers.delete);
+
+
 
 
 

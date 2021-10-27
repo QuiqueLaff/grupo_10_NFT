@@ -36,8 +36,10 @@
                 <div class="box-description">
                     <p class="description"><%= product.detail %></p>
                 </div>
-                
-                <a href="#" class="add-button">Añadir</a>
+                <form action="/product/<%= product.id  %>?_method=DELETE" method="POST">
+                <button type="submit" class="action-button delete">ELIMINAR</button>
+                </form>
+
             </article>
         </section>
 

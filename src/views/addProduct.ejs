@@ -16,15 +16,15 @@
         <div class="background-edit-add"></div>
                 <section class="form-gral">
                 <div class="add-product-form">
+                    <form action="/product" method="POST" enctype="multipart/form-data" class="formulario">
                     <header class="main-header">Here you can add a new product!</header>
                     <div class="data">
-                        <form action="/product" method="POST" enctype="multipart/form-data" class="formulario">
                         <label for="name"></label>
                         <input type="text" name="name" placeholder="Product name:"/>
                         <label for="category"></label>
                         <input type="text" name="detail" placeholder="Description:"/>
                         <label for="price"></label>
-                        <input type="text" name="price" placeholder="Price:"/>
+                        <input type="number" name="price" placeholder="Price:"/>
                         <label for="category"></label>
                         <input type="text" name="artistname" placeholder="Artist name:"/>
                         <label for="category"></label>
@@ -32,12 +32,10 @@
                         <label for="category"></label>
                         <input type="text" name="artistcode" placeholder="Code..."/>
                         <div class="file-select" id="img" >
-                            <input type="file" name="img" aria-label="Archivo">
-                          </div>                        
+                            <input type="file" name="img" aria-label="Archivo"></div>                        
                         <div class="file-select" id="artistimg" >
                             <input type="file" name="artistimg" aria-label="Archivo">
-                          </div>               
-                    </div>
+                          </div>      
                     <div class="panel">
                         <button id="add-product-button" class="button">Add</button>
                         <a href="#/products">
