@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/productDetail.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel= "shortcut icon" type="image/png" href="/images/solapa.png">
 
@@ -18,9 +18,9 @@
         <!-- Product -->
         <section>
             <article class="container-product">
-                <img src="/images/<%= product.image[0] %>" class="product-img" alt="WYP">
+                <img src="/images/pear-bitch.png" class="product-img" alt="WYP">
                 <div class="product-name">
-                    <h3><%= product.name %></h3>
+                    <h3>Pear Bitch</h3>
                         <div class="ranking">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -31,36 +31,21 @@
                 </div>
 
                 <div class="box-price">
-                    <p class="price">$<%= product.price %></p>
+                    <p class="price">$7000</p>
                 </div>
                 <div class="box-description">
-                    <p class="description"><%= product.detail %></p>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum recusandae fugit beatae quas nam hic reiciendis assumenda, in voluptates eius laudantium, excepturi nobis sit nostrum adipisci repellendus molestiae error tempora. Lorem ipsum dolor sit amet consectetur, adipisicing elit. At natus aliquid fugiat soluta neque, delectus quae ut animi labore, omnis tenetur qui nemo iste atque quia inventore architecto vitae quos!</p>
                 </div>
                 
-
-                <form action="/product/<%= product.id  %>?_method=" method="POST">
-                <button type="submit" class="add-button">Agregar</button>
-                </form>
-
-
-                <form action="/product/<%= product.id  %>?_method=" method="POST">
-                <button type="submit" class="edit-button">Editar</button>
-                </form>
-
-
-                <form action="/product/<%= product.id  %>?_method=DELETE" method="POST">
-                <button type="submit" class="delete-button">Eliminar</button>
-                </form>
-                
-
+                <a href="#" class="add-button">Añadir</a>
             </article>
         </section>
 
         <!-- Artist -->
         <section>
             <div class="container-artist">
-                <img src="/images/<%= product.image[1] %>" class="artist-img" alt="JW">               
-                <h3 class="artist-name"><%= product.artistname %></h3>
+                <img src="/images/jessie-ware-artist.jpg" class="artist-img" alt="JW">               
+                <h3 class="artist-name">Jessie Ware</h3>
                 <div class="ranking">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -68,8 +53,8 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <p class="artist-code"><%= product.artistcode %></p>
-                <p class="artist-description"><%= product.artistbio %></p>
+                <p class="artist-code">0208</p>
+                <p class="artist-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda sequi facilis laudantium architecto quo explicabo consequuntur vel, tempore quod eveniet qui recusandae voluptatem est, autem, possimus quos nesciunt dolorum quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quo tempore sunt repellat blanditiis maiores, reprehenderit aliquid, delectus et distinctio earum pariatur excepturi est non eum voluptatum dolor fuga neque.</p>
             </div>
             </section>
         </div>    
@@ -78,7 +63,7 @@
         <section>
             <h3 class="similar-products-title">Productos Similares</h3>
              <article class="container-similar-products">
-                    <img src="images/lolita.jfif" class="similar-products-img" alt="lolita">
+                    <img src="/images/lolita.jfif" class="similar-products-img" alt="lolita">
                     <div class="similar-products-name">
                         <h3 class="similar-album">Lolita</h3>
                             <div class="ranking">
@@ -91,7 +76,7 @@
                             <p class="similar-price">$1000</p>
                     </div>
 
-                    <img src="images/shades-of-blue.jpg" class="similar-products-img" alt="shades-of-blue">
+                    <img src="/images/shades-of-blue.jpg" class="similar-products-img" alt="shades-of-blue">
                         <div class="similar-products-name">
                             <h3 class="similar-album">Shades of Blue</h3>
                                 <div class="ranking">
@@ -104,7 +89,7 @@
                                 <p class="similar-price">$980</p>
                         </div>
 
-                        <img src="images/behind-the-mask.jpg" class="similar-products-img" alt="behind-the-mask">
+                        <img src="/images/behind-the-mask.jpg" class="similar-products-img" alt="behind-the-mask">
                             <div class="similar-products-name">
                                 <h3 class="similar-album">Behind The Mask</h3>
                                     <div class="ranking">
