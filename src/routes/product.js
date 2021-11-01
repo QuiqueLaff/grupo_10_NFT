@@ -27,7 +27,6 @@ router.get('/addProduct', productControllers.addProduct);
 
 
 /* Editar Producto */
-
 router.get('/editProduct/:id', productControllers.editProduct);
 router.put('/editProduct/:id', productControllers.update);
 
