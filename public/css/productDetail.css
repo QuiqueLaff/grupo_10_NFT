@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+/* Main Product */
+
+.container-product {
+    display: flex;
+    margin-top: 12vh;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+.product-img {
+    width: 25%;
+    height: vh;
+    padding: 30px;
+    margin-left: 40px;
+}
+
+
+article.container-product .product-name {
+    align-items: center;
+    width: 60%;
+    margin: 15px;
+    position:absolute;
+    left: 500px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+article.container-product .ranking {
+    padding: 10px;
+    color: black;
+    transition: color 700ms;
+    font-size: 20px;
+}
+
+
+article.container-product .ranking:hover{
+    color: gold;
+}
+
+
+.product-name h3{
+    font-size: 30px;
+    justify-content: center;
+}
+
+
+article.container-product .box-price{
+    position: absolute;
+    bottom: 140px;
+    left: 525px;
+    font-size: 35px;
+    border-top: 5px solid #2A2A2A;
+    border-bottom: 5px solid #2A2A2A;
+    width: 35%;
+    padding: 10px;
+    text-align: center;
+}
+
+
+article.container-product .box-description {
+    font-size: 15px;
+    margin-bottom: 35px;
+    align-self: flex-end;
+    width: 60%;
+    position: absolute;
+    left: 520px;
+    text-align: justify;
+}
+
+
+.add-button {
+    position: relative;
+    left: 8.3rem;
+	background-color:#2A2A2A;
+	border-radius:28px;
+	border:1px solid #2A2A2A;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:17px;
+	padding:9px 60px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+    transition: all 450ms;
+    position: absolute;
+    left: 1100px;
+    bottom: 280px;
+}
+
+.add-button:hover {
+    background-color: #0F0F0F;
+}
+
+
+/* Artist */
+
+.container-artist {
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.container-artist .artist-img {
+    width: 10%;
+    border: 6px solid #666;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    margin-left: 65px;
+}
+
+h3.artist-name{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+p.artist-code {
+    font-weight: bold;
+    position: absolute;
+    bottom: 85px;
+    left: 210px;
+    font-size: 20px;
+}
+
+.container-artist .ranking {
+    color: black;
+    transition: color 700ms;
+    position: absolute;
+    top: 70px;
+    left: 210px;
+}
+
+.container-artist .ranking:hover{
+    color: gold;
+}
+
+p.artist-description {
+    font-size: 16px;
+    align-self: flex-end;
+    width: 60%;
+    position: absolute;
+    left: 510px;
+    bottom: 40px;
+    text-align: justify;
+}
+
+/* Similar Products */
+
+h3.similar-products-title{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.container-similar-products {
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    justify-content: space-evenly;
+}
+
+.container-similar-products .similar-products-img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border: 6px solid #666;
+    margin-bottom: 50px;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+
+
+h3.similar-album{
+    font-size: 20px;
+    margin-right: 120px;
+    margin-top: 10px;
+}
+
+p.similar-price {
+    font-weight: bold;
+    position: absolute;
+    font-size: 20px;
+}
+
+.container-similar-products .ranking {
+    color: black;
+    transition: color 700ms;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container-similar-products .ranking:hover{
+    color: gold;
+}

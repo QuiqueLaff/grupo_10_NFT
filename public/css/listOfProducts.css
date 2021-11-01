@@ -1,3 +1,78 @@
-.box{
+/* .box{
     margin-top: 100px;
+    
+        
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding:0;
+    background: whitesmoke;
+
+    
+}
+.todo{
+    display: flex;
+    /* align-items: center; */
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    background: whitesmoke;
+    margin-top: 100px;
+}
+
+
+.box{
+    /* flex: 1 1 300px; */
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, .3);
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+}
+.box .image{
+    padding: 10px;
+    background: #eee;
+    text-align: center;
+}
+.box .image img{
+    height: 45vh;
+    width: 45vh;
+    object-fit: cover;
+    filter: drop-shadow(0 3px 5px rgba(0,0,0,.7 ));
+}
+.box .info .title {
+    padding: 10px;
+    color: #666;
+    font-size: 20px;
+    text-align: center;
+
+}
+.box .info .subInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+    border-top: 1px solid rgba(0, 0, 0, .3);
+
+}
+.box .info .subInfo .price{
+    color:rgba(0, 0, 0, .3);
+    font-size: 20px;
+}
+.box .info .subInfo .price span{
+    font-size: 15px;
+    color: #999;
+    text-decoration: line-through;
+
+}
+.box .info .subInfo .stars i{
+    color: orange;
+    font-size: 17px;
 }

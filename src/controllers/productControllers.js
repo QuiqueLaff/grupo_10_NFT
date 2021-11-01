@@ -46,8 +46,35 @@ module.exports = {
         res.redirect('/');
     },
     
-    editProduct: (req, res) => {
-        res.render('editProduct');
+    editProduct: function (req, res)  {
+        let productoEditar = products.find(product => {
+            return product.id == req.params.id;
+        })
+        res.render('product/editProduct', { product: productoEditar });
+    },
+
+    update (req, res) {
+        
+        products.forEach(product => {
+            if (product.id == req.params.id) {
+                product.name == req.body.name;
+                product.detail == req.body.detail;
+                product.price == req.body.price;
+                product.artistname == req.body.artistname;
+                product.artistbio == req.body.artistbio;
+                product.artistcode == req.body.artistcode;
+                product.image == 'default-image.png';
+            }
+        })
+        let productToEdit = products.find(product => {
+            return product.id == req.params.id;
+        })
+        productToEdit.name = req.body.name;
+
+        let jsonDeProducts = JSON.stringify(productosRestantes, null, 4);
+        fs.writeFileSync(path.resolve(__dirname, '../db/products.json'), jsonDeProducts);
+        
+        res.redirect('/product');
     },
 
     listOfProducts: (req, res) => {

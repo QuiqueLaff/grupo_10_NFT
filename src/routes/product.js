@@ -28,16 +28,19 @@ router.get('/addProduct', productControllers.addProduct);
 
 /* Editar Producto */
 
-router.get('/editProduct', productControllers.editProduct);
-
+router.get('/editProduct/:id', productControllers.editProduct);
+router.put('/editProduct/:id', productControllers.update);
 
 /* Detalle del Producto */
 
 router.get('/:id', productControllers.productDetail);
 
+
 /* Borrar Producto */
 
 router.delete('/:id', productControllers.delete);
+
+
 
 
 

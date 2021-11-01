@@ -15,16 +15,18 @@
         <title>NFT</title>
     </head>
     
-    <body>
+    
     <!-- header  -->
     <%-include('./partials/header')%>
     
     <!-- products -->
     
     <% products.forEach(product => { %>
+        <body>
+        <div class= "todo">
         <div class="box">
             <div class="image">
-                <img src="/images/<%= product.image[0] %>" alt="emojicon">
+                <a href="/product/<%= product.id %>"> <img src="/images/<%= product.image[0] %>" alt="emojicon"></a>
             </div>
 
             <div class="info">
@@ -43,8 +45,10 @@
             </div>
         </div>
     <% }) %>
+    </div>
+</body>
+
     <!-- footer -->
     <%-include('./partials/footer')%>
-</body>
 </html>
 

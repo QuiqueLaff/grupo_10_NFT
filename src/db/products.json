@@ -34,7 +34,7 @@
         "artistbio": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
         "artistcode": 2820,
         "image": [
-            "behind-the-mask.jpg",
+            "behind-the-mask.png",
             "jessie-ware-artist.jpg"
         ]
     },
@@ -112,7 +112,7 @@
         "artistbio": "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\n\nIn congue. Etiam justo. Etiam pretium iaculis justo.",
         "artistcode": 7543,
         "image": [
-            "lolita.jfif",
+            "lolita.png",
             "bright-light-artist.jpg"
         ]
     },
@@ -126,7 +126,7 @@
         "artistcode": 7543,
         "artistimg": "bright-light-artist.jpg",
         "image": [
-            "shades-of-blue.jpg",
+            "shades-of-blue.png",
             "bright-light-artist.jpg"
         ]
     }

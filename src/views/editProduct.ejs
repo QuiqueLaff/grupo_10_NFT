@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />   
         <link rel="stylesheet" href="/css/add-edit.css">
-        <link rel="stylesheet" href="/css/style.css">   
+        <!-- <link rel="stylesheet" href="/css/style.css">    -->
         <link rel= "shortcut icon" type="image/png" href="images/solapa.png">
 
         <title>Edit product</title>
@@ -18,30 +18,34 @@
                 <div class="add-product-form">
                     <header class="main-header">Here you can edit your product!</header>
                     <div class="data">
-                        <label for="name"></label>
-                        <input type="text" name="name" placeholder="Edit product name:"/>
-                        <label for="category"></label>
-                        <input type="text" name="description" placeholder="Edit description:"/>
-                        <label for="price"></label>
-                        <input type="number" name="price" placeholder="Edit price:"/>
-                        <label for="category"></label>
-                        <input type="text" name="name-artist" placeholder="Edit name:"/>
-                        <label for="category"></label>
-                        <input type="text" name="bio" placeholder="Edit Bio:"/>
-                        <label for="category"></label>
-                        <input type="text" name="code" placeholder="Edit artist code"/>
-                        <div class="file-select" id="img" >
-                            <input type="file" name="img" aria-label="Archivo"></div>                        
-                        <div class="file-select" id="artistimg" >
-                            <input type="file" name="artistimg" aria-label="Archivo">
-                          </div>               
+                        <form action="/product/editProduct/<%= product.id %>?_method=PUT" method="POST">
+                            <label for="name"></label>
+                            <input type="text" id="name" name="name" placeholder="Edit product name:" value="<%=  product.name %>"/>
+
+                            <label for="category"></label>
+                            <input type="text" name="detail" placeholder="Edit description:" value="<%= product.detail%>"/>
+
+                            <label for="price"></label>
+                            <input type="number" name="price" placeholder="Edit price:" value="<%= product.price %> "/>
+
+                            <label for="category"></label>
+                            <input type="text" name="artistname" placeholder="Edit name:" value="<%= product.artistname %> "/>
+
+                            <label for="category"></label>
+                            <input type="text" name="artistbio" placeholder="Edit Bio:" value="<%= product.artistbio  %> ">
+
+                            <label for="category"></label>
+                            <input type="text" name="artistcode" placeholder="Edit artist code" value="<%= product.artistcode %> "/>
+         
                     </div>
                     <div class="panel">
-                        <button id="add-product-button" class="button">Edit</button>
+                            <button id="add-product-button" class="button">Edit</button>
+
                         <button class="button" id="cancel-button">Cancel</button>
                         <!-- <button id="add-product-button" class="button">Delete</button> -->
                         </a>
-                    </div>
+                        </div>
+                    </form>
                 </div>
             </section>
             <%-include('./partials/footer')%>
