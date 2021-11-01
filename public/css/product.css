@@ -156,6 +156,12 @@ article.container-product .box-description {
 
 .delete-button:hover {
     background-color: #0F0F0F;
+    text-decoration: none;
+}
+
+a {
+    color:#ffffff;
+    text-decoration: none;
 }
 
 /* Artist */

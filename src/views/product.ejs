@@ -38,20 +38,15 @@
                 </div>
                 
 
-                <form action="/product/<%= product.id  %>?_method=" method="POST">
-                <button type="submit" class="add-button">Agregar</button>
-                </form>
+                <a href="/product/addProduct" class="add-button">Agregar</a></button>
 
 
-                <form action="/product/<%= product.id  %>?_method=" method="POST">
-                <button type="submit" class="edit-button">Editar</button>
-                </form>
-
+                <a href="/product/editProduct/<%= product.id %>" class="edit-button">Editar</a>
 
                 <form action="/product/<%= product.id  %>?_method=DELETE" method="POST">
                 <button type="submit" class="delete-button">Eliminar</button>
                 </form>
-                
+
 
             </article>
         </section>
@@ -78,7 +73,7 @@
         <section>
             <h3 class="similar-products-title">Productos Similares</h3>
              <article class="container-similar-products">
-                    <img src="images/lolita.jfif" class="similar-products-img" alt="lolita">
+                    <img src="images/lolita.png" class="similar-products-img" alt="lolita">
                     <div class="similar-products-name">
                         <h3 class="similar-album">Lolita</h3>
                             <div class="ranking">
@@ -91,7 +86,7 @@
                             <p class="similar-price">$1000</p>
                     </div>
 
-                    <img src="images/shades-of-blue.jpg" class="similar-products-img" alt="shades-of-blue">
+                    <img src="images/shades-of-blue.png" class="similar-products-img" alt="shades-of-blue">
                         <div class="similar-products-name">
                             <h3 class="similar-album">Shades of Blue</h3>
                                 <div class="ranking">
@@ -104,7 +99,7 @@
                                 <p class="similar-price">$980</p>
                         </div>
 
-                        <img src="images/behind-the-mask.jpg" class="similar-products-img" alt="behind-the-mask">
+                        <img src="images/behind-the-mask.png" class="similar-products-img" alt="behind-the-mask">
                             <div class="similar-products-name">
                                 <h3 class="similar-album">Behind The Mask</h3>
                                     <div class="ranking">
