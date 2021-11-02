@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />   
         <link rel="stylesheet" href="/css/add-edit.css">
-        <!-- <link rel="stylesheet" href="/css/style.css">    -->
+        <link rel="stylesheet" href="/css/style.css">   
         <link rel= "shortcut icon" type="image/png" href="images/solapa.png">
 
         <title>Edit product</title>
@@ -18,7 +18,7 @@
                 <div class="add-product-form">
                     <header class="main-header">Here you can edit your product!</header>
                     <div class="data">
-                        <form action="/product/editProduct/<%= product.id %>?_method=PUT" method="POST">
+                        <form action="/product/editProduct/<%= product.id %>?_method=PUT" enctype="multipart/form-data" method="POST">
                             <label for="name"></label>
                             <input type="text" id="name" name="name" placeholder="Edit product name:" value="<%=  product.name %>"/>
 
@@ -36,7 +36,14 @@
 
                             <label for="category"></label>
                             <input type="text" name="artistcode" placeholder="Edit artist code" value="<%= product.artistcode %> "/>
-         
+                            <!-- <input type="image" name = "" id="img" alt="Editar1" src="/images/<%=product.image[0] %>">
+                            <input type="image" id="image" alt="artistimg" src="/images/<%= product.image[1] %>"> -->
+                            <div class="file-select" id="img" >
+                                <input type="file" name="img" aria-label="Archivo"></div>                        
+                            <div class="file-select" id="artistimg" >
+                                <input type="file" name="artistimg" aria-label="Archivo">
+                              </div>      
+                                
                     </div>
                     <div class="panel">
                             <button id="add-product-button" class="button">Edit</button>

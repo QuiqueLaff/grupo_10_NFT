@@ -28,7 +28,7 @@ router.get('/addProduct', productControllers.addProduct);
 
 /* Editar Producto */
 router.get('/editProduct/:id', productControllers.editProduct);
-router.put('/editProduct/:id', productControllers.update);
+router.put('/editProduct/:id',upload.any(), productControllers.update);
 
 /* Detalle del Producto */
 

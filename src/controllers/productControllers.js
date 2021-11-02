@@ -50,11 +50,10 @@ module.exports = {
         let productoEditar = products.find(product => {
             return product.id == req.params.id;
         })
-        res.render('product/editProduct', { product: productoEditar });
+        res.render('editProduct', { product: productoEditar });
     },
 
     update (req, res) {
-        
         products.forEach(product => {
             if (product.id == req.params.id) {
                 product.name == req.body.name;
@@ -63,17 +62,17 @@ module.exports = {
                 product.artistname == req.body.artistname;
                 product.artistbio == req.body.artistbio;
                 product.artistcode == req.body.artistcode;
-                product.image == 'default-image.png';
+                product.image = (req.files && req.files[0]) ? [req.files[0].filename, req.files[1].filename] : ['default-image.png', 'default-image.png'];
             }
         })
         let productToEdit = products.find(product => {
             return product.id == req.params.id;
         })
-        productToEdit.name = req.body.name;
-
-        let jsonDeProducts = JSON.stringify(productosRestantes, null, 4);
-        fs.writeFileSync(path.resolve(__dirname, '../db/products.json'), jsonDeProducts);
         
+        let jsonDeProductos = JSON.stringify(products, null, 4);
+        fs.writeFileSync(path.resolve(__dirname, '../db/products.json'), jsonDeProductos);
+
+
         res.redirect('/product');
     },
 
