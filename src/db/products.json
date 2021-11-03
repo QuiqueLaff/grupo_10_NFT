@@ -3,14 +3,14 @@
     {
         "id": 1,
         "name": "Pear Bitch",
-        "detail": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.",
+        "detail": "Funny Street Graffiti Art Glasses Man Pop Canvas Painting Space NFT Posters And Prints Living Room Decoration Wall Art Pictures.",
         "price": 7000,
         "artistname": "Jessie Ware",
         "artistbio": "Fusce consequat. Nulla nisl. Nunc nisl.\n\nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.",
         "artistcode": 2820,
         "image": [
             "pear-bitch.png",
-            "jessie-ware-artist.jpg"
+            "jessie.jpg"
         ]
     },
     {
@@ -18,12 +18,12 @@
         "name": "Dream Cube",
         "detail": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.",
         "price": 6800,
-        "artistname": "Jessie Ware",
+        "artistname": "Bernard Mook",
         "artistbio": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\n\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.\n\nCurabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",
         "artistcode": 2820,
         "image": [
             "dream-cube.jpeg",
-            "jessie-ware-artist.jpg"
+            "bernard.jpg"
         ]
     },
     {
@@ -31,12 +31,12 @@
         "name": "Behind The Mask",
         "detail": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
         "price": 6500,
-        "artistname": "Jessie Ware",
+        "artistname": "Aston Louis",
         "artistbio": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
         "artistcode": 2820,
         "image": [
             "behind-the-mask.jpg",
-            "jessie-ware-artist.jpg"
+            "Aston.jpg"
         ]
     },
     {
@@ -49,7 +49,7 @@
         "artistcode": 5836,
         "image": [
             "emojicon.png",
-            "bianca-carey-artist.jpg"
+            "bianca.jpg"
         ]
     },
     {
@@ -57,12 +57,12 @@
         "name": "Messi",
         "detail": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\n\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
         "price": 7300,
-        "artistname": "Bianca Carey",
+        "artistname": "Kevin Slatan",
         "artistbio": "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
         "artistcode": 5836,
         "image": [
             "messi.jpeg",
-            "bianca-carey-artist.jpg"
+            "kevin.jpg"
         ]
     },
     {
@@ -70,12 +70,12 @@
         "name": "NBA Top Shots",
         "detail": "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.",
         "price": 7500,
-        "artistname": "Emily Nelson",
+        "artistname": "Mat Nelson",
         "artistbio": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.",
         "artistcode": 9276,
         "image": [
             "nba.gif",
-            "emily-nelson-artist.jpg"
+            "mat.jpg"
         ]
     },
     {
@@ -83,12 +83,12 @@
         "name": "Game Boy",
         "detail": "In congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
         "price": 6700,
-        "artistname": "game-boy-gif",
+        "artistname": "Brunilda Stone",
         "artistbio": "In congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
         "artistcode": 9276,
         "image": [
             "apple.gif",
-            "emily-nelson-artist.jpg"
+            "brunilda.jpg"
         ]
     },
     {
@@ -96,12 +96,12 @@
         "name": "Apple",
         "detail": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
         "price": 7300,
-        "artistname": "Bright Light Bright Light",
+        "artistname": "Aron Dummesting",
         "artistbio": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
         "artistcode": 7543,
         "image": [
             "apple.gif",
-            "bright-light-artist.jpg"
+            "aron.jpg"
         ]
     },
     {
@@ -109,12 +109,12 @@
         "name": "Lolita",
         "detail": "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
         "price": 6400,
-        "artistname": "Bright Light Bright Light",
+        "artistname": "Lucas Villalobos",
         "artistbio": "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\n\nIn congue. Etiam justo. Etiam pretium iaculis justo.",
         "artistcode": 7543,
         "image": [
             "lolita.jfif",
-            "bright-light-artist.jpg"
+            "lucas.jpg"
         ]
     },
     {
@@ -122,13 +122,13 @@
         "name": "Shades of Blue",
         "detail": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
         "price": 6900,
-        "artistname": "Bright Light Bright Light",
+        "artistname": "Tom Brew",
         "artistbio": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\n\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\n\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
         "artistcode": 7543,
         "artistimg": "bright-light-artist.jpg",
         "image": [
             "shades-of-blue.jpg",
-            "bright-light-artist.jpg"
+            "tom.jpg"
         ]
     }
 ]

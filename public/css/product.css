@@ -171,11 +171,15 @@ a {
     display: flex;
     box-sizing: border-box;
     position: relative;
+    
+    
 }
 
 .container-artist .artist-img {
-    width: 20vh;
-    height: 20vh;
+    width: 200px;
+    height: 200px;
+    max-height: 200px;
+    max-width: 200px;
     border: 0px solid #666;
     border-radius: 50%;
     margin-bottom: 15px;
