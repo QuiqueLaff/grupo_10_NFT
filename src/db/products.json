@@ -1,3 +1,4 @@
+
 [
     {
         "id": 1,
@@ -8,19 +9,22 @@
         "artistbio": "Fusce consequat. Nulla nisl. Nunc nisl.\n\nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.",
         "artistcode": 2820,
         "image": [
-            "img-1635816790918.png",
-            "artistimg-1635816790921.png"
+            "pear-bitch.png",
+            "jessie-ware-artist.jpg"
         ]
     },
     {
         "id": 2,
-        "name": "Leo",
+        "name": "Dream Cube",
         "detail": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.",
         "price": 6800,
         "artistname": "Jessie Ware",
         "artistbio": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\n\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.\n\nCurabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",
         "artistcode": 2820,
-        "image": "default-image.png"
+        "image": [
+            "dream-cube.jpeg",
+            "jessie-ware-artist.jpg"
+        ]
     },
     {
         "id": 3,
@@ -30,7 +34,10 @@
         "artistname": "Jessie Ware",
         "artistbio": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
         "artistcode": 2820,
-        "image": "default-image.png"
+        "image": [
+            "behind-the-mask.jpg",
+            "jessie-ware-artist.jpg"
+        ]
     },
     {
         "id": 4,
@@ -106,7 +113,7 @@
         "artistbio": "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\n\nIn congue. Etiam justo. Etiam pretium iaculis justo.",
         "artistcode": 7543,
         "image": [
-            "lolita.png",
+            "lolita.jfif",
             "bright-light-artist.jpg"
         ]
     },
@@ -120,7 +127,7 @@
         "artistcode": 7543,
         "artistimg": "bright-light-artist.jpg",
         "image": [
-            "shades-of-blue.png",
+            "shades-of-blue.jpg",
             "bright-light-artist.jpg"
         ]
     }
