@@ -45,7 +45,8 @@ article.container-product .product-name {
 
 
 article.container-product .ranking {
-    padding: 10px;
+    padding: 0px;
+    margin-top: 10px;
     color: black;
     transition: color 700ms;
     font-size: 20px;
@@ -66,11 +67,11 @@ article.container-product .ranking:hover{
 article.container-product .box-price{
     position: absolute;
     bottom: 140px;
-    left: 525px;
+    left: 55vh;
     font-size: 35px;
     border-top: 5px solid #2A2A2A;
     border-bottom: 5px solid #2A2A2A;
-    width: 35%;
+    width: 55vh;
     padding: 10px;
     text-align: center;
 }
@@ -82,7 +83,7 @@ article.container-product .box-description {
     align-self: flex-end;
     width: 60%;
     position: absolute;
-    left: 520px;
+    left: 55vh;
     text-align: justify;
 }
 
@@ -103,7 +104,7 @@ article.container-product .box-description {
 	text-shadow:0px 1px 0px #ffffff;
     transition: all 450ms;
     position: absolute;
-    left: 860px;
+    left: 55vh;
     bottom: 280px;
 }
 
@@ -113,7 +114,7 @@ article.container-product .box-description {
 
 .edit-button {
     position: relative;
-    left: 8.3rem;
+    /* left: 8.3rem; */
 	background-color:#2A2A2A;
 	border-radius:28px;
 	border:1px solid #2A2A2A;
@@ -127,7 +128,7 @@ article.container-product .box-description {
 	text-shadow:0px 1px 0px #ffffff;
     transition: all 450ms;
     position: absolute;
-    left: 1040px;
+    left: 85vh;
     bottom: 280px;
 }
 
@@ -136,8 +137,6 @@ article.container-product .box-description {
 }
 
 .delete-button {
-    position: relative;
-    left: 8.3rem;
 	background-color:#2A2A2A;
 	border-radius:28px;
 	border:1px solid #2A2A2A;
@@ -151,7 +150,7 @@ article.container-product .box-description {
 	text-shadow:0px 1px 0px #ffffff;
     transition: all 450ms;
     position: absolute;
-    left: 1200px;
+    left: 98vh;
     bottom: 280px;
 }
 
@@ -189,15 +188,15 @@ a {
 
 h3.artist-name{
     font-size: 20px;
-    margin-left: 10px;
-    margin-top: 15px;
+    margin-left: 5vh;
+    margin-top: 40px;
 }
 
 p.artist-code {
     font-weight: bold;
     position: absolute;
     bottom: 85px;
-    left: 210px;
+    left: 30vh;
     font-size: 20px;
 }
 
@@ -205,8 +204,8 @@ p.artist-code {
     color: black;
     transition: color 700ms;
     position: absolute;
-    top: 70px;
-    left: 210px;
+    top: 75px;
+    left: 30vh;
 }
 
 .container-artist .ranking:hover{
