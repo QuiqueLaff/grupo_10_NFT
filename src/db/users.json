@@ -4,69 +4,90 @@
         "firstname": "Cody",
         "lastname": "Heinicke",
         "email": "cheinicke0@independent.co.uk",
-        "password": "REhEsNde8Rl"
+        "password": "REhEsNde8Rl",
+        "avatar": ""
     },
     {
         "id": 2,
         "firstname": "Jarvis",
         "lastname": "Driffield",
         "email": "jdriffield1@people.com.cn",
-        "password": "WAJ01kdUC"
+        "password": "WAJ01kdUC",
+        "avatar": ""
     },
     {
         "id": 3,
         "firstname": "Mayor",
         "lastname": "Cleveley",
         "email": "mcleveley2@sphinn.com",
-        "password": "yiSvLMQe"
+        "password": "yiSvLMQe",
+        "avatar": ""
     },
     {
         "id": 4,
         "firstname": "Carla",
         "lastname": "Hayesman",
         "email": "chayesman3@forbes.com",
-        "password": "TLUEtnQp"
+        "password": "TLUEtnQp",
+        "avatar": ""
     },
     {
         "id": 5,
         "firstname": "Doralin",
         "lastname": "MacEvilly",
         "email": "dmacevilly4@nba.com",
-        "password": "XjBWEBL2I"
+        "password": "XjBWEBL2I",
+        "avatar": ""
     },
     {
         "id": 6,
         "firstname": "Bonnee",
         "lastname": "Calken",
         "email": "bcalken5@state.gov",
-        "password": "yXS6n8OJzI"
+        "password": "yXS6n8OJzI",
+        "avatar": ""
     },
     {
         "id": 7,
         "firstname": "Thorin",
         "lastname": "Cumpton",
         "email": "tcumpton6@csmonitor.com",
-        "password": "ALbVOu34s"
+        "password": "ALbVOu34s",
+        "avatar": ""
     },
     {
         "id": 8,
         "firstname": "Olwen",
         "lastname": "Beton",
         "email": "obeton7@reference.com",
-        "password": "R7ihiW8x"
+        "password": "R7ihiW8x",
+        "avatar": ""
     },
     {
         "id": 9,
         "firstname": "Leontyne",
         "lastname": "Cullen",
         "email": "lcullen8@yelp.com",
-        "password": "kLbrzFla"
+        "password": "kLbrzFla",
+        "avatar": ""
     },
     {
         "id": 10,
         "firstname": "Truda",
         "lastname": "Fost",
         "email": "tfost9@phpbb.com",
-        "password": "rvsOCDC"
+        "password": "rvsOCDC",
+        "avatar": ""
+    },
+    {
+        "id": 11,
+        "firstname": "mariah",
+        "lastname": "carey",
+        "email": "asd@gmail.com",
+        "password": [
+            "asdasd",
+            "asdasd"
+        ],
+        "image": "userImage-1636586543216.jfif"
     }
 ]

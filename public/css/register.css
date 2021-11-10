@@ -19,7 +19,6 @@ body{
     background-size: cover;
     position: relative;
     margin-top: 10vh;
-
 }
 
 
@@ -118,10 +117,42 @@ a {
 	text-decoration:none;
     transition: all 450ms;
     margin-top: 30px;
-} 
+}
+
+.file-select {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+  
+.file-select::before {
+	background-color:#2A2A2A;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    content: 'Upload Avatar'; 
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.file-select input[type="file"] {
+    opacity: 0;
+    width: 150px;
+    height: 32px;
+    display: inline-block;
+  }
+  
+
 
 .checkbox {
     margin-left: 20px;
+    margin-top: 20px;
 }
 
 @media (min-width: 361px) {
