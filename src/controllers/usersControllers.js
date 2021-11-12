@@ -34,22 +34,23 @@ module.exports = {
 
     store (req, res) {
        
-        let userImage = req.file.filename
+        let userImage = req.file.filename || "default-image2.png"
        
         let newUser = {
             id: nuevoUserId(),
             ...req.body,
             password: bcrypt.hashSync(req.body.password, 10),
-            image: userImage || "default-image2.png"
+            image: userImage 
         }
         console.log(req.file);
+
         if(req.file){
             users.push(newUser);
             let jsonUsers = JSON.stringify(users, null, 4);
             fs.writeFileSync(path.resolve(__dirname, '../db/users.json'), jsonUsers);
             res.redirect('/');
         }else{
-            res.render("/")
+            res.render("/register")
         }    
     },
     
@@ -59,7 +60,7 @@ module.exports = {
     login: (req, res) => {        
         for(let i = 0; i< users.length; i++){
             if ( users[i].email == req.body.email){
-                if(bcrypt.hashSync(req.body.password, users[i].password)){
+                if(bcrypt.compareSync(req.body.password, users[i].password)){
                     var userToLog = users[i];
                     break;
                 }
@@ -78,7 +79,7 @@ module.exports = {
         let user = req.session.loggedUser
         
         res.render("profile",{"user":user})
-        //+res.send(user)
+        //res.send(user)
     }
 }
 

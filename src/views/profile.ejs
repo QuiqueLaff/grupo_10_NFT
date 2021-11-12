@@ -25,8 +25,8 @@
                 </div>
             <!-- iconos de login, singin y carrito -->
                 <div class="iconos">
-                    <% if (users) { %>
-                        <li><img class= "mini-picture-profile" src="/images/users/<%= user.image %> " alt=""><%= user %></li>
+                    <% if (user) { %>
+                        <li><img class= "mini-picture-profile" src="/images/users/<%= user.image %> " alt=""><%= user.firstname %></li>
                     <% } else { %>
                         <li><a href="/users/register"> <i class="fas fa-user"></i></a></li>
                     <% } %>
