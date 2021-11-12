@@ -62,12 +62,7 @@
                     </div>  
                     <div class="form-control">     
                         <i class="fas fa-key icons"></i>
-                        <input type="password" name="password" class="form-input" placeholder="Confirma tu contraseña">
-                        <% if (locals.errors && errors.password) { %>
-                            <div class="text-error">
-                                <%= errors.passwordconfirmation.msg %>
-                            </div>
-                        <% } %>
+                        <input type="password" name="confirm-password" class="form-input" placeholder="Confirma tu contraseña">
                     </div>
                     <div class="file-select" >
                         <input type="file" name="userImage" aria-label="Archivo">

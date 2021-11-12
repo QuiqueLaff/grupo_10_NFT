@@ -114,6 +114,15 @@
             "asdasd",
             "asdasd"
         ],
-        "image": "userImage-1636665916677.jpg"
+        "image": "userImage-1636586543216.jfif"
+    },
+    {
+        "id": 12,
+        "firstname": "jessie",
+        "lastname": "ware",
+        "email": "ff@gmail.com",
+        "password": "$2a$10$tfUxlXeDEReGvrTQy2ibA.YKhLTArNUs.2rRtsXOPYENU1Fjz6Y.G",
+        "confirm-password": "1234",
+        "image": "userImage-1636667920017.jfif"
     }
 ]

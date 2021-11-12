@@ -40,7 +40,7 @@ module.exports = {
             id: nuevoUserId(),
             ...req.body,
             password: bcrypt.hashSync(req.body.password, 10),
-            image: userImage,
+            image: userImage || "default-image2.png"
         }
         console.log(req.file);
         if(req.file){
