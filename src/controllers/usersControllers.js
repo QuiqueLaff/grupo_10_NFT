@@ -38,9 +38,10 @@ module.exports = {
             id: nuevoUserId(),
             ...req.body,
             password: bcrypt.hashSync(req.body.password, 10),
-             image: userImage || 'default-image2.png',
+             image: userImage || 'default-image2.png'
         }
-     
+        
+
         users.push(newUser);
     
         let jsonUsers = JSON.stringify(users, null, 4);
