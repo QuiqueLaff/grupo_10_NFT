@@ -41,7 +41,6 @@ module.exports = {
              image: userImage || 'default-image2.png'
         }
         
-
         users.push(newUser);
     
         let jsonUsers = JSON.stringify(users, null, 4);
