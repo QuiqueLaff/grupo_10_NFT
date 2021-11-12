@@ -17,18 +17,32 @@
 
     <!-- cuerpo de la pagina -->
     <main>
+         
         <div class= "login1">
             <div class= "background-login1">
                 <div class="form-container"></div>
-                    <form action="">
+                    <form action="/users/login" method="POST" autocomplete="off">
+                        <% if(typeof errors != "undefined") { %>
+                            <ul>
+                                <% for (let i = 0; i < errors.length;i++ ) { %>                                    
+                                    <li>
+                                        <%= errors[i].msg %> 
+                                    </li>
+                                <% } %>
+                            </ul>
+                            
+                        <% } %>  
+                        
                         <h4>INICIAR SESIÓN</h4>
+                        
                         <div class="form-control">
                             <i class="fas fa-envelope icons"></i>
-                            <input class="form-input" type="text" name="email" placeholder="Email">
+                            <input class="form-input" type="text" name="email" placeholder="Email">     
                         </div>
+
                         <div class="form-control">
                             <i class="fas fa-key icons"></i>
-                            <input class="form-input" type="password" name="password" placeholder="Contraseña">
+                            <input class="form-input" type="password" name="password" placeholder="Contraseña">    
                         </div>
                         
                         <button type="submit" class="button">Ingresar</button>

@@ -3,7 +3,8 @@ const app = express();
 const path = require('path');
 const methodOverride = require('method-override');
 
-/* const sesion = require('express-session') */
+
+ const sesion = require('express-session') 
 
 
 /* view engine */
@@ -16,7 +17,7 @@ app.use(express.static(path.resolve(__dirname, '../public')));
 app.use(express.urlencoded({extended: false}))
 app.use(methodOverride('_method'));
 app.use (express.json());
-/* app.use(sesion({secret: 'Cuidadito'})) */
+app.use(sesion({secret: 'Cuidadito'})) 
 
 /* Routes */
 
