@@ -20,9 +20,14 @@
         </div>
      <!-- iconos de login, singin y carrito -->
         <div class="iconos">
-        <li><a href="/users/register"> <i class="fas fa-user"></i></a></li>
-        <li><a href="/users/login"> <i class="fas fa-sign-in-alt"></i></a></li>
-        <li><a href="/cart"> <i class="fas fa-shopping-cart"></i></a></li>
+            <% if (locals.islogged){ %>
+                
+                <li ><img style="width: 100px;" src="/images/users/<%= locals.loggedUser.image %>" alt=""></li>
+                <li><a href="/users/register"> <i class="fas fa-user"></i></a></li>
+                
+                <li><a href="/cart"> <i class="fas fa-shopping-cart"></i></a></li>
+            <% } %>
+            <li><a href="/users/login"> <i class="fas fa-sign-in-alt"></i></a></li>
         </div>
     </nav>
 </header>
