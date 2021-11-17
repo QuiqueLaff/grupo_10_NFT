@@ -1,8 +1,12 @@
 const express = require('express');
+const {check} = require("express-validator")
 const router = express.Router();
 const path = require('path');
 const multer = require ('multer');
 const usersControllers = require('../controllers/usersControllers');
+
+
+
 
 
 // MULTER
@@ -32,6 +36,15 @@ router.post('/register', upload.single('userImage'), usersControllers.store);
 
 // Login
 
-router.get('/login', usersControllers.login)
+router.get('/login', usersControllers.loginView)
 
+router.post("/login", [
+    check("email").isEmail().withMessage("Email incorrecto"),
+    check("password").isLength({min:8}).withMessage("Contraseña demasiado corta"),
+    ],usersControllers.login)
+
+
+
+//profile
+router.get("/profile", usersControllers.profileView)
 module.exports = router;

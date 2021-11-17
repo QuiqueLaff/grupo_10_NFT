@@ -76,14 +76,15 @@
         "firstname": "Truda",
         "lastname": "Fost",
         "email": "tfost9@phpbb.com",
-        "password": "rvsOCDC",
+        "password": "rvsOCDCasd",
         "avatar": ""
     },
     {
         "id": 11,
-        "firstname": "mariah",
-        "lastname": "carey",
+        "firstname": "asd",
+        "lastname": "asd",
         "email": "asd@gmail.com",
+<<<<<<< HEAD
         "password": [
             "asdasd",
             "asdasd"
@@ -116,5 +117,10 @@
         "password": "$2a$10$5e/rYBVJU1bGad0Aui9kzeO0Tsvfg2K/V1JVNKuvLh7QTJuWa9MFC",
         "confirm-password": "123",
         "image": "userImage-1636729555338.png"
+=======
+        "password": "$2a$10$lrN6MLe3NDppF1T.8YpNR.Gw6nwRBvmDp1uUlUm45fjd.0Ls6qy46",
+        "confirm-password": "asd",
+        "image": "userImage-1636734166542.jpg"
+>>>>>>> 7378df1f9ce839b379637a332bcb47a90b01a444
     }
 ]

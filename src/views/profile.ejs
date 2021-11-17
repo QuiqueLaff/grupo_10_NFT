@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- head -->
+    <%-include('./partials/head')%>
+    <body>
+    <!-- header -->
+        <header>
+            <!-- barra de navegación -->
+            <nav class="navbar">
+                <div class="logotipo">
+                <a href="/"><img src="/images/NFT-logo.ico" width="80" alt="Logo" ></a>
+                </div>
+                <a href="/"><div class="brand-title"><h1>NFT</h1></div></a>
+                <div class="burger-menu">
+                    <i class="fa fa-bars burger"></i>
+                </div>
+            <!-- links -->
+                <div class="navbar-links">
+                    <ul>
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="/product">PRODUCTS</a></li>
+                        <li><a href="/#staff">STAFF</a></li>
+                        <li><a href="/#colections">COLLECTIONS</a></li>
+                    </ul>
+                </div>
+            <!-- iconos de login, singin y carrito -->
+                <div class="iconos">
+                    <% if (user) { %>
+                        <li><img class= "mini-picture-profile" src="/images/users/<%= user.image %> " alt=""><%= user.firstname %></li>
+                    <% } else { %>
+                        <li><a href="/users/register"> <i class="fas fa-user"></i></a></li>
+                    <% } %>
+                    <li><a href="/users/login"> <i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="/cart"> <i class="fas fa-shopping-cart"></i></a></li>
+                </div>
+            </nav>
+        </header>
+    <main>
+       
+    </main>
+    <!-- footer -->
+    <%-include('./partials/footer')%>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
