@@ -20,16 +20,16 @@
         <div class= "register1">
             <div class="background-login1">
                 <div class="form-container">
-                <form class="form-register" action="/register" method="POST">
+                <form class="form-register" action="/users/register" method="POST" enctype="multipart/form-data">
                     <h4>REGISTRARSE</h4>
                     <p class= "estas-registrado">¿Ya estás registrado? <a href="#">Inicia sesión</a></p>
                     <div class="form-control">           
                         <i class="fas fa-id-card icons"></i>
-                        <input type="text" name="nombre" class="form-input" placeholder="Nombre"> 
+                        <input type="text" name="firstname" class="form-input" placeholder="Nombre"> 
                     </div>
                     <div class="form-control">        
                         <i class="far fa-id-card icons"></i>
-                        <input type="text" name="apellido" class="form-input" placeholder="Apellido">
+                        <input type="text" name="lastname" class="form-input" placeholder="Apellido">
                     </div>
                     <div class="form-control">    
                         <i class="fas fa-envelope icons"></i>
@@ -37,26 +37,21 @@
                     </div>
                     <div class="form-control">      
                         <i class="fas fa-key icons"></i>
-                        <input type="password" name="contraseña" class="form-input" placeholder="Contraseña"> 
+                        <input type="password" name="password" class="form-input" placeholder="Contraseña"> 
                     </div>  
                     <div class="form-control">     
                         <i class="fas fa-key icons"></i>
-                        <input type="password" name="contraseña" class="form-input" placeholder="Confirma tu contraseña">
+                        <input type="password" name="confirm-password" class="form-input" placeholder="Confirma tu contraseña">
                     </div>
+                    <div class="file-select" >
+                        <input type="file" name="userImage" aria-label="Archivo">
+                    </div>      
                     <div class="checkbox">
-                        <input type="checkbox" name="politica" value="politica-privacidad" id="politica-privacidad">
-                        <label for="politica-privacidad">Acepto los <a href="#">Terminos y Condiciones</a></label>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" name="mails" value="mails-promocinales" id="mails-promocionales">
-                        <label for="mails-promocionales">Acepto que me manden mails promocionales</label>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" name="sesión" value="sesión-iniciada" id="sesión-iniciada">
-                        <label for="sesión-iniciada">Mantener la sesión iniciada</label>
+                        <input type="checkbox" name="session" value="session" id="session">
+                        <label for="session">Mantener sesión iniciada.</label>
                     </div>
                     
-                    <button type="submit" class="button">Registrarse</button>
+                    <button type="submit" href="/users" class="button">Registrarse</button>
                 </form>
             </div>
         </div>
