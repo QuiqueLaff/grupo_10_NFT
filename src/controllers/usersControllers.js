@@ -10,8 +10,6 @@ const jsonUsers = fs.readFileSync(path.resolve(__dirname, '../db/users.json'), '
 const users = JSON.parse(jsonUsers); 
 
 
-
-
 const nuevoUserId = () => {
     let ultimo = 0;
     users.forEach(user => {

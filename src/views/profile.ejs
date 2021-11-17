@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- head -->
-    <%-include('./partials/head')%>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />   
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/style.css">  
+    <link rel="stylesheet" href="/css/profile.css">  
+    <link rel= "shortcut icon" type="image/png" href="/images/solapa.png">
+ 
+    <title>Profile</title>
+</head>
     <body>
     <!-- header -->
         <header>
@@ -26,18 +36,35 @@
             <!-- iconos de login, singin y carrito -->
                 <div class="iconos">
                     <% if (user) { %>
-                        <li><img class= "mini-picture-profile" src="/images/users/<%= user.image %> " alt=""><%= user.firstname %></li>
+                        <li><img class= "mini-picture-profile" src="/images/users/<%= user.image %> " width="30" height="30" alt=""></li>
+                        <a href= # class="link-name"><p class="sub"><%= user.firstname %></p></a>
                     <% } else { %>
                         <li><a href="/users/register"> <i class="fas fa-user"></i></a></li>
                     <% } %>
-                    <li><a href="/users/login"> <i class="fas fa-sign-in-alt"></i></a></li>
+                    <!-- <li><a href="/users/login"> <i class="fas fa-sign-in-alt"></i></a></li> -->
                     <li><a href="/cart"> <i class="fas fa-shopping-cart"></i></a></li>
                 </div>
             </nav>
         </header>
-    <main>
-       
-    </main>
+
+        <main>
+            <div class= "login1">
+                <div class= "background-login1">
+                    <body>
+                        <div class="container">
+                            <div class="shape">
+                                <img class="image" src="/images/users/<%= user.image %> "></img>
+                            </div>
+                            <h3>Congrats <%= user.firstname %> <%= user.lastname %> now you have a profile!</h3>
+                      
+                            <h4>You are signed with this email: <%= user.email %></h4>   
+
+                            <button class="butto"><a href="/" style='text-decoration:none;color:white;'>Back home</a></button>
+                        </div>
+                    </body>
+                </div>
+            </div>
+        </main>
     <!-- footer -->
     <%-include('./partials/footer')%>
 </body>

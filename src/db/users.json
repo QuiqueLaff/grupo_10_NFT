@@ -84,43 +84,8 @@
         "firstname": "asd",
         "lastname": "asd",
         "email": "asd@gmail.com",
-<<<<<<< HEAD
-        "password": [
-            "asdasd",
-            "asdasd"
-        ],
-        "image": "userImage-1636586543216.jfif"
-    },
-    {
-        "id": 12,
-        "firstname": "jessie",
-        "lastname": "ware",
-        "email": "ff@gmail.com",
-        "password": "$2a$10$tfUxlXeDEReGvrTQy2ibA.YKhLTArNUs.2rRtsXOPYENU1Fjz6Y.G",
-        "confirm-password": "1234",
-        "image": "userImage-1636667920017.jfif"
-    },
-    {
-        "id": 13,
-        "firstname": "Enrique",
-        "lastname": "Laffranconi",
-        "email": "enriquelaffranconi@gmail.com",
-        "password": "$2a$10$UP/C9sr3R/BeGNyOcYWm1OZWQfv6tQlZ0JhjcW/WkgGcfky27JbQm",
-        "confirm-password": "123",
-        "image": "userImage-1636729045965.png"
-    },
-    {
-        "id": 14,
-        "firstname": "Enrique",
-        "lastname": "Laffranconi",
-        "email": "enriquelaffranconi@gmail.com",
-        "password": "$2a$10$5e/rYBVJU1bGad0Aui9kzeO0Tsvfg2K/V1JVNKuvLh7QTJuWa9MFC",
-        "confirm-password": "123",
-        "image": "userImage-1636729555338.png"
-=======
         "password": "$2a$10$lrN6MLe3NDppF1T.8YpNR.Gw6nwRBvmDp1uUlUm45fjd.0Ls6qy46",
         "confirm-password": "asd",
         "image": "userImage-1636734166542.jpg"
->>>>>>> 7378df1f9ce839b379637a332bcb47a90b01a444
     }
 ]
