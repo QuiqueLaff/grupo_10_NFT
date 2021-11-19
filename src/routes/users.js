@@ -5,10 +5,6 @@ const path = require('path');
 const multer = require ('multer');
 const usersControllers = require('../controllers/usersControllers');
 
-
-
-
-
 // MULTER
 
 const storage = multer.diskStorage({
@@ -30,20 +26,16 @@ router.get('/', usersControllers.home);
 // Registro 
 
 router.get('/register', usersControllers.register);
-
 router.post('/register', upload.single('userImage'), usersControllers.store);
 
 
 // Login
 
 router.get('/login', usersControllers.loginView)
-
 router.post("/login", [
     check("email").isEmail().withMessage("Email incorrecto"),
     check("password").isLength({min:8}).withMessage("Contraseña demasiado corta"),
     ],usersControllers.login)
-
-
 
 //profile
 router.get("/profile", usersControllers.profileView)
