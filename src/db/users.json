@@ -90,9 +90,9 @@
     },
     {
         "id": 12,
-        "firstname": "Juan ",
+        "firstname": "Quique ",
         "lastname": "Carlos ",
-        "email": "juancarlos@gmai.com",
+        "email": "enriquelaffranconi@gmail.com",
         "password": "$2a$10$4dJrK8TDf6FO0FD3L.TRde1gP9EYR8VWHV8IjsjHKxwqsZYsnj2NW",
         "confirm-password": "juan",
         "image": "userImage-1637326230399.png"

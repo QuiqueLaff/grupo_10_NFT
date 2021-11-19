@@ -4,6 +4,9 @@ const router = express.Router();
 const path = require('path');
 const multer = require ('multer');
 const usersControllers = require('../controllers/usersControllers');
+const guestMiddleare = require ('../middlewares/guestMiddleare')
+const authMidelware = require ('../middlewares/authMidelware')
+
 
 // MULTER
 
@@ -25,18 +28,18 @@ router.get('/', usersControllers.home);
 
 // Registro 
 
-router.get('/register', usersControllers.register);
+router.get('/register', guestMiddleare, usersControllers.register);
 router.post('/register', upload.single('userImage'), usersControllers.store);
 
 
 // Login
 
-router.get('/login', usersControllers.loginView)
+router.get('/login', guestMiddleare, usersControllers.loginView)
 router.post("/login", [
     check("email").isEmail().withMessage("Email incorrecto"),
     check("password").isLength({min:8}).withMessage("Contraseña demasiado corta"),
     ],usersControllers.login)
 
 //profile
-router.get("/profile", usersControllers.profileView)
+router.get("/profile", authMidelware, usersControllers.profileView)
 module.exports = router;
