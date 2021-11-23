@@ -25,7 +25,7 @@ app.use(loggedUser)
 
 const mainRouter = require('./routes/main');
 const usersRouter = require('./routes/users');
-const productRouter = require('./routes/product');
+const productsRouter = require('./routes/products');
 const { application } = require('express');
 
 /* Main Router */ 
@@ -38,7 +38,7 @@ app.use('/users', usersRouter);
 
 /* Product */
 
-app.use('/product', productRouter);
+app.use('/products', productsRouter);
 
 
 
