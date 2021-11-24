@@ -1,3 +1,40 @@
+# Retrospectiva quinto sprint. 
+
+## *Comenzar a hacer:*
+
+<ul>   
+  <li>Revisar en conjunto el sprint con antelación.</li>
+  <li>Diagramar las dinámicas.</li>
+</ul>
+
+## *Hacer más:*
+
+<ul>
+  <li>Capacitación de tutoriales.</li>
+  <li>Despeje de dudas con los profesores.</li>
+</ul>
+
+## *Continuar haciendo:*
+
+<ul>
+  <li>Comunicación fluida y predisposición continua.</li>
+  <li>Trabajo en equipo.</li>
+  <li>División de las tareas en base a la dificultad.</li>
+</ul>
+
+## *Hacer menos:*
+
+<ul>
+  <li>Tomar por sentado la dificultad de las tareas.</li>
+</ul>
+
+
+## *Dejar de hacer:*
+
+<ul>   
+  <li></li>
+</ul>
+
 # Retrospectiva cuarto sprint.
 
 ## *Comenzar a hacer:*
