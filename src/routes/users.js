@@ -43,3 +43,4 @@ router.post("/login", [
 //profile
 router.get("/profile", authMidelware, usersControllers.profileView)
 module.exports = router;
+

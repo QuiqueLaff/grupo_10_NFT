@@ -16,7 +16,7 @@
         <div class="background-edit-add"></div>
                 <section class="form-gral">
                 <div class="add-product-form">
-                    <form action="/product" method="POST" enctype="multipart/form-data" class="formulario">
+                    <form action="/product/addProduct" method="POST" enctype="multipart/form-data" class="formulario">
                     <header class="main-header">Here you can add a new product!</header>
                     <div class="data">
                         <label for="name"></label>
@@ -37,9 +37,8 @@
                             <input type="file" name="artistimg" aria-label="Archivo">
                           </div>      
                     <div class="panel">
-                            <button id="add-product-button" class="button">Add</button>
-                            <a href="#/products">
-                            <button class="button" id="cancel-button">Cancel</button>
+                            <button type="submit" id="add-product-button" class="button">Add</button>
+                            <button type="reset" class="button" id="cancel-button">Cancel</button>
                         </a>
                     </div>
                 </div>

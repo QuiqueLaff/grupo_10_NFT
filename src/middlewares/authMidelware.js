@@ -1,6 +1,6 @@
 function authMidelware(req,res, next) {
-    if (!req.session.userLogged){
-        return res.redirect ('/user/login');
+    if (!req.session.loggedUser){
+        return res.redirect ('/users/login');
     }
     next();
 }

@@ -96,5 +96,14 @@
         "password": "$2a$10$4dJrK8TDf6FO0FD3L.TRde1gP9EYR8VWHV8IjsjHKxwqsZYsnj2NW",
         "confirm-password": "juan",
         "image": "userImage-1637326230399.png"
+    },
+    {
+        "id": 13,
+        "firstname": "Fernando ",
+        "lastname": "Petela",
+        "email": "petela@gmail.com",
+        "password": "$2a$10$lxeYVCMwdlRPmG0c6i96a.FtALB/gY83JsEZc8/xD0tdZ1HupcEA2",
+        "confirm-password": "petela",
+        "image": "userImage-1637708816395.png"
     }
 ]

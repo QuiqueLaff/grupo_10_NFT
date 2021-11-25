@@ -36,8 +36,8 @@
                 <div class="box-description">
                     <p class="description"><%= product.detail %></p>
                 </div>
-                <a href="/product/addProduct" class="add-button">Buy</a></button>
-                <a href="/product/editProduct/<%= product.id %>" class="edit-button">Edit</a>
+                <a href="/cart" class="add-button">Buy</a></button>
+                <a href="/product/<%= product.id %>/editProduct" class="edit-button">Edit</a>
                 <form action="/product/<%= product.id  %>?_method=DELETE" method="POST">
                 <button type="submit" class="delete-button">Delete</button>
                 </form>

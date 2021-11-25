@@ -1,9 +1,9 @@
 function guestMiddleare (req, res, next){
-    if (req.session.userLogged){
-        return res.redirect ('/user/profile');
+    if (req.session.loggedUser){
+        res.redirect('/users/profile');
+    }else{
+        next();
     }
-    next();
-
 }
 
 module.exports = guestMiddleare;

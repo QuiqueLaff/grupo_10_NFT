@@ -21,15 +21,13 @@
      <!-- iconos de login, singin y carrito -->
         <div class="iconos">
             <% if (locals.islogged){ %>
-                <li><img class= "mini-picture-profile" src="/images/users/<%= locals.loggedUser.image %> " width="30" height="30" alt=""></li>
-                <a href= # class="link-name"><p class="sub"><%=  locals.loggedUser.firstname %></p></a>
-                <li><a href="/cart"> <i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href= "/users/profile" class="link-name"><img class= "mini-picture-profile" src="/images/users/<%= locals.loggedUser.image %> " width="30" height="30" alt=""></a></li>
+                <li><a href= "/users/profile" class="link-name"><p class="sub"><%=  locals.loggedUser.firstname %></p></a></li>
             <% } else { %>
-            <li><a href="/users/register"> <i class="fas fa-user"></i></a></li>
-            <li><a href="/users/login"> <i class="fas fa-sign-in-alt"></i></a></li>
-            <li><a href="/cart"> <i class="fas fa-shopping-cart"></i></a></li>
-
+                <li><a href="/users/register"> <i class="fas fa-user"></i></a></li>
+                <li><a href="/users/login"> <i class="fas fa-sign-in-alt"></i></a></li>
             <% } %>
+            <li><a href="/cart"> <i class="fas fa-shopping-cart"></i></a></li>
 
         </div>
     </nav>

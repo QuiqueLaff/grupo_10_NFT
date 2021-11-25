@@ -18,7 +18,7 @@
                 <div class="add-product-form">
                     <header class="main-header">Here you can edit your product!</header>
                     <div class="data">
-                        <form action="/product/editProduct/<%= product.id %>?_method=PUT" enctype="multipart/form-data" method="POST">
+                        <form action="/product/<%= product.id %>/editProduct?_method=PUT" enctype="multipart/form-data" method="POST">
                             <label for="name"></label>
                             <input type="text" id="name" name="name" placeholder="Edit product name:" value="<%=  product.name %>"/>
 
