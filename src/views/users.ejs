@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />   
-        <link rel="stylesheet" href="/css/add-edit.css">
-        <link rel="stylesheet" href="/css/style.css">  
-        <link rel= "shortcut icon" type="image/png" href="images/solapa.png">
- 
-        <title>All Users</title>
-    </head>
-        <body>
-        <%-include('./partials/header')%>
+    <%- include('./partials/head', {'title': 'Listado de usuario'})  %>
+<body>
+    <%- include('./partials/header')  %> 
 
-
-            <h3>Te registraste con éxito!</h3>
-
-
-        <%-include('./partials/footer')%>
-    </body>
+    <% for(let i = 0;i < users.length; i++){ %>
+        <div style="border: 2px black solid;">
+            <p>ID : <%= users[i].id %></p>
+            <p>nombre : <%= users[i].email %></p>
+            <img style="width: 150px;" src="./images/users/<%=users[i].avatar %>" alt="">
+        
+        <form action="/usersRouter/<%=users[i].id%>/delete?_method=delete" method="POST">
+            <button type="submit" > Borrar </button>
+        </form>
+    
+        <form action="/usersRouter/<%=users[i].id%>/update?_method=PUT" method="GET">
+            <button type="submit" > Actualizar </button>
+        </form>
+        </div>
+        <br>
+    <% } %>
+    
+    
+        <%- include('./partials/footer')  %>
+    </main>    
+</body>
 </html>

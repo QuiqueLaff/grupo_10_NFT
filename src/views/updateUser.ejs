@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />   
+        <link rel="stylesheet" href="/css/add-edit.css">
+        <link rel="stylesheet" href="/css/style.css">   
+        <link rel= "shortcut icon" type="image/png" href="images/solapa.png">
+
+        <title>Edit product</title>
+    </head>
+        <body>
+        <%-include('./partials/header')%>
+        <div class="background-edit-add"></div>
+            <section class="form-gral">
+                <div class="add-product-form">
+                    <header class="main-header">Here you can edit your profile!</header>
+                    <div class="data">
+                        <form action="/users/<%= user.id %>/update?_method=PUT" enctype="multipart/form-data" method="POST">
+                            
+
+                            <label for="category"></label>
+                            <input type="text" name="firstname" placeholder="Edit first name:" />
+
+                            <label for="price"></label>
+                            <input type="text" name="lastname" placeholder="Edit lastname:"/>
+
+                            <label for="category"></label>
+                            <input type="text" name="email" placeholder="Edit email:" />
+
+                            <label for="category"></label>
+                            <input type="password" name="password" placeholder="Edit password" />
+                            
+                            
+                            <div class="file-select" id="image" >
+
+                                <input type="file" name="image" aria-label="Archivo" >
+                                
+                            </div>  
+                                
+                            <div class="panel">
+                                
+                                <button type="submit" id="add-product-button" class="button">Edit</button>
+
+                                <button type="reset" class="button" id="cancel-button">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <%-include('./partials/footer')%>
+        </body>
+</html>

@@ -33,6 +33,7 @@ module.exports = {
             id: nuevoId(),
             ...req.body,
              image: images || 'default-image.png',
+             
         }
      
         products.push(newProduct);

@@ -23,13 +23,17 @@ const upload = multer({storage: storage})
 
 
 // Todos los usuarios 
-router.get('/', usersControllers.home);
+router.get('/', usersControllers.renderUserList);
 
 
 // Registro 
 
 router.get('/register', guestMiddleare, usersControllers.register);
 router.post('/register', upload.single('userImage'), usersControllers.store);
+
+// Update 
+router.get("/:id/update",usersControllers.viewUpdateUser)
+router.put("/:id/update",upload.single('image'), usersControllers.updateUser)
 
 
 // Login

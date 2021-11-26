@@ -1,109 +1,89 @@
 [
     {
-        "id": 1,
-        "firstname": "Cody",
-        "lastname": "Heinicke",
+        "id": "11",
+        "firstname": "Solapa",
+        "lastname": "Laffranconi",
         "email": "cheinicke0@independent.co.uk",
-        "password": "REhEsNde8Rl",
-        "avatar": ""
+        "password": "1345"
     },
     {
         "id": 2,
-        "firstname": "Jarvis",
-        "lastname": "Driffield",
+        "firstname": "qwertyu",
+        "lastname": "qwerty",
         "email": "jdriffield1@people.com.cn",
-        "password": "WAJ01kdUC",
-        "avatar": ""
+        "password": "$2a$10$QJuVpnsL7y6YfBe4xMHHROamJdC1mmg3W1WOEtjx/Sozo34f14M6K",
+        "image": "image-1637886533244.png"
     },
     {
         "id": 3,
-        "firstname": "Mayor",
-        "lastname": "Cleveley",
+        "firstname": "qwertyu",
+        "lastname": "qwerty",
         "email": "mcleveley2@sphinn.com",
-        "password": "yiSvLMQe",
-        "avatar": ""
+        "password": "$2a$10$.sEu4b9PrDfqW/xHiZvh6O21sstiloLhJ5M3Ef65C4EHg9M//T3uW",
+        "image": "image-1637886533244.png"
     },
     {
         "id": 4,
-        "firstname": "Carla",
-        "lastname": "Hayesman",
+        "firstname": "qwertyu",
+        "lastname": "qwerty",
         "email": "chayesman3@forbes.com",
-        "password": "TLUEtnQp",
-        "avatar": ""
+        "password": "$2a$10$OIMeYQ56/ikLTDBu2uM21OIUQV25Hz.Tb8KydsvaSAAHd6C.reWvG",
+        "image": "image-1637886533244.png"
     },
     {
         "id": 5,
-        "firstname": "Doralin",
-        "lastname": "MacEvilly",
+        "firstname": "qwertyu",
+        "lastname": "qwerty",
         "email": "dmacevilly4@nba.com",
-        "password": "XjBWEBL2I",
-        "avatar": ""
+        "password": "$2a$10$kdol7oDeFeggkroqfmS0duRJskuDG1DOxsK/faH45UXE6RcnZ6MaS",
+        "image": "image-1637886533244.png"
     },
     {
         "id": 6,
-        "firstname": "Bonnee",
-        "lastname": "Calken",
+        "firstname": "qwertyu",
+        "lastname": "qwerty",
         "email": "bcalken5@state.gov",
-        "password": "yXS6n8OJzI",
-        "avatar": ""
+        "password": "$2a$10$O//u8Z60lbAGzNmncBgute7IVldB92EPpoGhL9NUPSv8kO6Y42/mO",
+        "image": "image-1637886533244.png"
     },
     {
         "id": 7,
-        "firstname": "Thorin",
-        "lastname": "Cumpton",
+        "firstname": "qwertyu",
+        "lastname": "qwerty",
         "email": "tcumpton6@csmonitor.com",
-        "password": "ALbVOu34s",
-        "avatar": ""
+        "password": "$2a$10$9axDegE4e.Iz2tF7QZG1YukyIjkFyLm75D4INWAKDElxiIOFzP1wq",
+        "image": "image-1637886533244.png"
     },
     {
         "id": 8,
-        "firstname": "Olwen",
-        "lastname": "Beton",
+        "firstname": "qwertyu",
+        "lastname": "qwerty",
         "email": "obeton7@reference.com",
-        "password": "R7ihiW8x",
-        "avatar": ""
+        "password": "$2a$10$qXVFJPgH8IT7NbB.eTrnyupoPnZUryKyTFPvWHmCMA48i0sNLryrC",
+        "image": "image-1637886533244.png"
     },
     {
         "id": 9,
-        "firstname": "Leontyne",
-        "lastname": "Cullen",
+        "firstname": "qwertyu",
+        "lastname": "qwerty",
         "email": "lcullen8@yelp.com",
-        "password": "kLbrzFla",
-        "avatar": ""
+        "password": "$2a$10$8MBL8FNRFENYuIqqm5SnOOprql7yBbV4oFfx.b0kAuuiOTN2DtaJ.",
+        "image": "image-1637886533244.png"
     },
     {
         "id": 10,
-        "firstname": "Truda",
-        "lastname": "Fost",
+        "firstname": "qwertyu",
+        "lastname": "qwerty",
         "email": "tfost9@phpbb.com",
-        "password": "rvsOCDCasd",
-        "avatar": ""
+        "password": "$2a$10$sqH.jHnUw0PqAqk1DHa/1OSWPPsv4EJscEz1XrK0XXjnEvscFR7M2",
+        "image": "image-1637886533244.png"
     },
     {
         "id": 11,
-        "firstname": "asd",
-        "lastname": "asd",
+        "firstname": "Solapa",
+        "lastname": "Laffranconi",
         "email": "asd@gmail.com",
-        "password": "$2a$10$lrN6MLe3NDppF1T.8YpNR.Gw6nwRBvmDp1uUlUm45fjd.0Ls6qy46",
-        "confirm-password": "asd",
-        "image": "userImage-1636734166542.jpg"
-    },
-    {
-        "id": 12,
-        "firstname": "Quique ",
-        "lastname": "Carlos ",
-        "email": "enriquelaffranconi@gmail.com",
-        "password": "$2a$10$4dJrK8TDf6FO0FD3L.TRde1gP9EYR8VWHV8IjsjHKxwqsZYsnj2NW",
-        "confirm-password": "juan",
-        "image": "userImage-1637326230399.png"
-    },
-    {
-        "id": 13,
-        "firstname": "Fernando ",
-        "lastname": "Petela",
-        "email": "petela@gmail.com",
-        "password": "$2a$10$lxeYVCMwdlRPmG0c6i96a.FtALB/gY83JsEZc8/xD0tdZ1HupcEA2",
-        "confirm-password": "petela",
-        "image": "userImage-1637708816395.png"
+        "password": "$2a$10$ebHSwr0yuIitrHZC7sJSK.fB/kejH2p5rXyO41alPHN64NRaZwrFK",
+        "confirm-password": "asd"
     }
 ]
