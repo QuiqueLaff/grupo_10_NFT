@@ -22,5 +22,8 @@
     "mysql2": "^2.3.3",
     "nodemon": "^2.0.13",
     "sequelize": "^5.21.13"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.3.0"
   }
 }
