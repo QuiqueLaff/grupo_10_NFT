@@ -3,7 +3,6 @@ const Sequelize = require('sequelize');
 
 module.exports = (sequelize, dataTypes) => {
 
-    const Order = sequelize.define(alias, cols, config);
 
     let alias = "Orders";
     let cols = {
@@ -42,6 +41,34 @@ module.exports = (sequelize, dataTypes) => {
         tableName: "orders",
         timestamps: false
     }
+
+
+
+    Order.associate = function (models){
+        Order.belongsTo(models.Users, {
+            as: "userProduct",
+            foreignKey: "user_id" 
+        })
+    }
+
+    
+    Order.associate = function (models){
+        Order.hasMany(models.Products, {
+            as: "orderProducts",
+            foreignKey: "order_id" 
+        })
+    }
+
+    Order.associate = function (models){
+        Order.belongsTo(models.Cart, {
+            as: "cartProduct",
+            foreignKey: "cart_id" 
+        })
+    }
+
+    const Order = sequelize.define(alias, cols, config);
+    
+
 
 
     return Order;

@@ -3,7 +3,6 @@ const Sequelize = require('sequelize');
 
 module.exports = (sequelize, dataTypes) => {
 
-    const Cart = sequelize.define(alias, cols, config);
 
     let alias = "Cart";
     let cols = {
@@ -25,6 +24,20 @@ module.exports = (sequelize, dataTypes) => {
         timestamps: false
     }
 
+    Cart.associate = function (models){
+        Cart.belongsTo(models.Orders, {
+            as: "cartOrder",
+            foreignKey: "cart_id" 
+        })
+    }
 
+    Cart.associate = function (models){
+        Cart.belongsTo(models.Users, {
+            as: "userCart",
+            foreignKey: "user_id" 
+        })
+    }
+    const Cart = sequelize.define(alias, cols, config);
+    
     return Cart;
 }
