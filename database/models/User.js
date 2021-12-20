@@ -1,60 +1,51 @@
-const Sequelize = require('sequelize');
-
-
-module.exports = (sequelize, dataTypes) => {
-
-
+module.exports = ((sequelize,dataTypes) => {
     let alias = "Users";
     let cols = {
         id: {
             type: dataTypes.INTEGER,
             primaryKey: true,
-            allowNull: false
+            autoIncrement: true
         },
         first_name: {
-            type: dataTypes.STRING(45)
+            type: dataTypes.STRING
         },
         last_name: {
-            type: dataTypes.STRING(45)
+            type: dataTypes.STRING
         },
         email: {
-            type: dataTypes.STRING(45),
+            type: dataTypes.STRING,
             unique: true
         },
         avatar: {
-            type: dataTypes.STRING(45),
-            defaultValue: 'user_defaultimg'
+            type: dataTypes.STRING,
+            defaultValue: 'default-image2.png'
+        },
+        password:{
+            type: dataTypes.STRING
         },
     };
-
+ 
     let config = {
         tableName: "users",
         timestamps: false
     }
-
+ 
     const User = sequelize.define(alias, cols, config);
 
-
-    User.associate = function (models){
-        User.hasMany(models.Product, {
+    /*User.associate = function (models){
+        User.hasMany(models.Products, {
             as: "userProducts",
-            foreignKey: "user_id" 
-        })
-    }
-
-    User.associate = function (models){
+            foreignKey: "user_id"
+        });
         User.belongsTo(models.Cart, {
             as: "cartUser",
-            foreignKey: "user_id" 
-        })
-    }
-
-    User.associate = function (models){
-        User.belongsTo(models.Order, {
+            foreignKey: "user_id"
+        });
+        User.belongsTo(models.Orders, {
             as: "userOrder",
-            foreignKey: "user_id" 
-        })
-    }
-
+            foreignKey: "user_id"
+        });
+    }*/
     return User;
 }
+)

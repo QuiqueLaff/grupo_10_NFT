@@ -3,6 +3,7 @@ const app = express();
 const path = require('path');
 const methodOverride = require('method-override');
 const loggedUser = require("./middlewares/loggedUser")
+require('dotenv').config()
 
 
  const sesion = require('express-session') 

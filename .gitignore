@@ -1,6 +1,7 @@
 node_modules/
 .DS_Store/
 DS_Store/
+.env/
 
 // se debe crear la FK de Product y Order (order_id) para relacionar ambas tablas
 // se debe crear la FK 

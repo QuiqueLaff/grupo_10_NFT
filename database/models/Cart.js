@@ -9,35 +9,37 @@ module.exports = (sequelize, dataTypes) => {
         id: {
             type: dataTypes.INTEGER,
             primaryKey: true,
+            allowNull:false
         },
         user_id: { 
             type: dataTypes.INTEGER,
-            references: {
+            default:null,
+            /*references: {
                 model: User,
                 key: 'id',
-            }
+            }*/
         }
     };
 
     let config = {
         tableName: "cart",
-        timestamps: false
-    }
+        timestamps: false,
+        underscored:true
+    } 
 
+    const Cart = sequelize.define(alias, cols, config);
+    
     Cart.associate = function (models){
-        Cart.belongsTo(models.Orders, {
+        /*Cart.belongsTo(models.Orders, {
             as: "cartOrder",
             foreignKey: "cart_id" 
         })
-    }
-
-    Cart.associate = function (models){
         Cart.belongsTo(models.Users, {
             as: "userCart",
             foreignKey: "user_id" 
-        })
+        })*/
     }
-    const Cart = sequelize.define(alias, cols, config);
+    
     
     return Cart;
 }

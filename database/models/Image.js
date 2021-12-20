@@ -11,30 +11,32 @@ module.exports = (sequelize, dataTypes) => {
             primaryKey: true,
             allowNull: false
         },
-        product_id: { 
+        prduct_id: { 
             type: dataTypes.INTEGER,
-            references: {
-                model: Product,
+            default: null,
+            /*references: {
+                model: Products,
                 key: 'id',
-            }
+            }*/
         },
         image: {
             type: dataTypes.STRING(45),
+            default:'product_defaultimg'
         }
     };
 
     let config = {
         tableName: "images",
-        timestamps: false
+        timestamps: false,
+        underscored:true
     }
 
     const Image = sequelize.define(alias, cols, config);
-
     Image.associate = function (models){
-        Image.belongsTo(models.Products, {
+        /*Image.belongsTo(models.Products, {
             as: "productImage",
             foreignKey: "image_id" 
-        })
+        })*/
     }
 
     return Image;

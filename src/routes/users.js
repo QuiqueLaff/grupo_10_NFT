@@ -35,6 +35,9 @@ router.post('/register', upload.single('userImage'), usersControllers.store);
 router.get("/:id/update",usersControllers.viewUpdateUser)
 router.put("/:id/update",upload.single('image'), usersControllers.updateUser)
 
+//Delete
+router.delete('/:id/delete', usersControllers.deleteUser);
+
 
 // Login
 

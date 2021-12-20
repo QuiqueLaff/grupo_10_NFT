@@ -1,6 +1,8 @@
 const Sequelize = require('sequelize');
 
 
+
+
 module.exports = (sequelize, dataTypes) => {
 
 
@@ -34,64 +36,60 @@ module.exports = (sequelize, dataTypes) => {
         },
         category_id: {
             type: dataTypes.INTEGER,
-            references: {
+            default:null,
+            /*references: {
                 model: Category,
                 key: 'id',
-            }
+            }*/
         },
         user_id: {
             type: dataTypes.INTEGER,
-            references: {
+            default:null,
+            /*references: {
                 model: User,
                 key: 'id'
-            }
+            }*/
         },
         image_id: {
             type: dataTypes.INTEGER,
-            references: {
-                model: Image,
+            default:null,
+            /*references: {
+                model: Images,
                 key: 'id'
-            }
+            }*/
         }
     };
 
     let config = {
         tableName: "products",
-        timestamps: false
+        timestamps: false,
+        underscored:true
     }
 
     const Product = sequelize.define(alias, cols, config);
 
 
     Product.associate = function (models){
+        /*Product.belongsTo(models.Images, {
+            as: "productImage",
+            foreignKey: "image_id" 
+        })
         Product.belongsTo(models.Categories, {
             as: "productCategory",
             foreignKey: "category_id" 
         })
-    }
-
-
-    Product.associate = function (models){
         Product.belongsTo(models.Users, {
             as: "productUser",
             foreignKey: "user_id" 
         })
-    }
-
-    Product.associate = function (models){
-        Product.belongsTo(models.Images, {
-            as: "productImage",
-            foreignKey: "image_id" 
-        })
-    }
-
-
-    Product.associate = function (models){
+        
         Order.belongsTo(models.Orders, {
             as: "productOrder",
             foreignKey: "order_id" 
-        })
-    }
+        })*/
 
+    
+    }
     return Product;
+
 }

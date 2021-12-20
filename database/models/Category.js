@@ -12,8 +12,9 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false
         },
         category: { 
-            type: dataTypes.STRING(45),
-            unique: true
+            type: dataTypes.STRING,
+            unique: true,
+            allowNull:false
         }
     };
 
@@ -24,12 +25,11 @@ module.exports = (sequelize, dataTypes) => {
 
     const Category = sequelize.define(alias, cols, config);
 
-
     Category.associate = function (models){
-        Category.hasMany(models.Products, {
+        /*Category.hasMany(models.Products, {
             as: "categoryProducts",
             foreignKey: "category_id" 
-        })
+        })*/
     }
 
     return Category;
