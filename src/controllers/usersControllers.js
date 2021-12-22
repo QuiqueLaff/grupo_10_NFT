@@ -3,23 +3,8 @@ const fs = require('fs');
 const res = require('express/lib/response');
 const bcrypt = require('bcryptjs');
 const { validationResult } = require('express-validator');
-const db = require("../../database/models")
+const db = require("../database/models");
 
-const saltRounds = 10;
-
-const jsonUsers = fs.readFileSync(path.resolve(__dirname, '../db/users.json'), 'utf-8');
-const users = JSON.parse(jsonUsers); 
-
-
-const nuevoUserId = () => {
-    let ultimo = 0;
-    users.forEach(user => {
-        if (user.id > ultimo) {
-            ultimo = user.id;
-        }
-    });
-    return ultimo + 1;
-}
 
 module.exports = {
     register: (req, res) => {
@@ -39,7 +24,7 @@ module.exports = {
         db.Users.create({
             first_name:req.body.firstname,
             last_name:req.body.lastname,
-            emai:req.body.email,
+            email:req.body.email,
             avatar:req.file.filename,
             password:bcrypt.hashSync(req.body.password, 10),
         })
@@ -75,7 +60,7 @@ module.exports = {
         let user = req.session.loggedUser
         
         res.render("profile",{"user":user})
-        //res.send(user)
+        
     },
     viewUpdateUser:(req,res)=>{
         db.Users.findByPk(req.params.id)
@@ -85,27 +70,28 @@ module.exports = {
         
     },
     updateUser: (req,res) =>{
-
+        
         db.Users.update({
             first_name:req.body.firstname,
             last_name:req.body.lastname,
-            emai:req.body.email,
+            email:req.body.email,
             avatar:req.file.filename,
             password:bcrypt.hashSync(req.body.password, 10),
 
         },{
             where:{id:req.params.id}
-        }).then((user)=>{
-            return res.render("listUsers",{user});
+        }).then(()=>{
+            return res.redirect("/");
         }).catch((error)=>{
             return res.send(error)
         })
+        
     },
     deleteUser:(req,res)=>{
         db.Users.destroy({
-            where:{id:req.params.id}
-        }).then((users)=>{
-            return res.render("listUsers",{users})
+            where:{id:req.params.id},
+        }).then(()=>{
+            return res.redirect("/")
         })
     }
 

@@ -9,15 +9,12 @@ module.exports = (sequelize, dataTypes) => {
         id: {
             type: dataTypes.INTEGER,
             primaryKey: true,
-            allowNull:false
+            allowNull:false,
+            autoIncrement:true
         },
         user_id: { 
             type: dataTypes.INTEGER,
             default:null,
-            /*references: {
-                model: User,
-                key: 'id',
-            }*/
         }
     };
 
@@ -30,16 +27,14 @@ module.exports = (sequelize, dataTypes) => {
     const Cart = sequelize.define(alias, cols, config);
     
     Cart.associate = function (models){
-        /*Cart.belongsTo(models.Orders, {
+        Cart.hasMany(models.Orders, {
             as: "cartOrder",
             foreignKey: "cart_id" 
         })
-        Cart.belongsTo(models.Users, {
-            as: "userCart",
-            foreignKey: "user_id" 
-        })*/
-    }
-    
-    
+        Cart.belongsTo(models.Users,{
+            as:"userCart",
+            foreignKey:"user_id"
+        })
+    }   
     return Cart;
 }

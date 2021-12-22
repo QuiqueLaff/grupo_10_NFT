@@ -1,10 +1,6 @@
 const Sequelize = require('sequelize');
 
-
-
-
 module.exports = (sequelize, dataTypes) => {
-
 
     let alias = "Products";
     let cols = {
@@ -36,27 +32,24 @@ module.exports = (sequelize, dataTypes) => {
         },
         category_id: {
             type: dataTypes.INTEGER,
+            allowNull:false,
             default:null,
-            /*references: {
-                model: Category,
-                key: 'id',
-            }*/
         },
         user_id: {
             type: dataTypes.INTEGER,
             default:null,
-            /*references: {
-                model: User,
-                key: 'id'
-            }*/
         },
         image_id: {
             type: dataTypes.INTEGER,
-            default:null,
-            /*references: {
-                model: Images,
-                key: 'id'
-            }*/
+            default:"default-image.png",
+        },
+        detail:{
+            type: dataTypes.TEXT,
+            default: "El artista deja a libre interpretacion esta obra"
+        },
+        order_id:{
+            type: dataTypes.INTEGER,
+            default:null
         }
     };
 
@@ -70,24 +63,18 @@ module.exports = (sequelize, dataTypes) => {
 
 
     Product.associate = function (models){
-        /*Product.belongsTo(models.Images, {
-            as: "productImage",
-            foreignKey: "image_id" 
-        })
         Product.belongsTo(models.Categories, {
             as: "productCategory",
             foreignKey: "category_id" 
         })
+        Product.belongsTo(models.Orders, {
+            as: "productOrder",
+            foreignKey: "order_id" 
+        })
         Product.belongsTo(models.Users, {
             as: "productUser",
             foreignKey: "user_id" 
-        })
-        
-        Order.belongsTo(models.Orders, {
-            as: "productOrder",
-            foreignKey: "order_id" 
-        })*/
-
+        })  
     
     }
     return Product;

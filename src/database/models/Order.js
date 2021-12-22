@@ -9,35 +9,17 @@ module.exports = (sequelize, dataTypes) => {
         id: {
             type: dataTypes.INTEGER,
             primaryKey: true,
-            allowNull: false
-        },
-        user_id: { 
-            type: dataTypes.INTEGER,
-            default: null,
-            /*references: {
-                model: User,
-                key: 'id',
-            }*/
+            allowNull: false,
+            autoIncrement: true
         },
         quantity: {
             type: dataTypes.INTEGER,
             default:null,
         },
-        product_id: { 
-            type: dataTypes.INTEGER,
-            default:null,
-            /*references: {
-                model: Product,
-                key: 'id',
-            }*/
-        },
         cart_id: { 
             type: dataTypes.INTEGER,
             default:null,
-            /*references: {
-                model: Cart,
-                key: 'id',
-            }*/
+
         }
     };
 
@@ -50,10 +32,6 @@ module.exports = (sequelize, dataTypes) => {
     const Order = sequelize.define(alias, cols, config);
 
     Order.associate = function (models){
-        /*Order.belongsTo(models.Users, {
-            as: "userProduct",
-            foreignKey: "user_id" 
-        })
         Order.belongsTo(models.Cart, {
             as: "cartProduct",
             foreignKey: "cart_id" 
@@ -61,14 +39,8 @@ module.exports = (sequelize, dataTypes) => {
         Order.hasMany(models.Products, {
             as: "orderProducts",
             foreignKey: "order_id" 
-        })*/
+        })
 
-    }
-
-    
-    
-
-
-
+    }  
     return Order;
 }
