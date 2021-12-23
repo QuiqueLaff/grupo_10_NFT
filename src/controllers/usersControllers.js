@@ -3,6 +3,7 @@ const fs = require('fs');
 const res = require('express/lib/response');
 const bcrypt = require('bcryptjs');
 const { validationResult } = require('express-validator');
+const db =require("../../database/models")
 
 const saltRounds = 10;
 
@@ -89,34 +90,13 @@ module.exports = {
     },
     updateUser: (req,res) =>{
 
-        /*for(let i =0; i < users.length; i++){
-            if(req.file && users[i].image != "default-image2.png" ){
-                fs.unlinkSync(path.resolve(__dirname, "./images/users", users[i].image))
-            }
-            let user = {
-                ...users[i],
-                firstname : req.body.firstname ? req.body.firstname: users[i].firstname,
-                lastname : req.body.lastname ? req.body.lastname: users[i].lastname,
-                image : req.file ? req.file.filename : users[i].image,
-                password : bcrypt.compareSync(req.body.password,users[i].password) ? users[i].password : 
-                bcrypt.hashSync(req.body.password),
-            }
-                        
-            if(users[i].id == user.id){
-                users.splice(i,1,user);
-            }
-            
-        };
-        usersJSON = JSON.stringify(users,null, " ");
-        fs.writeFileSync(path.resolve(__dirname,"../db/users.json"), usersJSON);
-        res.redirect("/users");*/
+        
         console.log(req.file)
         users.forEach(user => {
             if (user.id == req.params.id) {
                 
                 user.firstname = req.body.firstname;
                 user.lastname = req.body.lastname;
-                           
                 user.image = req.file ? req.file.image : user.image;
             }
         })
