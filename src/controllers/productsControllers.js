@@ -12,9 +12,11 @@ module.exports = {
             .then((product)=>{
                 //return res.send(product)
                 return res.render("listOfProducts",{products:product})
+                
             }).catch((error)=>{
                 return res.send(error)
             })
+            
     },
 
     productsAddView: (req, res) => {
@@ -37,6 +39,7 @@ module.exports = {
         }).catch((error)=>{
             return res.send(error)
         })
+        
         
     },
     

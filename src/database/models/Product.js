@@ -39,7 +39,7 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.INTEGER,
             default:null,
         },
-        image_id: {
+        image: {
             type: dataTypes.INTEGER,
             default:"default-image.png",
         },
