@@ -2,7 +2,15 @@ const path = require('path');
 const fs = require('fs');
 const res = require('express/lib/response');
 const { validationResult } = require('express-validator');
+<<<<<<< HEAD
+<<<<<<< HEAD
+const db =require("../../database/models")
+=======
 const db= require("../database/models")
+>>>>>>> c5b9f373af1853917b4fe75840e89a89ab085b67
+=======
+const db= require("../database/models")
+>>>>>>> c5b9f373af1853917b4fe75840e89a89ab085b67
 
 
 module.exports = {
