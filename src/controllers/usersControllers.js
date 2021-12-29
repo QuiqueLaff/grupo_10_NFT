@@ -4,7 +4,11 @@ const res = require('express/lib/response');
 const bcrypt = require('bcryptjs');
 const { validationResult } = require('express-validator');
 <<<<<<< HEAD
+<<<<<<< HEAD
 const db =require("../../database/models")
+=======
+const db = require("../database/models");
+>>>>>>> c5b9f373af1853917b4fe75840e89a89ab085b67
 =======
 const db = require("../database/models");
 >>>>>>> c5b9f373af1853917b4fe75840e89a89ab085b67
@@ -83,6 +87,7 @@ module.exports = {
             password:bcrypt.hashSync(req.body.password, 10),
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         
         console.log(req.file)
         users.forEach(user => {
@@ -93,12 +98,17 @@ module.exports = {
                 user.image = req.file ? req.file.image : user.image;
             }
 =======
+=======
+>>>>>>> c5b9f373af1853917b4fe75840e89a89ab085b67
         },{
             where:{id:req.params.id}
         }).then(()=>{
             return res.redirect("/");
         }).catch((error)=>{
             return res.send(error)
+<<<<<<< HEAD
+>>>>>>> c5b9f373af1853917b4fe75840e89a89ab085b67
+=======
 >>>>>>> c5b9f373af1853917b4fe75840e89a89ab085b67
         })
         
