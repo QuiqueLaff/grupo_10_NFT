@@ -40,11 +40,11 @@ module.exports = (sequelize, dataTypes) => {
             default:null,
         },
         image: {
-            type: dataTypes.INTEGER,
-            default:"default-image.png",
+            type: dataTypes.STRING(45),
+            
         },
         detail:{
-            type: dataTypes.TEXT,
+            type: dataTypes.STRING(100),
             default: "El artista deja a libre interpretacion esta obra"
         },
         order_id:{

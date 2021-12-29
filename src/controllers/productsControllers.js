@@ -27,6 +27,7 @@ module.exports = {
     },   
 
     productsAdd: (req, res) =>{
+        console.log(req.file);
         db.Products.create({
             name:req.body.name,
             price:req.body.price,
@@ -34,6 +35,7 @@ module.exports = {
             artist_bio: req.body.artistbio,
             artist_code: req.body.artistcode,
             category_id: req.body.category,
+            image: req.file.filename
         }).then(()=>{
             res.redirect("/")
         }).catch((error)=>{

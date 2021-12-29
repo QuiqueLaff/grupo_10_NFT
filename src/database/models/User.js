@@ -18,10 +18,9 @@ module.exports = ((sequelize,dataTypes) => {
         },
         avatar: {
             type: dataTypes.STRING,
-            defaultValue: 'default-image2.png'
         },
-        password:{
-            type: dataTypes.STRING
+        pass:{
+            type: dataTypes.STRING(60)
         },
     };
  
