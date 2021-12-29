@@ -1,8 +1,11 @@
+require('dotenv').config()
+
 module.exports = {
   "development": {
     "username": "root",
-    "password": "grupo10",
+    "password": null,
     "database": "nft_db",
+    "port":3306,
     "host": "127.0.0.1",
     "dialect": "mysql"
   },

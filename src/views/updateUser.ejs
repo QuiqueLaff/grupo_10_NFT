@@ -16,6 +16,7 @@
         <div class="background-edit-add"></div>
             <section class="form-gral">
                 <div class="add-product-form">
+                    <h1><%=user.id%></h1>
                     <header class="main-header">Here you can edit your profile!</header>
                     <div class="data">
                         <form action="/users/<%= user.id %>/update?_method=PUT" enctype="multipart/form-data" method="POST">

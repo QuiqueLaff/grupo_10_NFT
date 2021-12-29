@@ -3,23 +3,12 @@ const fs = require('fs');
 const res = require('express/lib/response');
 const bcrypt = require('bcryptjs');
 const { validationResult } = require('express-validator');
+<<<<<<< HEAD
 const db =require("../../database/models")
+=======
+const db = require("../database/models");
+>>>>>>> c5b9f373af1853917b4fe75840e89a89ab085b67
 
-const saltRounds = 10;
-
-const jsonUsers = fs.readFileSync(path.resolve(__dirname, '../db/users.json'), 'utf-8');
-const users = JSON.parse(jsonUsers); 
-
-
-const nuevoUserId = () => {
-    let ultimo = 0;
-    users.forEach(user => {
-        if (user.id > ultimo) {
-            ultimo = user.id;
-        }
-    });
-    return ultimo + 1;
-}
 
 module.exports = {
     register: (req, res) => {
@@ -27,32 +16,27 @@ module.exports = {
     },
 
     renderUserList: (req, res) => {
-        
-        res.render("listUsers",{ users });
+        db.Users.findAll()
+            .then((users)=>{
+                return res.render("listUsers",{ users });
+            }).catch((error)=>{
+                return res.send(error)
+            })
     },
     
-
-
     store (req, res) {
-       
-        let userImage = req.file.filename || "default-image2.png"
-       
-        let newUser = {
-            id: nuevoUserId(),
-            ...req.body,
-            password: bcrypt.hashSync(req.body.password, 10),
-            image: userImage 
-        }
-        console.log(req.file);
-
-        if(req.file){
-            users.push(newUser);
-            let jsonUsers = JSON.stringify(users, null, 4);
-            fs.writeFileSync(path.resolve(__dirname, '../db/users.json'), jsonUsers);
-            res.redirect('/');
-        }else{
-            res.render("/register")
-        }    
+        db.Users.create({
+            first_name:req.body.firstname,
+            last_name:req.body.lastname,
+            email:req.body.email,
+            avatar:req.file.filename,
+            password:bcrypt.hashSync(req.body.password, 10),
+        })
+            .then(()=>{
+                res.redirect('/')
+            }).catch((error)=>{
+                res.send(error)
+            })
     },
     
     loginView: (req, res) => {
@@ -80,16 +64,25 @@ module.exports = {
         let user = req.session.loggedUser
         
         res.render("profile",{"user":user})
-        //res.send(user)
+        
     },
     viewUpdateUser:(req,res)=>{
-        let user = users.find(user => {
-            return user.id = req.params.id
-        })
-        res.render("updateUser",{user});
+        db.Users.findByPk(req.params.id)
+            .then((user)=>{
+                return res.render("updateUser",{user});
+            })
+        
     },
     updateUser: (req,res) =>{
+        
+        db.Users.update({
+            first_name:req.body.firstname,
+            last_name:req.body.lastname,
+            email:req.body.email,
+            avatar:req.file.filename,
+            password:bcrypt.hashSync(req.body.password, 10),
 
+<<<<<<< HEAD
         
         console.log(req.file)
         users.forEach(user => {
@@ -99,16 +92,28 @@ module.exports = {
                 user.lastname = req.body.lastname;
                 user.image = req.file ? req.file.image : user.image;
             }
+=======
+        },{
+            where:{id:req.params.id}
+        }).then(()=>{
+            return res.redirect("/");
+        }).catch((error)=>{
+            return res.send(error)
+>>>>>>> c5b9f373af1853917b4fe75840e89a89ab085b67
         })
         
-        let jsonUsers = JSON.stringify(users, null, 4); 
-        fs.writeFileSync(path.resolve(__dirname, '../db/users.json'), jsonUsers);
-        res.redirect('/users');
-
+    },
+    deleteUser:(req,res)=>{
+        db.Users.destroy({
+            where:{id:req.params.id},
+        }).then(()=>{
+            return res.redirect("/")
+        })
     }
+
     
     
 }
 
 
-// if (bcrypt.compareSync(req.body.password)
+

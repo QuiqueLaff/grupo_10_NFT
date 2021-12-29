@@ -1,8 +1,6 @@
 const Sequelize = require('sequelize');
 
-
 module.exports = (sequelize, dataTypes) => {
-
 
     let alias = "Products";
     let cols = {
@@ -34,30 +32,31 @@ module.exports = (sequelize, dataTypes) => {
         },
         category_id: {
             type: dataTypes.INTEGER,
-            references: {
-                model: Category,
-                key: 'id',
-            }
+            allowNull:false,
+            default:null,
         },
         user_id: {
             type: dataTypes.INTEGER,
-            references: {
-                model: User,
-                key: 'id'
-            }
+            default:null,
         },
-        image_id: {
+        image: {
+            type: dataTypes.STRING(45),
+            
+        },
+        detail:{
+            type: dataTypes.STRING(100),
+            default: "El artista deja a libre interpretacion esta obra"
+        },
+        order_id:{
             type: dataTypes.INTEGER,
-            references: {
-                model: Image,
-                key: 'id'
-            }
+            default:null
         }
     };
 
     let config = {
         tableName: "products",
-        timestamps: false
+        timestamps: false,
+        underscored:true
     }
 
     const Product = sequelize.define(alias, cols, config);
@@ -68,30 +67,16 @@ module.exports = (sequelize, dataTypes) => {
             as: "productCategory",
             foreignKey: "category_id" 
         })
-    }
-
-
-    Product.associate = function (models){
-        Product.belongsTo(models.Users, {
-            as: "productUser",
-            foreignKey: "user_id" 
-        })
-    }
-
-    Product.associate = function (models){
-        Product.belongsTo(models.Images, {
-            as: "productImage",
-            foreignKey: "image_id" 
-        })
-    }
-
-
-    Product.associate = function (models){
-        Order.belongsTo(models.Orders, {
+        Product.belongsTo(models.Orders, {
             as: "productOrder",
             foreignKey: "order_id" 
         })
+        Product.belongsTo(models.Users, {
+            as: "productUser",
+            foreignKey: "user_id" 
+        })  
+    
     }
-
     return Product;
+
 }

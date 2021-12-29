@@ -21,7 +21,7 @@ router.get('/', productsControllers.productList);
 
 /* Agregado de Productos + Vista */
 router.get('/addProduct', productsControllers.productsAddView);
-router.post('/addProduct', upload.any(),  productsControllers.productsAdd);
+router.post('/addProduct', upload.single("artistimg"),  productsControllers.productsAdd);
 
 /* Detalle del Producto */
 router.get('/:id', productsControllers.productsDetail);

@@ -9,11 +9,13 @@ module.exports = (sequelize, dataTypes) => {
         id: {
             type: dataTypes.INTEGER,
             primaryKey: true,
-            allowNull: false
+            allowNull: false,
+            autoIncrement: true
         },
         category: { 
-            type: dataTypes.STRING(45),
-            unique: true
+            type: dataTypes.STRING,
+            unique: true,
+            allowNull:false
         }
     };
 
@@ -23,7 +25,6 @@ module.exports = (sequelize, dataTypes) => {
     }
 
     const Category = sequelize.define(alias, cols, config);
-
 
     Category.associate = function (models){
         Category.hasMany(models.Products, {
