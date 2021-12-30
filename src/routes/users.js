@@ -24,12 +24,21 @@ const validator =[
         return true;
     }),
     check("avatar").custom((value,{req})=>{
-        let file = req.file;
+        let file = req.filename;
         if(value = req.body.avatar){
             throw new Error("Debes subir una imagen");
         }
         return true;
     }),
+]
+
+const logvalidator = [
+        check("email")
+        .notEmpty().withMessage("Ingresa un Email valido").bail()
+        .isEmail().withMessage("Debes ingresar un Email"),
+        check("password")
+        .notEmpty().withMessage("Debes ingresar tu password").bail()
+        .isLength({min:8}).withMessage("Contraseña demasiado corta"),
 ]
 
 
@@ -66,11 +75,8 @@ router.delete('/:id/delete', usersControllers.deleteUser);
 
 // Login
 
-router.get('/login', guestMiddleare, usersControllers.loginView)
-router.post("/login", [
-    check("email").isEmail().withMessage("Email incorrecto"),
-    check("password").isLength({min:8}).withMessage("Contraseña demasiado corta"),
-    ],usersControllers.login)
+router.get("/login", guestMiddleare, usersControllers.loginView)
+router.post("/login", logvalidator ,usersControllers.login)
 
 //profile
 router.get("/profile", authMidelware, usersControllers.profileView)

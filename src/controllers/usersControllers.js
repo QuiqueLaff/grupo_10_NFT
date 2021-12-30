@@ -47,8 +47,16 @@ module.exports = {
     loginView: (req, res) => {
         res.render('login');
     },
+  
 
-    login: (req, res) => {        
+    login: (req, res) => {      
+        let error = validationResult(req);
+        if (error.errors.length > 0){
+            return res.render ('login', {
+                errors: error.mapped(),
+            })
+        }
+
         for(let i = 0; i< users.length; i++){
             if ( users[i].email == req.body.email){
                 if(bcrypt.compareSync(req.body.password, users[i].password)){

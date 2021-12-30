@@ -37,12 +37,22 @@
                         
                         <div class="form-control">
                             <i class="fas fa-envelope icons"></i>
-                            <input class="form-input" type="text" name="email" placeholder="Email">     
+                            <input class="form-input" type="text" name="email" placeholder="Email">   
+                            <% if (locals.errors && errors.email ) { %>
+                                <div class="text-error" style="color:red"  >
+                                    <%= errors.email.msg %> 
+                                </div>
+                            <% } %>  
                         </div>
 
                         <div class="form-control">
                             <i class="fas fa-key icons"></i>
-                            <input class="form-input" type="password" name="password" placeholder="Contraseña">    
+                            <input class="form-input" type="password" name="password" placeholder="Contraseña"> 
+                            <% if (locals.errors && errors.password ) { %>
+                                <div class="text-error" style="color:red"  >
+                                    <%= errors.password.msg %> 
+                                </div>
+                            <% } %>     
                         </div>
                         
                         <button type="submit" class="button">Ingresar</button>
