@@ -19,7 +19,7 @@ app.use(express.static(path.resolve(__dirname, '../public')));
 app.use(express.urlencoded({extended: false}))
 app.use(methodOverride('_method'));
 app.use (express.json());
-app.use(sesion({secret: 'Cuidadito'})) 
+app.use(sesion({secret: 'Cuidadito', resave : false, saveUninitialized: false})) 
 app.use(loggedUser)
 
 /* Routes */

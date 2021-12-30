@@ -26,10 +26,11 @@ module.exports = {
             last_name:req.body.lastname,
             email:req.body.email,
             avatar:req.file.filename,
-            password:bcrypt.hashSync(req.body.password, 10),
+            pass:bcrypt.hashSync(req.body.password, 10),
         })
-            .then(()=>{
-                res.redirect('/')
+            .then((user)=>{
+                // res.redirect('/')
+                res.send(user)
             }).catch((error)=>{
                 res.send(error)
             })
