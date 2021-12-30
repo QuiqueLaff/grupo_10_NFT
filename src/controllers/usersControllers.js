@@ -21,6 +21,14 @@ module.exports = {
     },
     
     store (req, res) {
+        let error = validationResult(req);
+        if (error.errors.length > 0){
+            return res.render ('register', {
+                errors: error.mapped(),
+                oldData: req.body
+            })
+        }
+
         db.Users.create({
             first_name:req.body.firstname,
             last_name:req.body.lastname,
@@ -29,8 +37,8 @@ module.exports = {
             pass:bcrypt.hashSync(req.body.password, 10),
         })
             .then((user)=>{
-                // res.redirect('/')
-                res.send(user)
+                res.render("profile",{user})
+           
             }).catch((error)=>{
                 res.send(error)
             })
@@ -39,6 +47,7 @@ module.exports = {
     loginView: (req, res) => {
         res.render('login');
     },
+
     login: (req, res) => {        
         for(let i = 0; i< users.length; i++){
             if ( users[i].email == req.body.email){
@@ -59,9 +68,8 @@ module.exports = {
 
     profileView:(req, res)=> {
         let user = req.session.loggedUser
-        
         res.render("profile",{"user":user})
-        
+    
     },
     viewUpdateUser:(req,res)=>{
         db.Users.findByPk(req.params.id)
@@ -92,7 +100,7 @@ module.exports = {
         db.Users.destroy({
             where:{id:req.params.id},
         }).then(()=>{
-            return res.redirect("/")
+            return res.redirect("/users")
         })
     }
 
