@@ -62,33 +62,12 @@ module.exports = {
         }) .then((userToLog)=> {
             if(userToLog !== null && bcrypt.compareSync(req.body.password, userToLog.dataValues.pass )){
             req.session.loggedUser = userToLog;
+            res.redirect("/")
         }else res.render("login",{ errors :
-            [{msg: "No exites como usuario"} ]})
+            [{msg: "No exites como usuario"}]})
 
-    })
+        })
 
-        // if(userToLog == null){
-        //         res.send("la concha de tu hermana")
-        //         render("login",{errors :[
-        //             {msg: "La contraseña o el email son incorrectas, revisa los campos y logueate de nuevo"}
-        //         ]})
-        //     }
-          
-        // for(let i = 0; i< users.length; i++){
-        //     if ( users[i].email == req.body.email){
-        //         if(bcrypt.compareSync(req.body.password, users[i].password)){
-        //             var userToLog = users[i];
-        //             break;
-        //         }
-        //     }
-        // }
-        // if(userToLog == undefined){
-        //     return res.render("login",{errors :[
-        //         {msg: "La contraseña o el email son incorrectas, revisa los campos y logueate de nuevo"}
-        //     ]})
-        // }
-        // req.session.loggedUser = userToLog;
-        // res.redirect("/users/profile");
     },
 
     profileView:(req, res)=> {
