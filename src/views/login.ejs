@@ -22,16 +22,7 @@
             <div class= "background-login1">
                 <div class="form-container"></div>
                     <form action="/users/login" method="POST" autocomplete="off">
-                        <% if(typeof errors != "undefined") { %>
-                            <ul>
-                                <% for (let i = 0; i < errors.length;i++ ) { %>                                    
-                                    <li>
-                                        <%= errors[i].msg %> 
-                                    </li>
-                                <% } %>
-                            </ul>
-                            
-                        <% } %>  
+        
                         
                         <h4>INICIAR SESIÓN</h4>
                         
@@ -53,6 +44,14 @@
                                     <%= errors.password.msg %> 
                                 </div>
                             <% } %>     
+                            <% if(typeof errors != "undefined") { %>
+                                    <% for (let i = 0; i < errors.length;i++ ) { %>                                    
+                                        <div class="text-error" style="color:red"  >
+                                            <%= errors[i].msg %> 
+                                        </div>
+                                    <% } %>
+                            <% } %>  
+
                         </div>
                         
                         <button type="submit" class="button">Ingresar</button>
