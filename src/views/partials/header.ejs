@@ -21,16 +21,18 @@
      <!-- iconos de login, singin y carrito -->
         <div class="iconos">
             <% if (locals.islogged){ %>
-                <li><a href= "/users/profile" class="link-name"><img class= "mini-picture-profile" src="/images/users/<%= locals.loggedUser.avatar %> " width="30" height="30" alt=""></a></li>
-                <li><a href= "/users/profile" class="link-name"><p class="sub"><%=  locals.loggedUser.first_name %> <%=  locals.loggedUser.last_name %></p></a></li>
+                
+                <li><a href= "/users/profile" class="link-name"><img class= "mini-picture-profile" src="/images/users/<%= locals.loggedUser.avatar %> " width="30" height="30"  alt=""></a></li>
+                <li><a href= "/users/profile" class="link-name"><p class="sub"><%=  locals.loggedUser.first_name %> </p></a></li>
                 <li><a href="/cart"> <i class="fas fa-shopping-cart"></i></a></li>
-                <select name="opciones" id="">
-                    
-                </select>
+                <li><a href="/users/logout"> <i class="fas fa-sign-out-alt"></i></a></li>
+
+                <i class="fas fa-sign-out-alt"></i>
+
+
             <% } else { %>
                 <li><a href="/users/register"> <i class="fas fa-user"></i></a></li>
                 <li><a href="/users/login"> <i class="fas fa-sign-in-alt"></i></a></li>
-                <li><a href="/cart"> <i class="fas fa-shopping-cart"></i></a></li>
 
             <% } %>
 

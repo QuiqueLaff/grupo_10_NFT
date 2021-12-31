@@ -106,8 +106,12 @@ module.exports = {
         }).then(()=>{
             return res.redirect("/users")
         })
-    }
+    },
 
+   logout: (req, res) => {
+       req.session.destroy();
+       res.redirect("/")
+   }
     
     
 }

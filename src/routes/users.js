@@ -80,5 +80,10 @@ router.post("/login", logvalidator ,usersControllers.login)
 
 //profile
 router.get("/profile", authMidelware, usersControllers.profileView)
-module.exports = router;
 
+
+//logout
+
+router.get("/logout", usersControllers.logout);
+
+module.exports = router;
