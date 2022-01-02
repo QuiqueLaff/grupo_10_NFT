@@ -8,6 +8,7 @@ const db = require("../database/models");
 
 module.exports = {
     register: (req, res) => {
+        
         res.render('register');  
     },
 
@@ -51,6 +52,7 @@ module.exports = {
   
 
     login: (req, res) => {      
+        
         let error = validationResult(req);
         if (error.errors.length > 0){
             return res.render ('login', {
@@ -58,10 +60,14 @@ module.exports = {
             })
         }
 
+
         let userToLog = db.Users.findOne({ where: { email: req.body.email } 
         }) .then((userToLog)=> {
             if(userToLog !== null && bcrypt.compareSync(req.body.password, userToLog.dataValues.pass )){
             req.session.loggedUser = userToLog;
+            if (req.body.remember_user){
+                res.cookie('userEmail', req.body.email, {maxAge: (1000 * 60) * 2})
+            }
             res.redirect("/")
         }else res.render("login",{ errors :
             [{msg: "No exites como usuario"}]})
@@ -109,6 +115,7 @@ module.exports = {
     },
 
    logout: (req, res) => {
+       res.clearCookie("userEmail")
        req.session.destroy();
        res.redirect("/")
    }

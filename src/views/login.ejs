@@ -38,7 +38,7 @@
 
                         <div class="form-control">
                             <i class="fas fa-key icons"></i>
-                            <input class="form-input" type="password" name="password" placeholder="Contraseña"> 
+                            <input id= "checo" class="form-input" type="password" name="password" placeholder="Contraseña"> 
                             <% if (locals.errors && errors.password ) { %>
                                 <div class="text-error" style="color:red"  >
                                     <%= errors.password.msg %> 
@@ -57,11 +57,12 @@
                         <button type="submit" class="button">Ingresar</button>
                         
                         <div class="form-control">
-                            <input type="checkbox" name="" value="" id="">
+                            <input type="checkbox" name="" value="" id="check">
                             <label for="">Mostrar contraseña</label>
+                        
                         </div>
                         <div class="form-control">
-                            <input type="checkbox" name="" value="" id="">
+                            <input type="checkbox" name="remember_user" class= "form-check-input" >
                             <label for="">Recordarme</label>
                         </div>
                         <div class="hipervinculo">

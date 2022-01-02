@@ -141,6 +141,9 @@ body{
 	top:1px;
 
 }
+.ss {
+  text-align: center;
+}
 
 @media (min-width: 361px){
   .add-product-form{

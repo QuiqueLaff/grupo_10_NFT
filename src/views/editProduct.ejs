@@ -20,22 +20,22 @@
                     <div class="data">
                         <form action="/product/<%= product.id %>/editProduct?_method=PUT" enctype="multipart/form-data" method="POST">
                             <label for="name"></label>
-                            <input type="text" id="name" name="name" placeholder="Edit product name:" value="<%=  product.name %>"/>
+                            <input class="ss" type="text" id="name" name="name" placeholder="Edit product name:" value="<%=  product.name %>"/>
 
                             <label for="category"></label>
-                            <input type="text" name="detail" placeholder="Edit description:" value="<%= product.detail%>"/>
+                            <input class="ss" type="text" name="detail" placeholder="Edit description:" value="<%= product.detail%>"/>
 
                             <label for="price"></label>
-                            <input type="number" name="price" placeholder="Edit price:" value="<%= product.price %> "/>
+                            <input class="ss" type="number" name="price" placeholder="Edit price:" value="<%= product.price %> "/>
 
                             <label for="category"></label>
-                            <input type="text" name="artistname" placeholder="Edit name:" value="<%= product.artistname %> "/>
+                            <input class="ss" type="text" name="artistname" placeholder="Edit name:" value="<%= product.artistname %> "/>
 
                             <label for="category"></label>
-                            <input type="text" name="artistbio" placeholder="Edit Bio:" value="<%= product.artistbio  %> ">
+                            <input class="ss" type="text" name="artistbio" placeholder="Edit Bio:" value="<%= product.artistbio  %> ">
 
                             <label for="category"></label>
-                            <input type="text" name="artistcode" placeholder="Edit artist code" value="<%= product.artistcode %> "/>
+                            <input class="ss" type="text" name="artistcode" placeholder="Edit artist code" value="<%= product.artistcode %> "/>
                             
                             <div class="file-select" id="img" >
                                 <input type="file" name="img" aria-label="Archivo"></div>                        
