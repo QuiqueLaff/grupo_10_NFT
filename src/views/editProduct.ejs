@@ -12,47 +12,49 @@
         <title>Edit product</title>
     </head>
         <body>
-        <%-include('./partials/header')%>
-        <div class="background-edit-add"></div>
-            <section class="form-gral">
-                <div class="add-product-form">
-                    <header class="main-header">Here you can edit your product!</header>
-                    <div class="data">
-                        <form action="/product/<%= product.id %>/editProduct?_method=PUT" enctype="multipart/form-data" method="POST">
-                            <label for="name"></label>
-                            <input class="ss" type="text" id="name" name="name" placeholder="Edit product name:" value="<%=  product.name %>"/>
+            <%-include('./partials/header')%>
+                <div class="background-edit-add"></div>
+                    <section class="form-gral">
+                        <div class="add-product-form">
+                            <header class="main-header">Please edit your product!</header>
+                            <div class="data">
+                                <form action="/product/<%= product.id %>/editProduct?_method=PUT" enctype="multipart/form-data" method="POST">
+                                    <label for="categoy"></label>
+                                    <input type="text" id="name" name="name" placeholder="<%=  product.name %>"/>
 
-                            <label for="category"></label>
-                            <input class="ss" type="text" name="detail" placeholder="Edit description:" value="<%= product.detail%>"/>
+                                    <label for="detail"></label>
+                                    <input type="text" name="detail" placeholder="<%= product.detail %>" />
 
-                            <label for="price"></label>
-                            <input class="ss" type="number" name="price" placeholder="Edit price:" value="<%= product.price %> "/>
+                                    <label for="price"></label>
+                                    <input type="number" name="price" placeholder="<%= product.price %>"/>
 
-                            <label for="category"></label>
-                            <input class="ss" type="text" name="artistname" placeholder="Edit name:" value="<%= product.artistname %> "/>
+                                    <label for="artistname"></label>
+                                    <input  type="text" name="artistname" placeholder="<%= product.artist_name %> " />
 
-                            <label for="category"></label>
-                            <input class="ss" type="text" name="artistbio" placeholder="Edit Bio:" value="<%= product.artistbio  %> ">
+                                    <label for="artistbio"></label>
+                                    <input type="text" name="artistbio" placeholder="<%= product.artist_bio  %>" />
 
-                            <label for="category"></label>
-                            <input class="ss" type="text" name="artistcode" placeholder="Edit artist code" value="<%= product.artistcode %> "/>
-                            
-                            <div class="file-select" id="img" >
-                                <input type="file" name="img" aria-label="Archivo"></div>                        
-                            <div class="file-select" id="artistimg" >
-                                <input type="file" name="artistimg" aria-label="Archivo">
-                              </div>      
+                                    <label for="artistcode"></label>
+                                    <input type="text" name="artistcode" placeholder="<%= product.artist_code %>" /><br>
+                                    
                                 
-                    </div>
-                    <div class="panel">
-                            <button id="add-product-button" class="button">Edit</button>
+                                    <div class="file-select" id="artistimg" >
+                                        <input type="file" name="artistimg" aria-label="Archivo">
+                                    </div>      
+                                        
+                            </div>
+                            <div class="panel">
+                                    <button id="add-product-button" class="button">Edit</button>
 
-                        <button class="button" id="cancel-button">Cancel</button>
-                        </a>
+                                <button class="button" id="cancel-button">Cancel</button>
+                                
+                                </div>
+                            </form>
+                    
                         </div>
-                    </form>
+                    </section>    
                 </div>
-            </section>
+                    
             <%-include('./partials/footer')%>
         </body>
 </html>

@@ -16,44 +16,42 @@
     </head>
     
     <body>
-    <!-- header  -->
-    <%-include('./partials/header')%>
+        <!-- header  -->
+        <%-include('./partials/header')%>
+            <div class="todo">
+                <% if (products){ %>
 
-    <div class="todo">
-
-    <% if (products){ %>
-
-        <% products.forEach(product => { %>
-            <div class="box-conteiner">
-                <div class="box">
-                    <div class="image">
-                        <a href="/product/<%= product.id %>"> <img src="/images/<%= product.image %>" alt="emojicon"></a><p><%= product.image %></p>
-                    </div>
-                    <div class="info">
-                        <h3 class="title"><%= product.name %></h3>
-                        <div class="subInfo">
-                        <div class= "price">$<%= product.price %><span>$600</span></div>
-                        <div class="stars">
-                            <i class= "fas fa-star"></i>
-                            <i class= "fas fa-star"></i>
-                            <i class= "fas fa-star"></i>
-                            <i class= "fas fa-star"></i>
-                            <i class= "fas fa-star"></i>
+                <% products.forEach(product => { %>
+                    <div class="box-conteiner">
+                        <div class="box">
+                            <div class="image">
+                                <a href="/product/<%= product.id %>"> <img src="/images/<%= product.image %>" alt="emojicon"></a>
+                            </div>
+                            <div class="info">
+                                <h3 class="title"><%= product.name %></h3>
+                                <div class="subInfo">
+                                    <div class= "price">$<%= product.price %><span>$600</span></div>
+                                        <div class="stars">
+                                            <i class= "fas fa-star"></i>
+                                            <i class= "fas fa-star"></i>
+                                            <i class= "fas fa-star"></i>
+                                            <i class= "fas fa-star"></i>
+                                            <i class= "fas fa-star"></i>
+                                        </div>
+                                </div>
+                            </div>
                         </div>
-            
-                        </div>
-                    </div>
-                </div>
-            </div>    
-            <% }) %>
+                    </div> 
+                       
+                    <% }) %>
+            <% } %>
+        </div>    
     
-    <% }else{ %>
-        <p>'Todavía no has cargado ningún producto'</p>
-        <a href="/addProduct"> Carga un producto aquí. </a>
-    <% } %>
 
-    <!-- footer -->
-    <%-include('./partials/footer')%>
-</body>
+        <!-- footer -->
+        <%-include('./partials/footer')%> 
+
+    </body>
+
 </html>
 

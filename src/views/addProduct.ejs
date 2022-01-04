@@ -12,42 +12,48 @@
         <title>Add product</title>
     </head>
         <body>
-        <%-include('./partials/header')%>
-        <div class="background-edit-add"></div>
+            <%-include('./partials/header')%>
+            <div class="background-edit-add">
                 <section class="form-gral">
-                <div class="add-product-form">
-                    <form action="/product/addProduct" method="POST" enctype="multipart/form-data" class="formulario">
-                    <header class="main-header">Here you can add a new product!</header>
-                    <div class="data">
-                        <label for="name"></label>
-                        <input type="text" name="name" placeholder="Product name:"/>
-                        <label for="detail"></label>
-                        <input type="text" name="detail" placeholder="Description:"/>
-                        <label for="price"></label>
-                        <input type="number" name="price" placeholder="Price:"/>
-                        <label for="artistname"></label>
-                        <input type="text" name="artistname" placeholder="Artist name:"/>
-                        <label for="artistbio"></label>
-                        <input type="text" name="artistbio" placeholder="Bio:"/>
-                        <label for="artistcode"></label>
-                        <input type="text" name="artistcode" placeholder="Code..."/><br>
-                        <select name="category" >
-                            <% for (let i =0; i < category.length; i++) { %>
-                                <option value="<%= category[i].id %>"><%= category[i].category %></option>
-                            <% } %>
-                        </select><br>
+                    <div class="add-product-form">
+                        <form action="/product/addProduct" method="POST" enctype="multipart/form-data" class="formulario">
                         
-                                              
-                        <div class="file-select" id="artistimg" >
-                            <input type="file" name="artistimg" aria-label="Archivo">
-                          </div>      
-                    <div class="panel">
-                            <button type="submit" id="add-product-button" class="button">Add</button>
-                            <button type="reset" class="button" id="cancel-button">Cancel</button>
-                        </a>
+                            <header class="main-header">Here you can add a new product!</header>
+                            <div class="data">
+                                <label for="name"></label>
+                                <input type="text" name="name" placeholder="Product name:"/>
+                                <label for="detail"></label>
+                                <input type="text" name="detail" placeholder="Description:"/>
+                                <label for="price"></label>
+                                <input type="number" name="price" placeholder="Price:"/>
+                                <label for="artistname"></label>
+                                <input type="text" name="artistname" placeholder="Artist name:"/>
+                                <label for="artistbio"></label>
+                                <input type="text" name="artistbio" placeholder="Bio:"/>
+                                <label for="artistcode"></label>
+                                <input type="text" name="artistcode" placeholder="Code..."/><br>
+                                <select name="category" >
+                                    <% for (let i =0; i < category.length; i++) { %>
+                                        <option value="<%= category[i].id %>"><%= category[i].category %></option>
+                                    <% } %>
+                                </select><br>
+                                
+                                                    
+                                <div class="file-select" id="artistimg" >
+                                    <input type="file" name="artistimg" aria-label="Archivo">
+                                </div>  
+
+                                <div class="panel">
+                                    <button type="submit" id="add-product-button" class="button">Add</button>
+                                    <button type="reset" class="button" id="cancel-button">Cancel</button>
+                                </div>
+                        
+                            </div>    
+                        </form>    
                     </div>
-                </div>
-            </section>
-            <%-include('./partials/footer')%>
+                </section>
+            </div>
+                
+                <%-include('./partials/footer')%>
         </body>
 </html>

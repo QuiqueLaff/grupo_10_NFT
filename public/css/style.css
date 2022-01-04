@@ -48,6 +48,10 @@ body{
     color: whitesmoke;
 }
 
+.mini-picture-profile{
+    border-radius: 50%;
+}
+
 
 /* Links */
 .navbar-links{

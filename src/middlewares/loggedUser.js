@@ -9,7 +9,6 @@ function userLogged(req, res, next){
     let emailInCookie = req.cookies.userEmail;
     let userFromCookie = Pepe.Users.findOne({ where: { email: emailInCookie } 
     })
-    console.log(userFromCookie)
 
     next();
 }
