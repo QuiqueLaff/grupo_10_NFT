@@ -59,9 +59,10 @@ form {
 
 .estas-registrado {
     text-align: center;
-    margin-top: 1%;
+    margin-top: 10%;
     text-decoration: none;
     font-size: 13px;
+    
 }
 
 .form-control {
@@ -125,6 +126,7 @@ a {
     display: inline-block;
     margin-top: 10px;
     margin-left: 60px;
+    
 }
   
 .file-select::before {

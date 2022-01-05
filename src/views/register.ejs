@@ -22,7 +22,6 @@
                 <div class="form-container">
                 <form class="form-register" action="/users/register" method="POST" enctype="multipart/form-data">
                     <h4>REGISTRARSE</h4>
-                    <p class= "estas-registrado">¿Ya estás registrado? <a href="/src/views/login">Inicia sesión</a></p>
                     <div class="form-control">           
                         <i class="fas fa-id-card icons"></i>
                         <input type="text" name="firstname" placeholder="Nombre" class="form-input" value = "<%= locals.oldData ? oldData.firstname : null%>" >
@@ -73,12 +72,11 @@
                             </div>
                         <% } %>
                     </div>      
-                    <div class="checkbox">
-                        <input type="checkbox" name="session" value="session" id="session">
-                        <label for="session">Mantener sesión iniciada.</label>
-                    </div>
                     
                     <button type="submit" href="/users" class="button">Registrarse</button>
+
+                    <p class= "estas-registrado">¿Ya estás registrado? <a href="/users/login">Inicia sesión</a></p>
+
                 </form>
             </div>
         </div>

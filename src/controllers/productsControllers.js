@@ -37,7 +37,7 @@ module.exports = {
             image: req.file.filename
 
         }).then(()=>{
-            res.redirect("/")
+            res.redirect("/product")
         }).catch((error)=>{
             return res.send(error)
         })

@@ -7,8 +7,8 @@ function userLogged(req, res, next){
         res.locals.loggedUser = req.session.loggedUser;
     }
     let emailInCookie = req.cookies.userEmail;
-    let userFromCookie = Pepe.Users.findOne({ where: { email: emailInCookie } 
-    })
+    // let userFromCookie = Pepe.Users.findOne({ where: { email: emailInCookie } 
+    // })
 
     next();
 }
