@@ -62,7 +62,12 @@ form {
     font-size: 10px;
     color: blue;
     text-align: center;
+    
 }
+.error {
+    border: 2px solid red;
+    
+    }
 
 .form-input:focus {
     outline: none;

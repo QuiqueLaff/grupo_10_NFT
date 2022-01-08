@@ -35,7 +35,8 @@
                                 </div>
                             <% } %>  
                         </div>
-                        <span class="span-email-login"></span>
+                        <div class="span-email-login"></div>
+
                         <div class="form-control">
                             <i class="fas fa-key icons"></i>
                             <input id= "checo" class="form-input form-password" type="password" name="password" placeholder="Contraseña"> 
@@ -44,26 +45,20 @@
                                     <%= errors.password.msg %> 
                                 </div>
                             <% } %>     
-                            <% if(typeof errors != "undefined") { %>
-                                    <% for (let i = 0; i < errors.length;i++ ) { %>                                    
-                                        <div class="text-error" style="color:red"  >
-                                            <%= errors[i].msg %> 
-                                        </div>
-                                    <% } %>
-                            <% } %>  
-
                         </div>
-                        <span class="span-password-login"></span>
+                        <div class="span-password-login"></div>
+
+                        <br>
 
                         <button type="submit" class="button">Ingresar</button>
                         
-                        <div class="form-control">
-                            <input type="checkbox" name="" value="" id="check">
-                            <label for="">Mostrar contraseña</label>
                         
+                        <div class="form-control">
+                            <input type="checkbox" name="mostrar-password" value="" id="check">
+                            <label for="">Mostrar contraseña</label>
                         </div>
                         <div class="form-control">
-                            <input type="checkbox" name="remember_user" class= "form-check-input" >
+                            <input type="checkbox" name="remember_user" class= "form-check-input" id="check" >
                             <label for="">Recordarme</label>
                         </div>
                         <div class="hipervinculo">
@@ -77,6 +72,8 @@
     <!-- footer -->
     <%-include('./partials/footer')%>
     <script src="/js/loginValidation.js"></script>
+    <script src="/js/password.js"></script>
+
 
 </body>
 </html>

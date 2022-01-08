@@ -63,7 +63,21 @@ form {
 .icons {
     color: #0F0F0F;
 }
+.span-email-login{
+     
+    font-size: 10px;
+    color: blue;
+    text-align: center;
+}
+.span-password-login{
+    font-size: 10px;
+    color: blue;
+    text-align: center; 
+}
+.error{
+    border: 2px solid red;
 
+}
 .button {
     position: relative;
     left: 6.3rem;
@@ -97,7 +111,7 @@ a {
 
 .form-control {
     position: relative;
-    margin: 3%;
+    margin-top: 10px;
 }
 
 @media (min-width: 361px){
