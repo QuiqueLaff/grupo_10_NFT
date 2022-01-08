@@ -7,18 +7,18 @@
 }
 body{
     margin: 0;
-    padding:0
+    padding:0;
 }
 
 .background-login1{
-    height: 68vh;
+    height: 100%;
     width: 100%;
     background-image:  url("/images/background-image3.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
-    margin-top: 10vh;
+    margin-top: 65px;
 }
 
 
@@ -26,6 +26,7 @@ body{
     display: flex;
     justify-content: center;
     align-items:center;
+    
 
 }
 
@@ -44,12 +45,22 @@ form {
     box-shadow: 0 0 6px 0 #0F0F0F;
     box-sizing: border-box;
     border-radius: 10px;
+    
 }
 
 .form-input {
     width: 90%;
     padding: 10px;
     margin: 1px;
+    text-align: center;
+}
+.text-error{
+    font-size: 10px;
+    text-align: center;
+}
+.estilo{
+    font-size: 10px;
+    color: blue;
     text-align: center;
 }
 
@@ -59,7 +70,7 @@ form {
 
 .estas-registrado {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 10px;
     text-decoration: none;
     font-size: 13px;
     
@@ -118,7 +129,7 @@ a {
 	padding:7px 14px;
 	text-decoration:none;
     transition: all 450ms;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .file-select {

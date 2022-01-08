@@ -24,7 +24,8 @@
                     <h4>REGISTRARSE</h4>
                     <div class="form-control">           
                         <i class="fas fa-id-card icons"></i>
-                        <input type="text" name="firstname" placeholder="Nombre" class="form-input" value = "<%= locals.oldData ? oldData.firstname : null%>" >
+                        <input type="text" name="firstname" placeholder="Nombre" class="form-input nombre-input" value = "<%= locals.oldData ? oldData.firstname : null%>" >
+                        <div class="span-nombre estilo"></div>
                         <% if (locals.errors && errors.firstname ) { %>
                             <div class="text-error" style="color:red"  >
                                 <%= errors.firstname.msg %> 
@@ -34,47 +35,55 @@
 
                     <div class="form-control">        
                         <i class="far fa-id-card icons"></i>
-                        <input type="text" name="lastname" class="form-input" placeholder="Apellido" value = "<%= locals.oldData ? oldData.lastname : null%>">
+                        <input type="text" name="lastname" class="form-input apellido-input" placeholder="Apellido" value = "<%= locals.oldData ? oldData.lastname : null%>">
+                        <div class="span-apellido estilo"></div>
                         <% if (locals.errors && errors.lastname ) { %>
                             <div class="text-error" style="color:red">
                                 <%= errors.lastname.msg %>
                             </div>
                         <% } %>
                     </div>
+
                     <div class="form-control">    
                         <i class="fas fa-envelope icons"></i>
-                        <input type="email" name="email" class="form-input" placeholder="Email" value = "<%= locals.oldData ? oldData.email : null%>">
+                        <input type="text" name="email" class="form-input email-input" placeholder="Email" value = "<%= locals.oldData ? oldData.email : null%>">
+                        <div class="span-email estilo"></div>
                         <% if (locals.errors && errors.email ) { %>
                             <div class="text-error" style="color:red">
                                 <%= errors.email.msg %>
                             </div>
                         <% } %>
                     </div>
+
                     <div class="form-control">      
                         <i class="fas fa-key icons"></i>
-                        <input type="password" name="password" class="form-input" placeholder="Contraseña" > 
+                        <input type="password" name="password" class="form-input password-input" placeholder="Contraseña" > 
+                        <div class="span-password estilo"></div>
                         <% if (locals.errors && errors.password ) { %>
                             <div class="text-error" style="color:red">
                                 <%= errors.password.msg %>
                             </div>
                         <% } %>
                     </div>  
+
                     <div class="form-control">     
                         <i class="fas fa-key icons"></i>
-                        <input type="password" name="confirm-password" class="form-input" placeholder="Confirma tu contraseña">
-                        
+                        <input type="password" name="confirm-password" class="form-input repassword-input" placeholder="Confirma tu contraseña">
+                        <div class="span-rePassword estilo"></div>
+
                     </div>
+
+                
                     <div class="file-select" >
                         <input type="file" name="userImage" aria-label="Archivo">
-                        <% if (locals.errors && errors.avatar ) { %>
-                            <div class="text-error" style="color:blue">
-                                <%= errors.avatar.msg %>
-                            </div>
-                        <% } %>
-                    </div>      
+                    </div>  
+                    <% if (locals.errors && errors.avatar ) { %>
+                        <div class="text-error" style="color:red">
+                            <%= errors.avatar.msg %>
+                        </div>
+                    <% } %>    
                     
                     <button type="submit" href="/users" class="button">Registrarse</button>
-
                     <p class= "estas-registrado">¿Ya estás registrado? <a href="/users/login">Inicia sesión</a></p>
 
                 </form>
@@ -82,6 +91,8 @@
         </div>
     </main>
     <!-- footer -->
-    <%-include('./partials/footer')%>
+    <!-- <%-include('./partials/footer')%> -->
+    <script src="/js/registerValidation.js"></script>
+
 </body>
 </html>

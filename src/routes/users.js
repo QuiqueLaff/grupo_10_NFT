@@ -9,11 +9,13 @@ const authMidelware = require ('../middlewares/authMidelware')
 
 // Validaciones 
 const validator =[
-    check("firstname").notEmpty().withMessage("El nombre es obligatorio"),
+    check("firstname")
+    .notEmpty().withMessage("El nombre es obligatorio").bail()
+    .isLength({min:2}).withMessage("Debe tener al menos 2 caracteres"),
     check("lastname").notEmpty().withMessage("El apellido es obligatorio"),
     check("email")
         .notEmpty().withMessage("El Email es obligatorio").bail()
-        .isEmail().withMessage("Debe ingresar un formato de Email valido").bail(),
+        .isEmail().withMessage("Debe ingresar un formato de Email valido"),
     check("password")
         .notEmpty().withMessage("La contraseña no puede estar vacia").bail()
         .isLength({min:8}).withMessage("la contraseña debe tener al menos 8 caracteres"),
@@ -23,19 +25,27 @@ const validator =[
         }
         return true;
     }),
-    check("avatar").custom((value,{req})=>{
-        let file = req.filename;
-        if(value = req.body.avatar){
-            throw new Error("Debes subir una imagen");
-        }
-        return true;
-    }),
+    check('avatar').custom((value, { req }) => {
+		let file = req.file;
+		let acceptedExtensions = ['.jpg', '.png', '.gif'];
+		
+		if (!file) {
+			throw new Error('Debes subir una imagen');
+		} else {
+			let fileExtension = path.extname(file.originalname);
+			if (!acceptedExtensions.includes(fileExtension)) {
+				throw new Error(`El archivo debe ser: ${acceptedExtensions.join(', ')}`);
+			}
+		}
+
+		return true;
+	})
 ]
 
 const logvalidator = [
         check("email")
-        .notEmpty().withMessage("Ingresa un Email valido").bail()
-        .isEmail().withMessage("Debes ingresar un Email"),
+        .notEmpty().withMessage("Debes ingresar un Email").bail()
+        .isEmail().withMessage("Debes ingresar un Email valido"),
         check("password")
         .notEmpty().withMessage("Debes ingresar tu password").bail()
         .isLength({min:8}).withMessage("Contraseña demasiado corta"),

@@ -95,7 +95,7 @@ module.exports = {
             last_name:req.body.lastname,
             email:req.body.email,
             avatar:req.file.filename,
-            password:bcrypt.hashSync(req.body.password, 10),
+            pass:bcrypt.hashSync(req.body.password, 10),
 
         },{
             where:{id:req.params.id}

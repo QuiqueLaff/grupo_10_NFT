@@ -26,6 +26,14 @@ module.exports = {
  
 
     productsAdd: (req, res) =>{
+            let validationProducts = validationResult(req);
+        if (validationProducts.errors.length > 0){
+            return res.render ('addProduct', {
+                errors: validationProducts.mapped(),
+                oldData: req.body
+            })
+        }
+
         db.Products.create({
             name:req.body.name,
             detail:req.body.detail,
@@ -34,7 +42,7 @@ module.exports = {
             artist_bio: req.body.artistbio,
             artist_code: req.body.artistcode,
             category_id: req.body.category,
-            image: req.file.filename
+            image: req.file ? req.file.filename : "default-image.png"
 
         }).then(()=>{
             res.redirect("/product")
@@ -52,7 +60,9 @@ module.exports = {
     },
 
     productsUpdate: (req, res) => {
-        console.log(req.body);
+        // console.log(req.body);
+        console.log("El req.file es este")
+        console.log(req.file)
         db.Products.update({
             name:req.body.name,
             price:req.body.price,
@@ -60,12 +70,14 @@ module.exports = {
             artist_bio: req.body.artistbio,
             artist_code: req.body.artistcode,
             category_id: req.body.category,
-            image: req.file.filename
+            image: req.file ? req.file.filename : "image-default.png"
             
         },{
             where:{id:req.params.id}
         }).then(()=>{
             return res.redirect('/product');
+        }).catch((error)=>{
+            res.send(error)
         })
     },
 

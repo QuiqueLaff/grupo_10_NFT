@@ -21,28 +21,64 @@
                             <header class="main-header">Here you can add a new product!</header>
                             <div class="data">
                                 <label for="name"></label>
-                                <input type="text" name="name" placeholder="Product name:"/>
+                                <input type="text" name="name" placeholder="Product name:" value = "<%= locals.oldData ? oldData.name : null%>"/>
+                                <% if (locals.errors && errors.name ) { %>
+                                    <div class="text-error estilo" style="color:red"  >
+                                        <%= errors.name.msg %> 
+                                    </div>
+                                <% } %>
                                 <label for="detail"></label>
-                                <input type="text" name="detail" placeholder="Description:"/>
+                                <input type="text" name="detail" placeholder="Description:" value = "<%= locals.oldData ? oldData.detail : null%>"/>
+                                <% if (locals.errors && errors.detail ) { %>
+                                    <div class="text-error estilo" style="color:red"  >
+                                        <%= errors.detail.msg %> 
+                                    </div>
+                                <% } %>
                                 <label for="price"></label>
-                                <input type="number" name="price" placeholder="Price:"/>
+                                <input type="number" name="price" placeholder="Price:" value = "<%= locals.oldData ? oldData.price : null%>"/>
+                                <% if (locals.errors && errors.price ) { %>
+                                    <div class="text-error estilo" style="color:red"  >
+                                        <%= errors.price.msg %> 
+                                    </div>
+                                <% } %>
                                 <label for="artistname"></label>
-                                <input type="text" name="artistname" placeholder="Artist name:"/>
+                                <input type="text" name="artistname" placeholder="Artist name:" value = "<%= locals.oldData ? oldData.artistname : null%>"/>
+                                <% if (locals.errors && errors.artistname ) { %>
+                                    <div class="text-error estilo" style="color:red"  >
+                                        <%= errors.artistname.msg %> 
+                                    </div>
+                                <% } %>
                                 <label for="artistbio"></label>
-                                <input type="text" name="artistbio" placeholder="Bio:"/>
+                                <input type="text" name="artistbio" placeholder="Bio:" value = "<%= locals.oldData ? oldData.artistbio : null%>"/>
+                                <% if (locals.errors && errors.artistbio ) { %>
+                                    <div class="text-error estilo" style="color:red"  >
+                                        <%= errors.artistbio.msg %> 
+                                    </div>
+                                <% } %>
                                 <label for="artistcode"></label>
-                                <input type="text" name="artistcode" placeholder="Code..."/><br>
+                                <input type="text" name="artistcode" placeholder="Code..." value = "<%= locals.oldData ? oldData.artistcode : null%>"/>
+                                <% if (locals.errors && errors.artistcode ) { %>
+                                    <div class="text-error estilo" style="color:red"  >
+                                        <%= errors.artistcode.msg %> 
+                                    </div>
+                                <% } %>
+                                <br>
+                                
                                 <select name="category" >
-                                    <% for (let i =0; i < category.length; i++) { %>
+                                    <% for (let i = 0; i < category.length; i++) { %>
                                         <option value="<%= category[i].id %>"><%= category[i].category %></option>
                                     <% } %>
                                 </select><br>
                                 
-                                                    
+                                           
                                 <div class="file-select" id="artistimg" >
                                     <input type="file" name="artistimg" aria-label="Archivo">
                                 </div>  
-
+                                <% if (locals.errors && errors.artistimg ) { %>
+                                    <div class="text-error estilo" style="color:red"  >
+                                        <%= errors.artistimg.msg %> 
+                                    </div>
+                                <% } %>       
                                 <div class="panel">
                                     <button type="submit" id="add-product-button" class="button">Add</button>
                                     <button type="reset" class="button" id="cancel-button">Cancel</button>

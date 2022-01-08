@@ -21,24 +21,24 @@
         <div class= "login1">
             <div class= "background-login1">
                 <div class="form-container"></div>
-                    <form action="/users/login" method="POST" autocomplete="off">
+                    <form class = "form-login" action="/users/login" method="POST" autocomplete="off">
         
                         
                         <h4>INICIAR SESIÓN</h4>
                         
                         <div class="form-control">
                             <i class="fas fa-envelope icons"></i>
-                            <input class="form-input" type="text" name="email" placeholder="Email">   
+                            <input class="form-input form-email" type="text" name="email" placeholder="Email">   
                             <% if (locals.errors && errors.email ) { %>
                                 <div class="text-error" style="color:red"  >
                                     <%= errors.email.msg %> 
                                 </div>
                             <% } %>  
                         </div>
-
+                        <span class="span-email-login"></span>
                         <div class="form-control">
                             <i class="fas fa-key icons"></i>
-                            <input id= "checo" class="form-input" type="password" name="password" placeholder="Contraseña"> 
+                            <input id= "checo" class="form-input form-password" type="password" name="password" placeholder="Contraseña"> 
                             <% if (locals.errors && errors.password ) { %>
                                 <div class="text-error" style="color:red"  >
                                     <%= errors.password.msg %> 
@@ -53,7 +53,8 @@
                             <% } %>  
 
                         </div>
-                        
+                        <span class="span-password-login"></span>
+
                         <button type="submit" class="button">Ingresar</button>
                         
                         <div class="form-control">
@@ -75,5 +76,7 @@
     </main>
     <!-- footer -->
     <%-include('./partials/footer')%>
+    <script src="/js/loginValidation.js"></script>
+
 </body>
 </html>
