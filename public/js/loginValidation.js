@@ -34,7 +34,7 @@ window.addEventListener("load", function(){
             document.querySelector(".form-password").classList.add("error")
 
         } 
-        if (Object.keys(errores).length > 0) {
+         if (Object.keys(errores).length > 0) {
             e.preventDefault()
         }
 

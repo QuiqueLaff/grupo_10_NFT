@@ -9,7 +9,7 @@ window.addEventListener("load", function(){
         let errores = {}
 
         // Nombre 
-        if (formulario.firstname.value == ""){
+        if (formulario.firstname.value == " "){
             errores.nombre = "Debes ingresar un nombre"
             document.querySelector(".span-nombre").innerHTML = errores.nombre;
             document.querySelector(".nombre-input").classList.add("error")

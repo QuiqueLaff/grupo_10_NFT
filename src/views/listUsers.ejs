@@ -11,12 +11,13 @@
             
             <img style="width: 150px;" src="/images/users/<%=users[i].avatar %>" alt="">
         
-        <form action="/users/<%=users[i].id%>/delete?_method=delete" method="POST">
+    
+        <form action="/users/<%=users[i].id%>/delete?_method=delete" class= "form-delete"  method="POST">
             <button type="submit" > Borrar </button>
         </form>
     
         <form action="/users/<%=users[i].id%>/update" method="get">
-            <button type="submit" > Actualizar </button>
+            <button type="submit" class="edit"> Actualizar </button>
         </form>
         </div>
         <br>
@@ -25,6 +26,10 @@
     
         <%- include('./partials/footer')  %>
     </main>    
+    <script src="/js/sweetalert.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
 </body>
 </html>
 

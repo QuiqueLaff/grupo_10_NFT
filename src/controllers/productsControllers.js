@@ -28,11 +28,12 @@ module.exports = {
     productsAdd: (req, res) =>{
             let validationProducts = validationResult(req);
         if (validationProducts.errors.length > 0){
-            return res.render ('addProduct', {
-                errors: validationProducts.mapped(),
-                oldData: req.body
+            db.Categories.findAll()
+            .then((category)=>{
+                return res.render("addProduct" ,{category, errors: validationProducts.mapped(),
+                    oldData: req.body})
             })
-        }
+        }else{
 
         db.Products.create({
             name:req.body.name,
@@ -49,7 +50,7 @@ module.exports = {
         }).catch((error)=>{
             return res.send(error)
         })
-        
+    }
     },
     
     productsUpdateView: (req, res) => {

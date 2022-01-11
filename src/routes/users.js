@@ -22,8 +22,7 @@ const validator =[
     check("confirm-password").custom((value,{req})=>{
         if(value != req.body.password){
             throw new Error("Las contraseñas deben de ser iguales");
-        }
-        return true;
+        } else {return true;}
     }),
     check('avatar').custom((value, { req }) => {
 		let file = req.file;
