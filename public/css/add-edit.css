@@ -46,6 +46,11 @@ body{
     
   }
 
+  span{
+    font-size: 10px;
+    color: blue;
+    text-align: center; 
+  }
 
   input 				{
     font-size:18px;
@@ -146,7 +151,7 @@ body{
 }
 .estilo{
   font-size: 10px;
-  color: red;
+  color: blue;
   text-align: center;
 }
 

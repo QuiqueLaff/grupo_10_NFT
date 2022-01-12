@@ -13,8 +13,7 @@ window.addEventListener("load", function(){
             errores.nombre = "Debes ingresar un nombre"
             document.querySelector(".span-nombre").innerHTML = errores.nombre;
             document.querySelector(".nombre-input").classList.add("error")
-            // agregar un estilo:
-            // document.querySelector(".nombre-input").style.border = "2px solid red";
+    
 
         }else if (formulario.firstname.value.length < 3){
             errores.nombre = "El nombre debe tener por lo menos dos caracteres"
@@ -63,20 +62,20 @@ window.addEventListener("load", function(){
             document.querySelector(".password-input").classList.add("error")
 
         }
+       
+        // RePassword
+        if (formulario.confirmpassword.value == ""){
+            errores.repassword = "Debes confirmar tu password" 
+            document.querySelector(".span-repassword").innerHTML = errores.repassword;
+        document.querySelector(".repassword-input").classList.add("error")
+        
+        } else if (formulario.confirmpassword.value != formulario.password.value){
+            errores.repassword = "los passwords no son iguales"
+            document.querySelector(".span-repassword").innerHTML = errores.repassword;
+        document.querySelector(".repassword-input").classList.add("error")
+        } 
+        
 
-        // // RePassword
-        // if (formulario.confirm-password.value == ""){
-        //     errores.rePassword = "Debes confirmar tu password" 
-        //     document.querySelector(".span-rePassword").innerHTML = errores.rePassword;
-        // document.querySelector(".confirm-password-input").classList.add("error")
-
-            
-        // }else if (formulario.confirm-password.value.length < 8){
-        //     errores.rePassword = ""
-        //     document.querySelector(".span-rePassword").innerHTML = errores.rePassword;
-        // document.querySelector(".confirm-password-input").classList.add("error")
-
-        // } 
 
         if (Object.keys(errores).length > 0) {
             e.preventDefault()
