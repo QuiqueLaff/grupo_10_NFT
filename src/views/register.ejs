@@ -75,8 +75,9 @@
 
                 
                     <div class="file-select" >
-                        <input type="file" name="userImage" aria-label="Archivo">
+                        <input type="file" name="userImage" class="userImage"aria-label="Archivo">
                     </div>  
+                    <div class= "userImage-error estillo"></div>
                     <% if (locals.errors && errors.avatar ) { %>
                         <div class="text-error" style="color:red">
                             <%= errors.avatar.msg %>

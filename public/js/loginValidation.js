@@ -1,4 +1,5 @@
 const regularExEmail = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/
+const passwordReg = /^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$/
 
 
 window.addEventListener("load", function(){
@@ -28,7 +29,7 @@ window.addEventListener("load", function(){
             document.querySelector(".form-password").classList.add("error")
 
 
-        }else if (regExPassword.test(login.password.value)){
+        }else if (!passwordReg.test(login.password.value)){
             errores.password = "Tu contraseña debe contener al menos 8 caracteres"
             document.querySelector(".span-password-login").innerHTML = errores.password;
             document.querySelector(".form-password").classList.add("error")

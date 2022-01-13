@@ -64,6 +64,11 @@ form {
     text-align: center;
     
 }
+.userImage-error{
+    font-size: 10px;
+    color: blue;
+    text-align: center;
+}
 .error {
     border: 2px solid red;
     

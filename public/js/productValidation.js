@@ -76,21 +76,16 @@ window.addEventListener("load", function(){
             document.querySelector(".artistimg-error").innerHTML = errores.artistimg;
 
 
-        // }else if (productValidation.artistimg.value.split(".").pop()){
-        //     let extensiones = ["png", "jpg", "gif", "tiff"]
-        //     for (var i = 0; i < extensiones.length; i++) {
-                
-        //         if (extensiones[i].includes(productValidation.artistimg.value.split(".").pop())) {
-        //             console.log 
-        //             // errores.artistimg = "debe ser un archivo vaido"
-        //             // document.querySelector(".artistimg-error").innerHTML = errores.artistimg;
-        //             // document.querySelector(".artistimg").style.borderBottom = "2px solid red";
-        //           }
-        //     }
+        }else if (productValidation.artistimg.value.split(".").pop()){
+            let extensiones = ["png", "jpg", "gif", "tiff"]                
+                if (!extensiones.includes(productValidation.artistimg.value.split(".").pop())) {
+                    errores.artistimg = "El archivo debe ser: png, jpg, gif, tiff!"
+                    document.querySelector(".artistimg-error").innerHTML = errores.artistimg;
+                    document.querySelector(".artistimg").style.borderBottom = "2px solid red";
+                  }
+            
         }
 
-
-        
          if (Object.keys(errores).length > 0) {
             e.preventDefault()
         }
