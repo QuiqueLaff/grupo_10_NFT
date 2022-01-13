@@ -26,7 +26,7 @@ module.exports = {
  
 
     productsAdd: (req, res) =>{
-            let validationProducts = validationResult(req);
+        let validationProducts = validationResult(req);
         if (validationProducts.errors.length > 0){
             db.Categories.findAll()
             .then((category)=>{
