@@ -27,15 +27,17 @@
         
         <div class="box-conteiner">
             <% for (let i = 0 ; i < 3 ; i++) { %>
+            
+            <% let indiceComun = myArray[i]%>
             <div class="box">
                 <div class="image">
-                    <a href="/product/<%= product[Math.floor(Math.random()*product.length)].id %>"><img src="/images/<%= product[Math.floor(Math.random()*product.length)].image %>" alt="pear-bitch"></a>
+                    <a href="/product/<%= product[indiceComun].id %>"><img src="/images/<%= product[indiceComun].image %>" alt="img"></a>
                 </div>
                 <!-- Pear bitch -->
                 <div class="info">
-                    <h3 class="title">Pear bitch</h3>
+                    <h3 class="title"><%= product[indiceComun].name %></h3>
                     <div class="subInfo">
-                    <div class= "price">$7000<span>$6000</span></div>
+                    <div class= "price"><%= product[indiceComun].price %></div>
                     <div class="stars">
                         <i class= "fas fa-star"></i>
                         <i class= "fas fa-star"></i>
