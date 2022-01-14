@@ -91,9 +91,42 @@ module.exports = {
     },
 
     productsDetail: (req, res) => {
+        
         db.Products.findByPk(req.params.id)
             .then((product)=>{
-                return res.render('product', { product });
+                db.Products.findAll().then((simPro)=>{
+                    let similProduct = []
+                    let myArray = []
+
+                    for (i=0; i< simPro.length ; i++){
+                        if (simPro[i].category_id == product.category_id && req.params.id != simPro[i].id){
+                            similProduct.push(simPro[i])
+                        }
+                    }
+
+                    if(similProduct.length >= 3){
+                        while(myArray.length < 3){
+                            let randomIndex = Math.floor(Math.random()*similProduct.length);
+                            let checked = false;
+                            for(var i=0;i<myArray.length;i++){
+                                if(myArray [i] == randomIndex){
+                                    checked = true;
+                                    break;
+                                }
+                            }
+                            if(!checked){
+                                myArray[myArray.length] = randomIndex;
+                            }
+                        }
+                        return res.render('product', { product, similProduct, myArray });
+                    }else{
+                        return res.render('product', { product });
+                    }
+
+                    
+
+                    
+                })
             }).catch((error)=>{
                 return res.send(error);
             })
