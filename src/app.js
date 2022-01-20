@@ -18,6 +18,7 @@ app.set("view engine", "ejs");
 app.set("views", path.resolve(__dirname, "views"));
 
 
+
 /* Config express */
 app.use(express.static(path.resolve(__dirname, '../public')));
 app.use(express.urlencoded({extended: false}))

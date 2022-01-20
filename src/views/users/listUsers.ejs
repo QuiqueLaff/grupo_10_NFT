@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head', {'title': 'Listado de usuario'})  %>
+    <%- include('../partials/head', {'title': 'Listado de usuario'})  %>
 <body>
-    <%- include('./partials/header')  %> 
+    <%- include('../partials/header')  %> 
 
     <% for(let i = 0;i < users.length; i++){ %>
         <div style="border: 2px black solid;">
@@ -24,7 +24,7 @@
     <% } %>
     
     
-        <%- include('./partials/footer')  %>
+        <%- include('../partials/footer')  %>
     </main>    
     <script src="/js/sweetalert.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>

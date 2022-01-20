@@ -9,13 +9,13 @@ const db = require("../database/models");
 module.exports = {
     register: (req, res) => {
         
-        res.render('register');  
+        res.render('users/register');  
     },
 
     renderUserList: (req, res) => {
         db.Users.findAll()
             .then((users)=>{
-                return res.render("listUsers" ,{ users });
+                return res.render("users/listUsers" ,{ users });
                 
             }).catch((error)=>{
                 return res.send(error)
@@ -25,7 +25,7 @@ module.exports = {
     store (req, res) {
         let error = validationResult(req);
         if (error.errors.length > 0){
-            return res.render ('register', {
+            return res.render ('users/register', {
                 errors: error.mapped(),
                 oldData: req.body
             })
@@ -39,7 +39,7 @@ module.exports = {
             pass:bcrypt.hashSync(req.body.password, 10),
         })
             .then((user)=>{
-                res.render("profile",{user})
+                res.render("users/profile",{user})
            
             }).catch((error)=>{
                 res.send(error)
@@ -47,7 +47,7 @@ module.exports = {
     },
     
     loginView: (req, res) => {
-        res.render('login');
+        res.render('users/login');
     },
   
 
@@ -55,7 +55,7 @@ module.exports = {
         
         let error = validationResult(req);
         if (error.errors.length > 0){
-            return res.render ('login', {
+            return res.render ('users/login', {
                 errors: error.mapped(),
             })
         }
@@ -78,13 +78,13 @@ module.exports = {
 
     profileView:(req, res)=> {
         let user = req.session.loggedUser
-        res.render("profile",{"user":user})
+        res.render("users/profile",{"user":user})
     
     },
     viewUpdateUser:(req,res)=>{
         db.Users.findByPk(req.params.id)
             .then((user)=>{
-                return res.render("updateUser",{user});
+                return res.render("users/updateUser",{user});
             })
         
     },
