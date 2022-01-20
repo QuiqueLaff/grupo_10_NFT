@@ -11,7 +11,7 @@ module.exports = {
         db.Products.findAll()
             .then((product)=>{
                 //return res.send(product)
-                return res.render("listOfProducts",{products:product})
+                return res.render("products/listOfProducts",{products:product})
             }).catch((error)=>{
                 return res.send(error)
             })
@@ -20,7 +20,7 @@ module.exports = {
     productsAddView: (req, res) => {
         db.Categories.findAll()
             .then((category)=>{
-                return res.render("addProduct" ,{category})
+                return res.render("products/addProduct" ,{category})
             })
     },   
  
@@ -30,7 +30,7 @@ module.exports = {
         if (validationProducts.errors.length > 0){
             db.Categories.findAll()
             .then((category)=>{
-                return res.render("addProduct" ,{category, errors: validationProducts.mapped(),
+                return res.render("products/addProduct" ,{category, errors: validationProducts.mapped(),
                     oldData: req.body})
             })
         }else{
@@ -56,14 +56,12 @@ module.exports = {
     productsUpdateView: (req, res) => {
         db.Products.findByPk(req.params.id)
             .then((product)=>{
-                return res.render('editProduct', { product });
+                return res.render('products/editProduct', { product });
             })
     },
 
     productsUpdate: (req, res) => {
-        // console.log(req.body);
-        console.log("El req.file es este")
-        console.log(req.file)
+        
         db.Products.update({
             name:req.body.name,
             price:req.body.price,
@@ -98,7 +96,7 @@ module.exports = {
                     let similProduct = []
                     let myArray = []
 
-                    for (i=0; i< simPro.length ; i++){
+                    for (i=0; i < simPro.length ; i++){
                         if (simPro[i].category_id == product.category_id && req.params.id != simPro[i].id){
                             similProduct.push(simPro[i])
                         }
@@ -118,9 +116,9 @@ module.exports = {
                                 myArray[myArray.length] = randomIndex;
                             }
                         }
-                        return res.render('product', { product, similProduct, myArray });
+                        return res.render('products/product', { product, similProduct, myArray });
                     }else{
-                        return res.render('product', { product });
+                        return res.render('products/product', { product });
                     }
 
                     

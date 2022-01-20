@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head', {'title': 'Listado de usuario'})  %>
+    <%- include('../partials/head', {'title': 'Listado de usuario'})  %>
 <body>
-    <%- include('./partials/header')  %> 
+    <%- include('../partials/header')  %> 
 
     <% for(let i = 0;i < users.length; i++){ %>
         <div style="border: 2px black solid;">
             <p>ID : <%= users[i].id %></p>
             <p>nombre : <%= users[i].first_name %></p>
-            
             <img style="width: 150px;" src="/images/users/<%=users[i].avatar %>" alt="">
-        
     
         <form action="/users/<%=users[i].id%>/delete?_method=delete" class= "form-delete"  method="POST">
             <button type="submit" > Borrar </button>
@@ -24,7 +22,7 @@
     <% } %>
     
     
-        <%- include('./partials/footer')  %>
+        <%- include('../partials/footer')  %>
     </main>    
     <script src="/js/sweetalert.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>

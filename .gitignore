@@ -1,13 +1,5 @@
 node_modules/
 .DS_Store/
 DS_Store/
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> c5b9f373af1853917b4fe75840e89a89ab085b67
-.env/
-
->>>>>>> c5b9f373af1853917b4fe75840e89a89ab085b67
-// se debe crear la FK de Product y Order (order_id) para relacionar ambas tablas
-// se debe crear la FK 
+.env.example
+procfile

@@ -1,11 +1,11 @@
 const path = require('path');
 const db = require("../database/models")
-
+//llamada al nombre de la categoria product[3].productCategory.category
 
 module.exports = {
     home: (req, res) => {
         
-        db.Products.findAll()
+        db.Products.findAll({include: "productCategory"})
             .then((product)=>{
                 if(product.length >= 3){
                     let myArray = []

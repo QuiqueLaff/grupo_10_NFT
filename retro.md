@@ -1,3 +1,40 @@
+# Retrospectiva sexto sprint. 
+
+## *Comenzar a hacer:*
+
+<ul>   
+  <li>Encarar los ejercicios de forma mas dinamica.</li>
+</ul>
+
+## *Hacer más:*
+
+<ul>
+  <li>Mantener una comunicacion mas activa.</li>
+  <li>Despeje de dudas con los profesores.</li>
+  <li>Planificar bien los tiempos de entrega.</li>
+</ul>
+
+## *Continuar haciendo:*
+
+<ul>
+  <li>Tener capacitaciones de distinos paradigmas de tecnologias.</li>
+  <li>Trabajo en equipo.</li>
+  <li>Encarar los ejercicios como equipo cuando nos superan.</li>
+</ul>
+
+## *Hacer menos:*
+
+<ul>
+  <li>subestimar los problemas grupales.</li>
+</ul>
+
+
+## *Dejar de hacer:*
+
+<ul>   
+  <li></li>
+</ul>
+
 # Retrospectiva quinto sprint. 
 
 ## *Comenzar a hacer:*
