@@ -3,8 +3,8 @@ require('dotenv').config()
 module.exports = {
   "development": {
     "username": "root",
-    "password": null,
-    "database": "update_db", 
+    "password": "Quijote2",
+    "database": "NFT", 
     "port": 3306,
     "host": "127.0.0.1",
     "dialect": "mysql"
