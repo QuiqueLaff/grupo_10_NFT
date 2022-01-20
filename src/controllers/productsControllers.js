@@ -98,7 +98,7 @@ module.exports = {
                     let similProduct = []
                     let myArray = []
 
-                    for (i=0; i< simPro.length ; i++){
+                    for (i=0; i < simPro.length ; i++){
                         if (simPro[i].category_id == product.category_id && req.params.id != simPro[i].id){
                             similProduct.push(simPro[i])
                         }

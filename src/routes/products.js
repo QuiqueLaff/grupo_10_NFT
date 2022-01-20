@@ -3,6 +3,8 @@ const router = express.Router();
 const path = require('path');
 const multer = require ('multer');
 const productsControllers = require('../controllers/productsControllers');
+const guestMiddleare = require ('../middlewares/guestMiddleare')
+const authMidelware = require ('../middlewares/authMidelware')
 
 const {check} = require("express-validator")
 
@@ -59,7 +61,7 @@ router.get('/addProduct', productsControllers.productsAddView);
 router.post('/addProduct', upload.single("artistimg"), validationProducts, productsControllers.productsAdd);
 
 /* Detalle del Producto */
-router.get('/:id', productsControllers.productsDetail);
+router.get('/:id',guestMiddleare, productsControllers.productsDetail);
 
 /* Editar Producto */
 router.get('/:id/editProduct', productsControllers.productsUpdateView);

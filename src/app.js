@@ -8,6 +8,8 @@ const cookies = require("cookie-parser")
 require('dotenv').config()
 
 
+
+
  const sesion = require('express-session') 
 
 
@@ -46,5 +48,5 @@ app.use('/product', productsRouter);
 
 
 
-app.listen(process.env.PORT || 3050, () => console.log('Servidor funcionando en el 3050'));
+app.listen(3050, () => console.log('Servidor funcionando en el 3050'));
 
