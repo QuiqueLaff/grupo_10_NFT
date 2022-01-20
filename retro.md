@@ -1,3 +1,85 @@
+# Retrospectiva Octavo sprint. 
+
+## *Comenzar a hacer:*
+
+<ul>   
+  <li>Establecer las prioridades de cara al ultimo sprint</li>
+  <li>Definir las cosas donde aun tenemos dudas</li>
+  <li>Pulir los detalles y conceptos camino a la entrega final</li>
+
+
+</ul>
+
+## *Hacer más:*
+
+<ul>
+  <li>Sentarse a pulir codigo</li>
+  <li>Leer documentación y ver fuera de la caja en cuanto a lo que los ejercicios proponen</li>
+</ul>
+
+## *Continuar haciendo:*
+
+<ul>
+  <li>Encarar los desafios planteados con buena predisposición.</li>
+  <li> Establecer prioridades y fechas de entrega</li>
+  <li>Trabajo en equipo.</li>
+</ul>
+
+## *Hacer menos:*
+
+<ul>
+  <li>Bajar el rendimiento frente a los problemas que puedan surgir con otros mienbros del grupo</li>
+</ul>
+
+
+## *Dejar de hacer:*
+
+<ul>   
+  <li>Confiarmos</li>
+</ul>
+
+
+# Retrospectiva Septimo sprint. 
+
+## *Comenzar a hacer:*
+
+<ul>   
+  <li>Optimizar el tiempo para realizar la mayor cantidad de tareas mientras las ideas de las clases todavía siguen frescas</li>
+  <li>Englobar y encarar la correcciónes de los pendientes</li>
+  <li>Pulir los detalles y conceptos camino a la entrega</li>
+
+
+</ul>
+
+## *Hacer más:*
+
+<ul>
+  <li>Optimizar las reuniones y hacerlas mas eficientes</li>
+  <li>Ser claros con la divisiones de tareas</li>
+</ul>
+
+## *Continuar haciendo:*
+
+<ul>
+  <li>Comunicación fluida y predisposición continua.</li>
+  <li> Establecer prioridades y fechas de entrega</li>
+  <li>Trabajo en equipo.</li>
+</ul>
+
+## *Hacer menos:*
+
+<ul>
+  <li>Confiarnos en el otro y no revisar las cosas en conjunto dando por sentado que esta todo bien</li>
+</ul>
+
+
+## *Dejar de hacer:*
+
+<ul>   
+  <li>Esperar a que llegue el ultimo instante para haer el debugeo</li>
+</ul>
+
+
 # Retrospectiva sexto sprint. 
 
 ## *Comenzar a hacer:*
