@@ -16,7 +16,7 @@ module.exports = {
                     id: producto.id,
                     name: producto.name,
                     description : producto.detail,
-                    detail: "http://localhost:3050/product/" + producto.id
+                    detail: "http://localhost:3050/product/" + producto.id,
                 })
 
                 if (countByCategory[producto.category_id]) {
@@ -27,17 +27,19 @@ module.exports = {
             })
             
             const formatedCategories = {}
+        
             
             Object.keys(countByCategory).forEach(key => {
                 const catName = categorias.find(c => c.id === parseInt(key)).category
                 formatedCategories[catName] = countByCategory[key] 
+                
             }) 
+
 
             return res.json({
                 count: productos.length,
                 countByCategory: formatedCategories,
-                products: list
-
+                products: list,
             })
 
          
