@@ -6,6 +6,7 @@ const multer = require ('multer');
 const usersControllers = require('../controllers/usersControllers');
 const guestMiddleare = require ('../middlewares/guestMiddleare')
 const authMidelware = require ('../middlewares/authMidelware')
+const userApi = require('../API/userApi')
 
 // Validaciones 
 const validator =[
@@ -96,5 +97,13 @@ router.get("/profile", authMidelware, usersControllers.profileView)
 //logout
 
 router.get("/logout", usersControllers.logout);
+
+// API User
+router.get("/api/users", userApi.getUserList)
+
+// API UserId
+router.get ("/api/users/:id", userApi.getUserDetail)
+
+
 
 module.exports = router;

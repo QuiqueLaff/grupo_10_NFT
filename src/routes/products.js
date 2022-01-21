@@ -5,6 +5,8 @@ const multer = require ('multer');
 const productsControllers = require('../controllers/productsControllers');
 const guestMiddleare = require ('../middlewares/guestMiddleare')
 const authMidelware = require ('../middlewares/authMidelware')
+const productApi = require('../API/productApi')
+
 
 const {check} = require("express-validator")
 
@@ -69,6 +71,13 @@ router.put('/:id/editProduct',upload.single("artistimg"), productsControllers.pr
 
 /* Borrar Producto */
 router.delete('/:id', productsControllers.productsDelete);
+
+// API Product
+router.get('/api/products', productApi.getProductList)
+
+// API UserId
+router.get ("/api/products/:id", productApi.getProductDetail)
+
 
 
 
