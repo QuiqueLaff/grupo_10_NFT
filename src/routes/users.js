@@ -93,7 +93,7 @@ router.get("/login",guestMiddleware, usersControllers.loginView)
 router.post("/login", logvalidator ,usersControllers.login)
 
 //profile
-router.get("/profile", usersControllers.profileView)
+router.get("/profile/:id",userOwnerMiddleware, usersControllers.profileView)
 
 
 //logout
