@@ -66,12 +66,12 @@ form {
 .span-email-login{
      
     font-size: 10px;
-    color: blue;
+    color: red;
     text-align: center;
 }
 .span-password-login{
     font-size: 10px;
-    color: blue;
+    color: red;
     text-align: center; 
 }
 .error{

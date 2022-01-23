@@ -60,13 +60,13 @@ form {
 }
 .estilo{
     font-size: 10px;
-    color: blue;
+    color: red;
     text-align: center;
     
 }
 .userImage-error{
     font-size: 10px;
-    color: blue;
+    color: red;
     text-align: center;
 }
 .error {

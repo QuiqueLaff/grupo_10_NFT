@@ -19,7 +19,6 @@
 .image {
     height: 100px;
     width: 100px;
-    /* background-image: url("/images/kevin.jpg"); */
     background-size: cover;
     border-radius: 50%;
     border: 8px solid white;

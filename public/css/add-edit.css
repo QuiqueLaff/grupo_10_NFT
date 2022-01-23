@@ -48,7 +48,7 @@ body{
 
   span{
     font-size: 10px;
-    color: blue;
+    color: red;
     text-align: center; 
   }
 
@@ -151,7 +151,7 @@ body{
 }
 .estilo{
   font-size: 10px;
-  color: blue;
+  color: red;
   text-align: center;
 }
 
