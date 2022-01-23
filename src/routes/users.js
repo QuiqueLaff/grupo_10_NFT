@@ -11,8 +11,6 @@ const validatorUser = require ('../middlewares/validations/userValidator')
 const logValidator = require('../middlewares/validations/logValidator')
 
 
-
-
 // MULTER
 
 const storage = multer.diskStorage({
