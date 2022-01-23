@@ -68,6 +68,7 @@ module.exports = {
             if (req.body.remember_user){
                 res.cookie('userEmail', req.body.email, {maxAge: (1000 * 60) * 2})
             }
+            console.log(req.session.loggedUser.pass);
             res.redirect("/")
         }else res.render("login",{ errors :
             [{msg: "No exites como usuario"}]})

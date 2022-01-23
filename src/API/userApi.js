@@ -30,12 +30,8 @@ module.exports = {
                     last_name: user.last_name,
                     email: user.email,
                     avatar: "http://localhost:3050/images/users/" + user.avatar,
-                    
-                
                     })
 
-                
-                
             }).catch((error)=>{
                 return res.send(error)
             })

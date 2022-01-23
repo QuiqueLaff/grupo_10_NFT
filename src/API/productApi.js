@@ -48,35 +48,27 @@ module.exports = {
         })
     },
 
+   
     getProductDetail: (req, res) => {
-    let categorias = db.Categories.findAll({include : {all: true}})
-
-    db.Products.findAll()
-            .then((product)=>{
-                return res.json({
-                    campoEnBase : product.map(function(prod){
-                        return {
-                            id: prod.id,
-                            name: prod.name,
-                            price: prod.price,
-                            artist_name: prod.artist_name,
-                            artist_bio: prod.artist_bio,
-                            artist_code: prod.artist_code,
-                            category_id: prod.category_id,
-                            detail: prod.detail,
-                            order_id: prod.order_id,
-                            image : "http://localhost:3050/images/" + prod.id
-                            
-                        }
-                    })
-                });
+        db.Products.findByPk(req.params.id)
+         .then((prod)=>{
+            return res.json({
+                id: prod.id,
+                name: prod.name,
+                price: prod.price,
+                artist_name: prod.artist_name,
+                artist_bio: prod.artist_bio,
+                artist_code: prod.artist_code,
+                category_id: prod.category_id,
+                detail: prod.detail,
+                order_id: prod.order_id,
+                image : "http://localhost:3050/images/" + prod.id
                 
+            })
+
             }).catch((error)=>{
                 return res.send(error)
             })
     }
-
-
-    
 
 }

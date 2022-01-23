@@ -5,19 +5,27 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+
+
 }
 
 /* Main Product */
+.body{
+    background-image: url("/images/fondo-product.jpeg");
+
+}
 
 .container-product {
+
     display: flex;
-    margin-top: 12vh;
+    margin-top: 25vh;
     margin-bottom: 20px;
     box-sizing: border-box;
     align-items: flex-start;
     justify-content: space-between;
     position: relative;
     box-sizing: border-box;
+    margin-left: 50vh;
 }
 
 
@@ -34,10 +42,10 @@ article.container-product .product-name {
     align-items: center;
     width: 60%;
     margin: 15px;
-    position:absolute;
-    left: 500px;
+    position: absolute;
     padding: 10px;
     box-sizing: border-box;
+    margin-left: 358px;
 }
 
 
@@ -63,7 +71,7 @@ article.container-product .ranking:hover{
 
 article.container-product .box-price{
     position: absolute;
-    bottom: 140px;
+    bottom: 24px;
     left: 55vh;
     font-size: 35px;
     border-top: 5px solid #2A2A2A;
@@ -75,13 +83,12 @@ article.container-product .box-price{
 
 
 article.container-product .box-description {
-    font-size: 15px;
-    margin-bottom: 35px;
     align-self: flex-end;
-    width: 60%;
     position: absolute;
-    left: 55vh;
     text-align: justify;
+    width: 60%;
+    font-size: 15px;
+    left: 55vh;    
 }
 
 
@@ -102,7 +109,7 @@ article.container-product .box-description {
     transition: all 450ms;
     position: absolute;
     left: 55vh;
-    bottom: 280px;
+    bottom: 135px;
 }
 
 .add-button:hover {
@@ -125,8 +132,8 @@ article.container-product .box-description {
 	text-shadow:0px 1px 0px #ffffff;
     transition: all 450ms;
     position: absolute;
-    left: 85vh;
-    bottom: 280px;
+    left: 74vh;
+    bottom: 135px;
 }
 
 .edit-button:hover {
@@ -147,8 +154,8 @@ article.container-product .box-description {
 	text-shadow:0px 1px 0px #ffffff;
     transition: all 450ms;
     position: absolute;
-    left: 98vh;
-    bottom: 280px;
+    left: 93vh;
+    bottom: 135px;
 }
 
 .delete-button:hover {
@@ -164,45 +171,50 @@ a {
 /* Artist */
 
 .container-artist {
+
+    /* background-color: violet; */
     display: flex;
     box-sizing: border-box;
     position: relative;
+    margin-left: 339px;
+    padding-top: 100px;
+
     
     
 }
 
 .container-artist .artist-img {
-    width: 200px;
-    height: 200px;
-    max-height: 200px;
-    max-width: 200px;
-    border: 0px solid #666;
+    width: 150px;
+    height: 150px;
+    max-height: 150px;
+    max-width: 150px;
+    /* border: 5px solid #666; */
     border-radius: 50%;
     margin-bottom: 15px;
-    margin-left: 65px;
+    margin-left: 109px;
     filter: drop-shadow(5px 5px 7px rgba(0,0,0,.7 ));
 }
 
 h3.artist-name{
     font-size: 20px;
-    margin-left: 5vh;
-    margin-top: 40px;
+    margin-left: 78px;
+    margin-top: 14px;
 }
 
 p.artist-code {
     font-weight: bold;
     position: absolute;
-    bottom: 85px;
-    left: 30vh;
-    font-size: 20px;
+    bottom: 108px;
+    left: 51vh;
+    font-size: 15px;
 }
 
 .container-artist .ranking {
     color: black;
     transition: color 700ms;
     position: absolute;
-    top: 75px;
-    left: 30vh;
+    top: 198px;
+    left: 51vh;
 }
 
 .container-artist .ranking:hover{
@@ -214,35 +226,42 @@ p.artist-description {
     align-self: flex-end;
     width: 60%;
     position: absolute;
-    left: 510px;
-    bottom: 40px;
+    left: 338px;
+    bottom: 75px;
     text-align: justify;
 }
 
 /* Similar Products */
+.similar-products-name{
+    margin-right: 100px;
+}
 
 h3.similar-products-title{
     font-size: 25px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 70px;
     margin-bottom: 30px;
+
 }
 
 .container-similar-products {
     display: flex;
-    box-sizing: border-box;
-    position: relative;
+    /* box-sizing: border-box; */
+    /* position: relative; */
     justify-content: space-evenly;
+
 }
 
 .container-similar-products .similar-products-img {
     width: 140px;
     height: 140px;
     object-fit: cover;
-    border: 6px solid #666;
     margin-bottom: 50px;
     margin-left: 35px;
     margin-top: 10px;
+    justify-content: center;
+    filter: drop-shadow(5px 5px 7px rgba(0,0,0,.7 ));
+
 }
 
 
@@ -259,11 +278,26 @@ p.similar-price {
 }
 
 .container-similar-products .ranking {
-    color: black;
+    color: #0F0F0F;
     transition: color 700ms;
-    margin-top: 10px;
+    margin-top: 50px;
     margin-bottom: 10px;
 }
+
+.container-similar-products .similar-name{
+    color: #0F0F0F;
+    transition: color 700ms;
+    margin-top: 40px;
+    margin-bottom: 10px;
+
+}
+.container-similar-products .similar-price{
+    color: #0F0F0F;
+    transition: color 700ms;
+   
+}
+
+
 
 .container-similar-products .ranking:hover{
     color: gold;

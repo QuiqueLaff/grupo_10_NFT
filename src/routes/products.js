@@ -63,7 +63,7 @@ router.get('/addProduct', productsControllers.productsAddView);
 router.post('/addProduct', upload.single("artistimg"), validationProducts, productsControllers.productsAdd);
 
 /* Detalle del Producto */
-router.get('/:id',guestMiddleare, productsControllers.productsDetail);
+router.get('/:id', productsControllers.productsDetail);
 
 /* Editar Producto */
 router.get('/:id/editProduct', productsControllers.productsUpdateView);
