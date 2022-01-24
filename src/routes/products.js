@@ -45,6 +45,4 @@ router.get('/api/products', productApi.getProductList)
 router.get ("/api/products/:id", productApi.getProductDetail)
 
 
-
-
 module.exports = router;
