@@ -4,6 +4,7 @@ const path = require('path');
 const methodOverride = require('method-override');
 const loggedUser = require("./middlewares/loggedUser")
 const cookies = require("cookie-parser")
+const cors = require('cors')
 
 require('dotenv').config()
 
@@ -27,6 +28,7 @@ app.use (express.json());
 app.use(sesion({secret: 'Cuidadito', resave : false, saveUninitialized: false})) 
 app.use(cookies())
 app.use(loggedUser)
+app.use(cors())
 
 /* Routes */
 
