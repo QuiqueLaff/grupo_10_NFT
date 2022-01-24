@@ -20,9 +20,10 @@
         </div>
      <!-- iconos de login, singin y carrito -->
         <div class="iconos">
+            
             <% if (locals.islogged){ %>
-                <li><a href= "/users/profile" class="link-name"><img class= "mini-picture-profile" src="/images/users/<%= locals.loggedUser.avatar %> " width="30" height="30"  alt=""></a></li>
-                <li><a href= "/users/profile" class="link-name"><p class="sub">Hi <%=  locals.loggedUser.first_name %>! </p></a></li>
+                <li><a href= "/users/profile/<%= locals.loggedUser.id %>" class="link-name"><img class= "mini-picture-profile" src="/images/users/<%= locals.loggedUser.avatar %> " width="30" height="30"  alt=""></a></li>
+                <li><a href= "/users/profile/<%= locals.loggedUser.id %>" class="link-name"><p class="sub">Hi <%=  locals.loggedUser.first_name %>! </p></a></li>
                 <li><a href="/product/addproduct"> <i class="fas fa-plus-circle"></i></i></a></li>
                 <li><a href="/cart"> <i class="fas fa-shopping-cart"></i></a></li>
                 <li><a href="/users/logout"> <i class="fas fa-sign-out-alt"></i></a></li>

@@ -3,8 +3,8 @@ const router = express.Router();
 const path = require('path');
 const multer = require ('multer');
 const productsControllers = require('../controllers/productsControllers');
-const guestMiddleare = require ('../middlewares/guestMiddleare')
-const authMidelware = require ('../middlewares/authMidelware')
+const productOwnerMiddleware = require("../middlewares/autorizations/productOwnerMiddleware")
+const authMiddleware = require ('../middlewares/autorizations/authMiddleware')
 const productApi = require('../API/productApi')
 const validationProducts = require('../middlewares/validations/prodValidator')
 
@@ -25,18 +25,18 @@ const upload = multer({storage: storage})
 router.get('/', productsControllers.productList);
 
 /* Agregado de Productos + Vista */
-router.get('/addProduct', productsControllers.productsAddView);
+router.get('/addProduct',authMiddleware, productsControllers.productsAddView);
 router.post('/addProduct', upload.single("artistimg"), validationProducts, productsControllers.productsAdd);
 
 /* Detalle del Producto */
 router.get('/:id', productsControllers.productsDetail);
 
 /* Editar Producto */
-router.get('/:id/editProduct', productsControllers.productsUpdateView);
+router.get('/:id/editProduct',productOwnerMiddleware, productsControllers.productsUpdateView);
 router.put('/:id/editProduct',upload.single("artistimg"), productsControllers.productsUpdate);
 
 /* Borrar Producto */
-router.delete('/:id', productsControllers.productsDelete);
+router.delete('/:id',productOwnerMiddleware, productsControllers.productsDelete);
 
 // API Product
 router.get('/api/products', productApi.getProductList)
