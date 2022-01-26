@@ -10,13 +10,21 @@ module.exports = {
         
         .then(function([productos, categorias]){
             const list = []
+            const categoryList = []
             const countByCategory = {}
+
+            categorias.forEach(categoria =>
+                categoryList.push(categoria.category)
+            )
+        
+            
             productos.forEach(producto => {
                 list.push({  
                     id: producto.id,
                     name: producto.name,
+                    category: categorias[producto.category_id -1].category,
                     description : producto.detail,
-                    detail: "http://localhost:3050/product/" + producto.id,
+                    image_url: "http://localhost:3050/images/" + producto.image
                 })
 
                 if (countByCategory[producto.category_id]) {
@@ -38,6 +46,7 @@ module.exports = {
 
             return res.json({
                 count: productos.length,
+                categorys: categoryList,
                 countByCategory: formatedCategories,
                 products: list,
             })
@@ -62,7 +71,7 @@ module.exports = {
                 category_id: prod.category_id,
                 detail: prod.detail,
                 order_id: prod.order_id,
-                image : "http://localhost:3050/images/" + prod.id
+                image :  prod.image
                 
             })
 
