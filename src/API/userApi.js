@@ -3,7 +3,8 @@ const db = require("../database/models")
 module.exports = {
 
     getUserList: (req, res) => {
-        db.Users.findAll()
+        db.Users.findAndCountAll()
+        
             .then((users)=>{
                 return res.json({
                     count : users.length,
