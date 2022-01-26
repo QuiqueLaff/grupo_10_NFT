@@ -1,5 +1,4 @@
 const express = require('express');
-const { check } = require("express-validator")
 const router = express.Router();
 const path = require('path');
 const multer = require ('multer');
@@ -33,7 +32,7 @@ router.get('/',adminMiddleware, usersControllers.renderUserList);
 
 // Registro 
 
-router.get('/register', guestMiddleare, usersControllers.register);
+router.get('/register', guestMiddleware, usersControllers.register);
 router.post('/register', upload.single('userImage'), validatorUser , usersControllers.store);
 
 // Update 
@@ -46,7 +45,7 @@ router.delete('/:id/delete',userOwnerMiddleware, usersControllers.deleteUser);
 
 // Login
 
-router.get("/login", guestMiddleare, usersControllers.loginView)
+router.get("/login", guestMiddleware, usersControllers.loginView)
 router.post("/login", logValidator ,usersControllers.login)
 
 //profile

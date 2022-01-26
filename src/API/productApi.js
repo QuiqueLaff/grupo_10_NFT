@@ -3,8 +3,20 @@ const db = require("../database/models")
 module.exports = {
 
     getProductList: (req, res) => {
-        let categorias = db.Categories.findAll({include : {all: true}})
-        let productos = db.Products.findAll({include : {all: true}})
+        let categorias = db.Categories.findAll(
+            {
+                include : {all: true},
+                limit :10,
+                offset : 0
+            }
+        ) 
+        let productos = db.Products.findAll(
+            {
+                include : {all: true},
+                limit :3,
+                offset :3
+            }
+        )
         Promise.all([productos, categorias])
         
         
