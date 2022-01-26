@@ -22,15 +22,20 @@ module.exports = {
         
         .then(function([productos, categorias]){
             const list = []
+            const categoryList = []
             const countByCategory = {}
+
+            
+            
             productos.forEach(producto => {
                 list.push({  
                     id: producto.id,
                     name: producto.name,
+                    category: categorias[producto.category_id -1].category,
                     description : producto.detail,
-                    detail: "http://localhost:3050/product/" + producto.id,
+                    image_url: "http://localhost:3050/images/" + producto.image
                 })
-
+                
                 if (countByCategory[producto.category_id]) {
                     countByCategory[producto.category_id] += 1
                 } else {
@@ -38,18 +43,26 @@ module.exports = {
                 }
             })
             
-            const formatedCategories = {}
-        
+            categorias.forEach(categoria =>
+                categoryList.push({
+                    name:categoria.category,
+                    quantity: categoria.categoryProducts.length})
+            )
             
+            const formatedCategories = {}
+
+
             Object.keys(countByCategory).forEach(key => {
                 const catName = categorias.find(c => c.id === parseInt(key)).category
                 formatedCategories[catName] = countByCategory[key] 
                 
             }) 
-
-
+            
+    
+            
             return res.json({
                 count: productos.length,
+                categorys: categoryList,
                 countByCategory: formatedCategories,
                 products: list,
             })
@@ -74,7 +87,7 @@ module.exports = {
                 category_id: prod.category_id,
                 detail: prod.detail,
                 order_id: prod.order_id,
-                image : "http://localhost:3050/images/" + prod.id
+                image :  prod.image
                 
             })
 
