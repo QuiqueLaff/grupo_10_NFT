@@ -7,7 +7,7 @@ const productOwnerMiddleware = require("../middlewares/autorizations/productOwne
 const authMiddleware = require ('../middlewares/autorizations/authMiddleware')
 const productApi = require('../API/productApi')
 const validationProducts = require('../middlewares/validations/prodValidator')
-
+const totalApi = require('../API/totalApi')
 
 // MULTER
 const storage = multer.diskStorage({
@@ -37,6 +37,9 @@ router.put('/:id/editProduct',upload.single("artistimg"), productsControllers.pr
 
 /* Borrar Producto */
 router.delete('/:id',productOwnerMiddleware, productsControllers.productsDelete);
+
+// API Total products 
+router.get('api/products', totalApi.getTotalProducts)
 
 // API Product
 router.get('/api/products/page/:offset', productApi.getProductList)

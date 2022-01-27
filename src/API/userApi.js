@@ -6,8 +6,7 @@ module.exports = {
         db.Users.findAll(
             {
                 include : {all: true},
-                limit :3,
-                offset :3
+            
         }
         )
             .then((users)=>{
