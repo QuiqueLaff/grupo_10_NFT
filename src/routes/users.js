@@ -57,7 +57,7 @@ router.get("/profile/:id",userOwnerMiddleware, usersControllers.profileView)
 router.get("/logout",authMiddleware, usersControllers.logout);
 
 // API User
-router.get("/api/users", userApi.getUserList)
+router.get("/api/users/", userApi.getUserList)
 
 // API UserId
 router.get ("/api/users/:id", userApi.getUserDetail)

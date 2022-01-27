@@ -6,17 +6,17 @@ module.exports = {
         let categorias = db.Categories.findAll(
             {
                 include : {all: true},
-                limit :10,
-                offset : 0
             }
         ) 
         let productos = db.Products.findAll(
             {
                 include : {all: true},
-                limit :3,
-                offset :3
+                limit : 3,
+                offset : parseInt(req.params.offset)
             }
         )
+        console.log(typeof req.params.offset)
+
         Promise.all([productos, categorias])
         
         
