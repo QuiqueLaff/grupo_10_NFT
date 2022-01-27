@@ -5,6 +5,6 @@ const mainControllers = require('../controllers/mainControllers');
 
 router.get('/', mainControllers.home);
 
-router.get('/cart', mainControllers.cart);
+router.post('/cart', mainControllers.cart);
 
 module.exports = router;

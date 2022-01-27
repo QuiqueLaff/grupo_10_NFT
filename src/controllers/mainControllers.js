@@ -1,6 +1,5 @@
 const path = require('path');
 const db = require("../database/models")
-//llamada al nombre de la categoria product[3].productCategory.category
 
 module.exports = {
     home: (req, res) => {
@@ -32,6 +31,6 @@ module.exports = {
             })
     },
     cart: (req, res) => {
-        res.render('cart');
+        return res.render("products/cart")
     }
 }

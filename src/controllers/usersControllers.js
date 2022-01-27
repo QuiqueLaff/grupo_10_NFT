@@ -64,10 +64,10 @@ module.exports = {
         let userToLog = db.Users.findOne({ where: { email: req.body.email } 
         }) .then((userToLog)=> {
             if(userToLog !== null && bcrypt.compareSync(req.body.password, userToLog.dataValues.pass )){
-            req.session.loggedUser = userToLog;
-            if (req.body.remember_user){
-                res.cookie('userEmail', req.body.email, {maxAge: (1000 * 60) * 2})
-            }
+                req.session.loggedUser = userToLog;
+                if (req.body.remember_user){
+                    res.cookie('userEmail', req.body.email, {maxAge: (1000 * 60) * 2})
+                }
             console.log(req.session.loggedUser.pass);
             res.redirect("/")
         }else res.render("login",{ errors :

@@ -16,6 +16,11 @@
                 <li><a href="/product">PRODUCTS</a></li>
                 <li><a href="/#staff">STAFF</a></li>
                 <li><a href="/#colections">COLLECTIONS</a></li>
+                <% if (locals.islogged){ %>
+                    <% if (locals.loggedUser.email == "admin@gmail.com"){ %>
+                        <li><a href="http://localhost:3000">DASHBOARD</a></li>
+                    <% } %>
+                <% } %>
             </ul>
         </div>
      <!-- iconos de login, singin y carrito -->

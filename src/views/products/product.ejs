@@ -38,7 +38,11 @@
                 <div class="box-description">
                     <p class="description"><%= product.detail %></p>
                 </div>
-                <a href="/cart" class="add-button">Buy</a></button>
+
+                <form action="/cart" method="POST" >
+                    <button value= "<%= product.id %>" type="submit"  name="product" class="add-button">Buy</button>
+                </form>
+                
                 <a href="/product/<%= product.id %>/editProduct" class="edit-button">Edit</a>
                 <form action="/product/<%= product.id  %>?_method=DELETE" method="POST">
                 <button type="submit" class="delete-button" >Delete</button>
@@ -92,6 +96,7 @@
         </div>
         </section>
         <% } %>
+        
     </main>
 
     <!-- footer -->

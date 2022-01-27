@@ -42,6 +42,7 @@ module.exports = {
             artist_name: req.body.artistname,
             artist_bio: req.body.artistbio,
             artist_code: req.body.artistcode,
+            user_id: req.session.loggedUser.id,
             category_id: req.body.category,
             image: req.file ? req.file.filename : "default-image.png"
 

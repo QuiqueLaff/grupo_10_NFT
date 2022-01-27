@@ -39,7 +39,7 @@ router.put('/:id/editProduct',upload.single("artistimg"), productsControllers.pr
 router.delete('/:id',productOwnerMiddleware, productsControllers.productsDelete);
 
 // API Total products 
-router.get('api/products', totalApi.getTotalProducts)
+router.get('/api/products', totalApi.getTotalProducts)
 
 // API Product
 router.get('/api/products/page/:offset', productApi.getProductList)
