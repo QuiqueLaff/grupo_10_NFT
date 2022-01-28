@@ -27,34 +27,23 @@
         </section>
 
         <!-- Carrito de Compras -->
-
+        
         <section class="container-cart-products">
             <h3 class="cart-products-title">Compras</h3>
+            <% for (let i = 0; i < products.length; i++) { %>
+                
+                <article class="cart-products-1">
+                        <img src="images/<%=products[i].image %>" class="cart-products-img" alt="lolita">
 
-            <article class="cart-products-1">
-                    <img src="" class="cart-products-img" alt="lolita">
+                        <div class="cart-products-name">
+                            <h3 class="cart-album"></h3>
 
-                    <div class="cart-products-name">
-                        <h3 class="cart-album"></h3>
+                            <p class="cart-artist-name"></p>
 
-                        <p class="cart-artist-name"></p>
-
-                        <p class="cart-price"></p>
-                    </div>
-            </article>
-
-            <article class="cart-products-2">
-                <img src="images/behind-the-mask.jpg" class="cart-products-img" alt="behind-the-mask">
-
-                <div class="cart-products-name">
-                    <h3 class="cart-album"></h3>
-
-                    <p class="cart-artist-name">Bianca Carey</p>
-
-                    <p class="cart-price">$950</p>
-                </div>
-            </article>
-
+                            <p class="cart-price"></p>
+                        </div>
+                </article>
+                <% } %>
         </section>
 
         <section>

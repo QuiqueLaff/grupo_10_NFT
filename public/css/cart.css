@@ -64,10 +64,9 @@ h3.cart-products-title{
 /* Producto 1 */ 
 
 .cart-products-1 {
-    display: flex;
+    
     box-sizing: border-box;
-    position: relative;
-    position: absolute;
+    
     top: 140px;
 }
 
