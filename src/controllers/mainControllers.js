@@ -3,6 +3,8 @@ const db = require("../database/models")
 
 module.exports = {
     home: (req, res) => {
+        
+
 
         db.Products.findAll({ include: "productCategory" })
             .then((product) => {
@@ -44,12 +46,49 @@ module.exports = {
                     order_id:req.session.order.id
                 }
             }).then(products =>{
-                console.log(products.length);
+                
                 res.render("products/cart",{products})
             }).catch((error)=>{
                 res.send(error)
             })
         })
+        
+    },
+
+    compra: (req,res) =>{
+        console.log(req.session.loggedUser.id);
+        console.log(req.session.order.id);
+        console.log(req.body.owner);
+        
+        
+        if(req.body.owner){
+            db.Cart.create({
+                user_id:req.session.loggedUser.id
+            }).then((data)=>{
+                db.Orders.update(
+                    {
+                        quantity : req.body.owner,
+                        cart_id : data.id
+                    },{
+                        where:{
+                            id: req.session.order.id
+                        }
+                    })
+            }).then(()=>{
+                db.Products.update({
+                    user_id: req.session.loggedUser.id
+                },{
+                    where:{
+                        order_id : req.session.order.id
+                    }
+                })
+            }).then(()=>{
+                return res.render("compraRealizada")
+            })
+            
+        }else{
+            return res.render("/")
+        }
         
     }
 }

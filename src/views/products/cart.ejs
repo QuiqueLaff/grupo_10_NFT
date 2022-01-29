@@ -29,7 +29,7 @@
         <!-- Carrito de Compras -->
         
         <section class="container-cart-products">
-            <h3 class="cart-products-title">Compras</h3>
+            <h3 class="cart-products-title">Compras <%= products.length %></h3>
             <% for (let i = 0; i < products.length; i++) { %>
                 
                 <article class="cart-products-1">
@@ -70,7 +70,10 @@
 
             <!-- Botones -->
             <div class="container-buttons">   
-                <a href="/" class="next-button">Confirmar compra</a>
+                <form action="/compraRealizada" method="POST">
+                    <button class="next-button" value="<%= products.length %>" name="owner">Confirmar compra</button>
+                </form>
+                
             </div>
 
         </section>
