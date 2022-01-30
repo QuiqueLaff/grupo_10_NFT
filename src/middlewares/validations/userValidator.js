@@ -12,8 +12,6 @@ const validatorUser =[
         .notEmpty().withMessage("La contraseña no puede estar vacia").bail()
         .isLength({min:8}).withMessage("la contraseña debe tener al menos 8 caracteres"),
     check("confirmpassword").custom((value,{req})=>{
-        console.log(value)
-        console.log(req.body.password)
         if(value != req.body.password){
             throw new Error("Las contraseñas deben de ser iguales");
         } else {return true;}

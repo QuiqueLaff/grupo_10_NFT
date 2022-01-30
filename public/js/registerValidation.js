@@ -1,6 +1,7 @@
 const regExEmail = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/
 const regExPassword = /^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$/
 
+
 window.addEventListener("load", function(){
     let formulario = document.querySelector(".form-register")
 
