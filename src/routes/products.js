@@ -49,4 +49,6 @@ router.get('/api/products/page/:offset', productApi.getProductList)
 router.get ("/api/products/:id", productApi.getProductDetail)
 
 
+
+
 module.exports = router;
