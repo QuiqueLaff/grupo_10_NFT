@@ -14,6 +14,10 @@ body{
 
 
 }
+a{
+    text-decoration: none;
+    color: white
+}
 
 .navbar{
     width: 100%;
@@ -29,18 +33,11 @@ body{
 }
 
 .img-select{
-    /* max-height: 600px;
-    max-width: 600px;
-    object-fit: cover; */
-    height: 18vh;
-    width: 60vh;
+    height: 187px;
+    width: 537px;
     object-fit: cover;
-
-
-}
-.img-select .img-item{ 
-    /* justify-content: space-evenly; */
-
+    display: flex;
+    justify-content: space-between;
 
 }
 
@@ -65,6 +62,9 @@ body{
 
 .mini-picture-profile{
     border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
 }
 
 
@@ -155,10 +155,6 @@ img{
 }
 .img-showcase img{
     min-width: 100%;
-}
-.img-select{
-    display: flex;
-    align-items: flex-start;
 }
 .img-item{
     margin: 0.3rem;
@@ -257,6 +253,7 @@ img{
 }
 .purchase-info{
     margin: 1.5rem 0;
+    display: flex;
 }
 .purchase-info input,
 .purchase-info .btn{
@@ -278,6 +275,61 @@ img{
 .purchase-info .btn:first-of-type{
     background: #256eff;
 }
+.asd{
+    margin-right: 10px;
+    box-shadow: inset 0px 1px 0px 0px #54b708;
+    background: linear-gradient(to bottom, #54b708 5%, #54b708 100%);
+    background-color: #54b708;
+    border-radius: 3px;
+    border: 1px solid #54b708;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 13px;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #54b708;
+    margin-bottom: 30px;
+
+}
+.dsa{
+    margin-right: 10px;
+    margin-bottom: 20px;
+    box-shadow: inset 0px 1px 0px 0px #e70f0f;
+    background: linear-gradient(to bottom, #e70f0f 5%, #e70f0f 100%);
+    background-color: #e70f0f;
+    border-radius: 3px;
+    border: 1px solid #e70f0f;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 13px;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #e70f0f;
+}
+
+.dnt{
+    margin-bottom: 30px;
+    box-shadow: inset 0px 1px 0px 0px #0f57e7;
+    background: linear-gradient(to bottom, #0f57e7 5%, #0f57e7 100%);
+    background-color: #0f57e7;
+    border-radius: 3px;
+    border: 1px solid #0f57e7;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 13px;
+    padding: 5px 29px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #0f57e7;
+    
+    
+}
+
 .purchase-info .btn:last-of-type{
     background: #f64749;
 }
