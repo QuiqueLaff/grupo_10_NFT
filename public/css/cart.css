@@ -280,4 +280,17 @@ h3.summary-title {
     background-color: #0F0F0F;
 }
 
+/* scrolleo de los productos */
+
+#global{
+    height: 300px;
+	width: 200px;
+	border: 1px solid #ddd;
+	background: #f1f1f1;
+	overflow-y: scroll;
+}
+
+#messages{
+    height: auto;
+}
 
