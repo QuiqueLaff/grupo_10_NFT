@@ -6,15 +6,15 @@ forms.forEach(formDelete => {
     formDelete.addEventListener('submit', (e) => {
         e.preventDefault();
         swal({
-            title: "¿Queres borrarlo?",
-            text: "Si borras este producto va a desaparecer de la db",
+            title: "Whant to delete this user?",
+            text: "Last chance",
             icon: "warning",
             buttons: true,
             dangerMode: true,
           })
           .then((resultado) => {
             if (!resultado) {
-              swal("Me imaginaba que no querias borrarlo", {
+              swal("Better to keep it", {
                 icon: "success",
               });
             } else {

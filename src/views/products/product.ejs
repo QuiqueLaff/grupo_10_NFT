@@ -1,107 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/product.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel= "shortcut icon" type="image/png" href="/images/solapa.png">
 
-    <title>Product</title>
-</head>
-<body class="body">
-     <!--header  -->
-     <%-include('../partials/header')%>
-     <main>
-        <!-- Product -->
-        <section>
-            <article class="container-product">
-
-                <img src="/images/<%= product.image %>" class="product-img" alt="WYP">
-
-                <div class="product-name">
-                    <h3><%= product.name %> </h3>
-                        <div class="ranking">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                </div>
-
-                <div class="box-price">
-                    <p class="price">$<%= product.price %></p>
-                </div>
-                <div class="box-description">
-                    <p class="description"><%= product.detail %></p>
-                </div>
-
-                <form action="/cart" method="POST" >
-                    <button value= "<%= product.id %>" type="submit"  name="product" class="add-button">Buy</button>
-                </form>
-                
-                <a href="/product/<%= product.id %>/editProduct" class="edit-button">Edit</a>
-                
-                <form action="/product/<%= product.id  %>?_method=DELETE" method="POST">
-                    <button type="submit" class="delete-button" >Delete</button>
-                </form>
-
-
-            </article>
-        </section>
-
-        <!-- Artist -->
-        <section>
-            <div class="container-artist">
-                <img src="/images/<%= product.image %>" class="artist-img" alt="JW"><!--aca hay que ponerle un include para que traiga imagen de usuario-->               
-                <h3 class="artist-name"><%= product.artist_name %></h3>
-                <div class="ranking">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p class="artist-code"><%= product.artist_code %></p>
-                <p class="artist-description"><%= product.artist_bio %></p>
-            </div>
-            </section>
-        </div>    
-        <!-- Similar Products -->
-        <% if (typeof (myArray) !== "undefined") { %>
-        <section >
-            <h3 class="similar-products-title">Productos Similares</h3>
-            <div class = "similar">
-
-            <article class="container-similar-products">
-                <% for (let i = 0 ; i < 3 ; i++) { %>
-                    <% let index = myArray[i] %>
-                    <a href="/product/<%= similProduct[index].id %>"><img src="/images/<%= similProduct[index].image %>" class="similar-products-img"></a>
-                    <div class="similar-products-name">
-                        <p class="similar-name"><%= similProduct[index].name %></p>
-                        <p class="similar-price"><%= similProduct[index].price %></p>
-                        <h3 class="similar-album"></h3>
-                            <div class="ranking">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                    </div>
-                <% } %>
-            </article>
-        </div>
-        </section>
-        <% } %>
-        
-    </main>
-
-    <!-- footer -->
-    <%-include('../partials/footer')%>
    
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Product Card/Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  </head>
+  <body>
+    <%-include('../partials/header')%>
+
+    <div class = "card-wrapper">
+      <div class = "card">
+        <!-- card left -->
+        <div class = "product-imgs">
+          <div class = "img-display">
+            <div class = "img-showcase">
+                <img src="/images/<%= product.image %>" class="product-img" alt="WYP">
+              <img src = "shoes_images/shoe_2.jpg" alt = "shoe image">
+              <img src = "shoes_images/shoe_3.jpg" alt = "shoe image">
+              <img src = "shoes_images/shoe_4.jpg" alt = "shoe image">
+            </div>
+          </div>
+
+          <div class = "img-select">
+            <div class = "img-item">
+              <a href = "#" data-id = "1">
+                <img src ="/images/<%= product.image %>" alt = "shoe image">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a href = "#" data-id = "2">
+                <img src = "/images/<%= product.image %>"alt = "shoe image">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a href = "#" data-id = "3">
+                <img src = "/images/<%= product.image %>" alt = "shoe image">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a href = "#" data-id = "4">
+                <img src = "/images/<%= product.image %>" alt = "shoe image">
+              </a>
+            </div>
+          </div>
+        </div>        
+        <!-- card right -->
+        <div class = "product-content">
+          <h2 class = "product-title"><%= product.name %></h2>
+          <a href = "#" class = "product-link">visit nike store</a>
+          <div class = "product-rating">
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star-half-alt"></i>
+          </div>
+
+          <div class = "product-price">
+            <p class = "last-price">Price: $<%= product.price %></p>
+          </div>
+
+          <div class = "product-detail">
+            <h2>about this item: </h2>
+            <p><%= product.detail %></p>
+            <h2>about this artist: </h2>
+            <p><%= product.artist_bio %></p>
+            <ul>
+              <li>Available: <span>in stock</span></li>
+              <li>Category: <span>NFT</span></li>
+              <li>Artist code: <span><%= product.artist_code %></span></li>
+              <li>Shipping Area: <span>All over the world</span></li>
+            </ul>
+          </div>
+
+          <div class = "purchase-info">
+
+            <form action="/cart" method="POST" >
+                <button value= "<%= product.id %>" type="submit"  name="product" class="btn">Buy <i class = "fas fa-shopping-cart"></i></button>
+            </form>
+              
+        
+            <form action="/product/<%= product.id  %>?_method=DELETE" method="POST">
+                <button type="submit" class="btn" >Delete</button>
+            </form>
+            
+            <button type = "button" class = "btn">
+                <a href="/product/<%= product.id %>/editProduct" class="edit-button"> Edit </a>
+            </button>
+          </div>
+
+          <div class = "social-links">
+            <p>Share At: </p>
+            <a href = "#">
+              <i class = "fab fa-facebook-f"></i>
+            </a>
+            <a href = "#">
+              <i class = "fab fa-twitter"></i>
+            </a>
+            <a href = "#">
+              <i class = "fab fa-instagram"></i>
+            </a>
+            <a href = "#">
+              <i class = "fab fa-whatsapp"></i>
+            </a>
+            <a href = "#">
+              <i class = "fab fa-pinterest"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>

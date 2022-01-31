@@ -1,33 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('../partials/head', {'title': 'Listado de usuario'})  %>
+    <!-- head -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">  
+        <link rel="stylesheet" href="/css/listofproducts.css">   
+        <link rel="stylesheet" href="/css/add-edit.css">  
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">    
+        <link rel= "shortcut icon" type="image/png" href="images/solapa.png">
+        <title>NFT</title>
+    </head>
+
 <body>
     <%- include('../partials/header')  %> 
+    <div class="todo">
+        <% for(let i = 0;i < users.length; i++){ %>
+                <div class="box-conteiner">
+                    <div class="box">
 
-    <% for(let i = 0;i < users.length; i++){ %>
-        <div style="border: 2px black solid;">
-            <p>ID : <%= users[i].id %></p>
-            <p>nombre : <%= users[i].first_name %></p>
-            <img style="width: 150px;" src="/images/users/<%=users[i].avatar %>" alt="">
-    
-        <form action="/users/<%=users[i].id%>/delete?_method=delete" class= "form-delete"  method="POST">
-            <button type="submit" > Borrar </button>
-        </form>
-    
-        <form action="/users/<%=users[i].id%>/update" method="get">
-            <button type="submit" class="edit"> Actualizar </button>
-        </form>
-        </div>
-        <br>
-    <% } %>
+                        <div class="image">
+                            <img src="/images/users/<%=users[i].avatar %>" alt="emojicon"></a>
+                        </div>
+
+                        <div class="info">
+                            <h3 class="title"><%= users[i].first_name %></h3>
+                                <div class="delete">
+                            <form action="/users/<%=users[i].id%>/delete?_method=delete" class= "form-delete "  method="POST">
+                                <button type="submit" class="edit-delete userEdit"> Delete </button>
+                            </form>
+                                </div>
+                               
+                            <form action="/users/<%=users[i].id%>/update" method="get">
+                                <button type="submit" class="edit-edit userEdit"> Edit </button>
+                            </form>
+                                
+                                
+                        </div>
+                    </div>
+                </div> 
+            
+        <% } %>
+    </div>
     
     
         <%- include('../partials/footer')  %>
     </main>    
     <script src="/js/sweetalert.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
-
 </body>
 </html>
 
+
+
+
+                
+
+      
