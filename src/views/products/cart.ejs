@@ -4,81 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/cart.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel= "shortcut icon" type="image/png" href="images/solapa.png">
-
-    <title>Cart</title>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" type="text/css" href="css/cart2.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
+<%-include('../partials/header')%>
 <body>
-    
-    <!-- header -->
-    <%-include('../partials/header')%>
-   
-    <main>
+    <div class="container">
+        <h1>Shopping Cart</h1>
+        <div class="cart">
+            <div class="products">
+                <% for (let i = 0; i < products.length; i++) { %>
+                <div class="product">
+                    <div class="cart-products-1">
 
-        <!-- Step Bar-->
-
-        <section class="step-bar">
-            <div>
-                <h3 class="step-cart">1. Carrito</h3>
-            </div>
-        </section>
-
-        <!-- Carrito de Compras -->
-        
-        <section class="container-cart-products">
-            <h3 class="cart-products-title">Compras <%= products.length %></h3>
-            <% for (let i = 0; i < products.length; i++) { %>
-                
-                <article class="cart-products-1">
-                        <img src="images/<%=products[i].image %>" class="cart-products-img" alt="lolita">
-
-                        <div class="cart-products-name">
-                            <h3 class="cart-album"></h3>
-
-                            <p class="cart-artist-name"></p>
-
-                            <p class="cart-price"></p>
-                        </div>
-                </article>
+                        <img src="images/<%=products[i].image %>" class="cart-products-img" alt="img_nft">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name"><%=products[i].name %></h3>
+                        <h4 class="product-price"><%=products[i].price %></h4>
+                        <h4><%=products[i].detail %></h4>
+                        <p class="product-remove">
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+                            <span class="remove">Remove</span>
+                        </p>
+                    </div>
+                </div>
                 <% } %>
-        </section>
-
-        <section>
-
-            <!-- Resumen -->
-            <div class="container-summary">
-                <h3 class="summary-title">Resumen</h3>
-
-                <div class="summary-subtotal">
-                    <p>SUBTOTAL</p>
-                    <p>$600</p>
-                </div>
-
-                <div class="summary-tax">
-                    <p>Block-chain TAXES</p>
-                    <p>$130</p>
-                </div>
-
-                <div class="summary-full-price">
-                    <p>TOTAL</p>
-                    <p>$730</p>
-                </div>
-            </div>
-
-            <!-- Botones -->
-            <div class="container-buttons">   
-                <form action="/compraRealizada" method="POST">
-                    <button class="next-button" value="<%= products.length %>" name="owner">Confirmar compra</button>
-                </form>
                 
             </div>
-
-        </section>
-    </main>
-    <!-- footer -->
-    <%-include('../partials/footer')%>
+            <div class="cart-total">
+                <p>
+                    <span>Total Price</span>
+                    <span></span>
+                </p>
+                <p>
+                    <span>Number of Items</span>
+                    <span><%=products.length %></span>
+                </p>
+                <form action="/compraRealizada" method="POST">
+                    <button value="<%= products.length %>" name="owner">Confirmar compra</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
+<%-include('../partials/footer')%>
+
 </html>
+
+
+

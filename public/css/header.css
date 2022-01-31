@@ -1,0 +1,213 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding:0
+}
+
+/* Barra de navegación */
+.navbar{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0f0f0f;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+
+}
+.brand-title h1{
+    width: 100px;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logotipo img{
+    justify-content: center;
+    width: 100px;
+}
+.burger-menu i{
+    text-align: center;
+    width: 100px;
+    color: whitesmoke;
+}
+
+.mini-picture-profile{
+    border-radius: 50%;
+}
+
+
+/* Links */
+.navbar-links{
+    text-align: center;
+    display:inline-block;
+    flex-direction: column;
+    display: none;
+
+}
+.navbar-links ul{
+    margin:0;
+    padding: 0;
+    display: flex;
+    align-items:center;
+    
+
+}
+.navbar-links li{
+    list-style: none;
+
+}
+.navbar-links li a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    display: flex;    
+
+}
+.navbar-links li :hover{
+    background-color: #555;
+
+}
+
+
+
+/* iconos de login, singin y carrito */
+.iconos{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+
+}
+.iconos li{
+    margin: 0 10px;
+
+
+}
+.iconos a{
+    text-decoration: none;
+    color:white;
+
+}
+.iconos a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+    
+}
+.iconos a:hover i{
+    color:aqua;
+
+}
+
+
+
+
+/* Media Ipad */
+@media (min-width: 361px){
+    .burger-menu i{
+        text-align: center;
+        width: 100px;
+        color: whitesmoke;
+        font-size: 30px;
+    }
+   
+}
+
+
+/* Media PC */
+@media (min-width: 769px){
+
+    div.burger-menu{
+    display: none;     
+    }
+
+    .navbar{
+        justify-content: left;
+    }
+            /* Links */
+    .navbar-links{
+        text-align: center;
+        display:inline-block;
+        flex-direction: column;
+    }
+    .navbar-links ul{
+        margin:0;
+        padding: 0;
+        display: flex;
+        align-items:center;
+    }
+    .navbar-links li{
+        list-style: none;
+    }
+    .navbar-links li a{
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        padding: 1rem;
+        display: flex;    
+    }
+    .navbar-links li :hover{
+        background-color: #555;
+    }
+    .brand-title h1{
+        text-align: left;
+        width: 100px;
+        color: whitesmoke;
+        text-decoration: none;
+    }
+    .navbar a{
+        text-decoration: none;
+    }
+
+
+        /* iconos de login, singin y carrito */
+    .iconos{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+    .iconos li{
+        margin: 0 10px;
+
+    }
+    .iconos a{
+        text-decoration: none;
+        color:white;
+        
+    }
+    .iconos a i{
+        font-size: 1.1rem;
+        transition: color .4s ease;
+
+        
+    }
+    .iconos a:hover i{
+        color:aqua;
+    }
+    
+
+    
+}

@@ -33,32 +33,39 @@ module.exports = {
             })
     },
     cart: (req, res) => {
+        
        
-
-        db.Products.update({
-            order_id : req.session.order.id
-        },{
-            where:{id : req.body.product}
-        }).then(()=>{
-
+        if (req.body.product){
+            db.Products.update({
+                order_id : req.session.order.id
+            },{
+                where:{id : req.body.product}
+            }).then((data)=>{
+                
+                db.Products.findAll({
+                    where:{
+                        order_id:req.session.order.id
+                    }
+                }).then(products =>{
+                    res.render("products/cart",{products})
+                }).catch((error)=>{
+                    res.send(error)
+                })
+            })
+        }else{
             db.Products.findAll({
                 where:{
-                    order_id:req.session.order.id
+                    order_id :req.session.order.id
                 }
             }).then(products =>{
-                
-                res.render("products/cart",{products})
-            }).catch((error)=>{
-                res.send(error)
+                    
+                res.render("products/cart",{products, total})
             })
-        })
+        }
         
     },
 
     compra: (req,res) =>{
-        console.log(req.session.loggedUser.id);
-        console.log(req.session.order.id);
-        console.log(req.body.owner);
         
         
         if(req.body.owner){
@@ -83,6 +90,7 @@ module.exports = {
                     }
                 })
             }).then(()=>{
+                
                 return res.render("compraRealizada")
             })
             
