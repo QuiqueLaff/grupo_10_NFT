@@ -205,6 +205,13 @@ body{
 .box .info .title {
     padding: 10px;
     color: #666;
+    font-size: 28px;
+    text-align: center;
+
+}
+.box .info .artclass {
+    padding: 10px;
+    color: #666;
     font-size: 20px;
     text-align: center;
 
