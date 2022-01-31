@@ -59,7 +59,7 @@ module.exports = {
                 }
             }).then(products =>{
                     
-                res.render("products/cart",{products, total})
+                res.render("products/cart",{products})
             })
         }
         
