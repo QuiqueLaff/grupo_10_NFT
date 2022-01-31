@@ -19,6 +19,8 @@
                 <% if (locals.islogged){ %>
                     <% if (locals.loggedUser.email == "admin@gmail.com"){ %>
                         <li><a href="http://localhost:3000">DASHBOARD</a></li>
+                        <li><a href="http://localhost:3050/users">USUERS</a></li>
+
                     <% } %>
                 <% } %>
             </ul>
@@ -32,9 +34,6 @@
                 <li><a href="/product/addproduct"> <i class="fas fa-plus-circle"></i></i></a></li>
                 <li><a href="/cart"> <i class="fas fa-shopping-cart"></i></a></li>
                 <li><a href="/users/logout"> <i class="fas fa-sign-out-alt"></i></a></li>
-
-
-
             <% } else { %>
                 <li><a href="/users/register"> <i class="fas fa-user"></i></a></li>
                 <li><a href="/users/login"> <i class="fas fa-sign-in-alt"></i></a></li>

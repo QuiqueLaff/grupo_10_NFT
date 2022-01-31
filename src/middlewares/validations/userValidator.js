@@ -1,4 +1,6 @@
 const { check } = require("express-validator")
+const path = require('path');
+
 
 const validatorUser =[
     check("firstname")
@@ -24,11 +26,11 @@ const validatorUser =[
 			throw new Error('Debes subir una imagen');
 		} else {
 			let fileExtension = path.extname(file.originalname);
+            console.log(fileExtension)
 			if (!acceptedExtensions.includes(fileExtension)) {
 				throw new Error(`El archivo debe ser: ${acceptedExtensions.join(', ')}`);
 			}
 		}
-
 		return true;
 	})
 ]
