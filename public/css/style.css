@@ -89,7 +89,23 @@ body{
 
 
 /* iconos de login, singin y carrito */
-.iconos{
+
+.fa-shopping-cart{
+    text-align: center;
+    width: 20px;
+    color: whitesmoke;
+}
+.asd{
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;}
+    
+    .iconos{
     list-style: none;
     display: flex;
     align-items: center;

@@ -40,14 +40,14 @@
             <div class="cart-total">
                 <p>
                     <span>Total Price</span>
-                    <span> <%= total %></span>
+                    <span>$ <%= total %></span>
                 </p>
                 <p>
                     <span>Number of Items</span>
                     <span><%=products.length %></span>
                 </p>
                 <form action="/compraRealizada" method="POST">
-                    <button value="<%= products.length %>" name="owner">Confirmar compra</button>
+                    <button value="<%= products.length %>" name="owner"> Confirm order </button>
                 </form>
             </div>
         </div>

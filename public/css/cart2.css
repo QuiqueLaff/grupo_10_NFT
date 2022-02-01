@@ -1,15 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap'); */
+
 
 *{
-font-family: 'Comfortaa', cursive;
+font-family: 'Comfortaa';
 margin: 0;
 padding: 0;
-
-	box-sizing: border-box;
-
+box-sizing: border-box;
+}
+span{
+	font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
+}
+body{
+line-height: 1.5;
+background-image: url("/images/fondo-product.jpeg");
+background-size: cover;
 }
 
 .container{
+
 
 	max-width: 1200px;
 
@@ -51,8 +61,6 @@ padding: 0;
 
 	overflow: hidden;
 
-	border: 1px solid silver;
-
 	margin-bottom: 20px;
 
 }
@@ -88,7 +96,6 @@ padding: 0;
 .product-name, .product-price, .product-offer{
 
 	margin-bottom: 20px;
-
 }
 
 .product-remove{
@@ -101,7 +108,7 @@ padding: 0;
 
 	padding: 10px 25px;
 
-	background-color: green;
+	background-color: #e70f0f;
 
 	color: white;
 
@@ -115,11 +122,11 @@ padding: 0;
 
 	background-color: white;
 
-	color: green;
+	color: #e70f0f;
 
 	font-weight: 600;
 
-	border: 1px solid green;
+	border: 1px solid #e70f0f;
 
 }
 
@@ -175,19 +182,23 @@ padding: 0;
 
 .cart-total button{
 
-	display: block;
+	border-radius: 4px;
+    margin-right: 14px;
+    box-shadow: inset 0px 1px 0px 0px #54b708;
+    background: linear-gradient(to bottom, #54b708 5%, #54b708 100%);
+    border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #54b708;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 13px;
+    padding: 12px 92px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #54b708;
+    margin-bottom: 30px;
 
-	text-align: center;
-
-	height: 40px;
-
-	line-height: 40px;
-
-	background-color: tomato;
-
-	color: white;
-
-	text-decoration: none;
 
 }
 
@@ -199,7 +210,6 @@ padding: 0;
 
 .cart-products-1 .cart-products-img {
     width: 140px;
-    border: 6px solid #666;
     margin: auto;
     height: 140px;
     object-fit: cover;
@@ -230,6 +240,9 @@ padding: 0;
 	.product-name, .product-price, .product-offer{
 
 		margin-bottom: 10px;
+
+		font-family: 'Roboto';
+
 
 	}
 
