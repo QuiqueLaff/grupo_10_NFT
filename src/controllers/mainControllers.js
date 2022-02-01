@@ -33,7 +33,7 @@ module.exports = {
             })
     },
     cart: (req, res) => {
-        
+        let total = 0 
        
         if (req.body.product){
             db.Products.update({
@@ -47,7 +47,12 @@ module.exports = {
                         order_id:req.session.order.id
                     }
                 }).then(products =>{
-                    res.render("products/cart",{products})
+                    total = total + products.price
+                    console.log(total , "total")
+                    console.log(products.price, "products.price")
+                    console.log(products);
+                    console.log(products[0]);
+                    res.render("products/cart",{products, total})
                 }).catch((error)=>{
                     res.send(error)
                 })
@@ -59,7 +64,7 @@ module.exports = {
                 }
             }).then(products =>{
                     
-                res.render("products/cart",{products})
+                res.render("products/cart",{products, total})
             })
         }
         

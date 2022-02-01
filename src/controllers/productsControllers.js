@@ -123,9 +123,8 @@ module.exports = {
                         return res.render('products/product', { product });
                     }
 
-                    
-
-                    
+                  }).catch((error)=>{
+                    return res.send(error);
                 })
             }).catch((error)=>{
                 return res.send(error);

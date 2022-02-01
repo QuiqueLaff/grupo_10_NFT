@@ -68,12 +68,20 @@
                 <form action="/cart" method="POST" >
                     <button value= "<%= product.id %>" type="submit"  name="product" class="asd">Buy <i class = "fas fa-shopping-cart"></i></button>
                 </form>
-                <form action="/product/<%= product.id  %>?_method=DELETE" method="POST">
-                    <button type="submit" class="dsa" >Delete</button>
-                </form>
-                <button type = "button" class = "dnt">
+                <% if (locals.islogged){ %>
+                  <% if (locals.loggedUser.email == "admin@gmail.com"){ %>
+
+                    <form action="/product/<%= product.id  %>?_method=DELETE" method="POST">
+                      <button type="submit" class="dsa" >Delete</button>
+                  </form>
+                  
+                  <% } %>
+                  <button type = "button" class = "dnt">
                     <a href="/product/<%= product.id %>/editProduct" class="edit-button"> Edit </a>
                 </button>
+              <% } %>
+            
+              
           </div>
 
         </div>
