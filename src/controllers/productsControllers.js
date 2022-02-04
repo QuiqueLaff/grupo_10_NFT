@@ -27,31 +27,33 @@ module.exports = {
  
 
     productsAdd: (req, res) =>{
-        /*let validationProducts = validationResult(req);
+        let validationProducts = validationResult(req);
         if (validationProducts.errors.length > 0){
             db.Categories.findAll()
             .then((category)=>{
                 return res.render("products/addProduct" ,{category, errors: validationProducts.mapped(),
                     oldData: req.body})
             })
-        }else{}*/
+        }else{
 
-        db.Products.create({
-            name:req.body.name,
-            detail:req.body.detail,
-            price:req.body.price,
-            artist_name: req.body.artistname,
-            artist_bio: req.body.artistbio,
-            artist_code: req.body.artistcode,
-            user_id: req.session.loggedUser.id,
-            category_id: req.body.category,
-            image: req.file ? req.file.filename : "default-image.png"
+            db.Products.create({
+                name:req.body.name,
+                detail:req.body.detail,
+                price:req.body.price,
+                artist_name: req.body.artistname,
+                artist_bio: req.body.artistbio,
+                artist_code: req.body.artistcode,
+                user_id: req.session.loggedUser.id,
+                category_id: req.body.category,
+                image: req.file ? req.file.filename : "default-image.png"
+    
+            }).then(()=>{
+                res.redirect("/product")
+            }).catch((error)=>{
+                return res.send(error)
+            })
+        }
 
-        }).then(()=>{
-            res.redirect("/product")
-        }).catch((error)=>{
-            return res.send(error)
-        })
     
     },
     
@@ -123,9 +125,8 @@ module.exports = {
                         return res.render('products/product', { product });
                     }
 
-                    
-
-                    
+                  }).catch((error)=>{
+                    return res.send(error);
                 })
             }).catch((error)=>{
                 return res.send(error);
