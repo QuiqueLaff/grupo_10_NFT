@@ -15,7 +15,7 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false
         },
         price: {
-            type: dataTypes.INTEGER(1000000),
+            type: dataTypes.INTEGER(1000),
             allowNull: false
         },
         artist_name: {

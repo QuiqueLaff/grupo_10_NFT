@@ -8,6 +8,8 @@
     <title>Product Card/Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/header.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
   </head>
   <body>
@@ -66,7 +68,7 @@
 
           <div class = "purchase-info">
                 <form action="/cart" method="POST" >
-                    <button value= "<%= product.id %>" type="submit"  name="product" class="asd">Buy <i class = "fas fa-shopping-cart"></i></button>
+                    <button value= "<%= product.id %>" type="submit"  name="product" class="asp">Buy <i class = "fas fa-shopping-cart"></i></button>
                 </form>
                 <% if (locals.islogged){ %>
                   <% if (locals.loggedUser.email == "admin@gmail.com"){ %>

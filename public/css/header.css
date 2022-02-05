@@ -17,6 +17,31 @@ body{
 }
 
 /* Barra de navegación */
+
+.fa-shopping-cart{
+    text-align: center;
+    width: 20px;
+    color: whitesmoke;
+}
+.asd{
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;}
+    
+    .iconos{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+
+}
 .navbar{
     width: 100%;
     height: 10vh;
