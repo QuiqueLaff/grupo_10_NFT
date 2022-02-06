@@ -102,7 +102,6 @@ a{
 }
 
 
-
 /* iconos de login, singin y carrito */
 .iconos{
     list-style: none;
@@ -328,6 +327,11 @@ img{
     text-shadow: 0px 1px 0px #0f57e7;
     
     
+}
+
+.similar{
+    text-align: center;
+    color: #12263a
 }
 
 .purchase-info .btn:last-of-type{

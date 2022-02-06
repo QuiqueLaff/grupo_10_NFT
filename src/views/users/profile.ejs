@@ -27,7 +27,8 @@
                             </div>
                             <h3>Congrats <%= user.first_name %> <%= user.last_name %> you have a profile!</h3>
                             <h4>You are signed with this email: <%= user.email %></h4>   
-                            <button class="butto"><a href="<%= user.id %>/update" style='text-decoration:none;color:white;'>Edit profile</a></button>
+                        
+                            <button class="butto"><a href="/users/<%= user.id %>/update" style='text-decoration:none;color:white;'>Edit profile</a></button>
                             <button class="butto"><a href="/" style='text-decoration:none;color:white;'>Back home</a></button>
                             
                         </div>

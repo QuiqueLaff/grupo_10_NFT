@@ -1,16 +1,15 @@
-
-   
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Product Card/Page</title>
+    <title>Product Detail</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/product.css">
     <link rel="stylesheet" href="/css/header.css">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel= "shortcut icon" type="image/png" href="images/solapa.png">
+
   </head>
   <body>
     <%-include('../partials/header')%>
@@ -24,6 +23,7 @@
                 <img src="/images/<%= product.image %>" class="product-img" alt="WYP">
             </div>
           </div>
+          <h1 class="similar">See more:</h1>
 
           <div class = "img-select">
                 <% if (typeof (myArray) !== "undefined") { %>
