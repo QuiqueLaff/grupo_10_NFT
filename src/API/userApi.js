@@ -17,7 +17,8 @@ module.exports = {
                             id: user.id,
                             email:user.email,
                             name: user.first_name,
-                            detail: "http://localhost:3050/users/profile/" + user.id
+                            detail: "http://localhost:3050/users/profile/" + user.id,
+                            image_url: "http://localhost:3050/images/users/" + user.avatar
                         }
                     })
                 });
