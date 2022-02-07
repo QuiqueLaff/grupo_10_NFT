@@ -24,7 +24,7 @@
                     <h4>REGISTRARSE</h4>
                     <div class="form-control">           
                         <i class="fas fa-id-card icons"></i>
-                        <input type="text" name="firstname" placeholder="Nombre" class="form-input nombre-input" value = "<%= locals.oldData ? oldData.firstname : null%>" >
+                        <input type="text" name="firstname" placeholder="Name" class="form-input nombre-input" value = "<%= locals.oldData ? oldData.firstname : null%>" >
                         <div class="span-nombre estilo"></div>
                         <% if (locals.errors && errors.firstname ) { %>
                             <div class="text-error" style="color:red"  >
@@ -35,7 +35,7 @@
 
                     <div class="form-control">        
                         <i class="far fa-id-card icons"></i>
-                        <input type="text" name="lastname" class="form-input apellido-input" placeholder="Apellido" value = "<%= locals.oldData ? oldData.lastname : null%>">
+                        <input type="text" name="lastname" class="form-input apellido-input" placeholder="Last Name" value = "<%= locals.oldData ? oldData.lastname : null%>">
                         <div class="span-apellido estilo"></div>
                         <% if (locals.errors && errors.lastname ) { %>
                             <div class="text-error" style="color:red">
@@ -57,7 +57,7 @@
 
                     <div class="form-control">      
                         <i class="fas fa-key icons"></i>
-                        <input type="password" name="password" class="form-input password-input " placeholder="Contraseña" > 
+                        <input type="password" name="password" class="form-input password-input " placeholder="Password" > 
                         <div class="span-password estilo"></div>
                         <% if (locals.errors && errors.password ) { %>
                             <div class="text-error" style="color:red">
@@ -68,7 +68,7 @@
 
                     <div class="form-control">     
                         <i class="fas fa-key icons"></i>
-                        <input type="password" name="confirmpassword" class="form-input repassword-input" placeholder="Confirma tu contraseña">
+                        <input type="password" name="confirmpassword" class="form-input repassword-input" placeholder="Confirm Password">
                         <div class="span-repassword estilo"></div>
 
                     </div>
@@ -84,8 +84,8 @@
                         </div>
                     <% } %>    
                     
-                    <button type="submit" href="/users" class="button">Registrarse</button>
-                    <p class= "estas-registrado">¿Ya estás registrado? <a href="/users/login">Inicia sesión</a></p>
+                    <button type="submit" href="/users" class="button"> - Register -   </button>
+                    <p class= "estas-registrado">¿Do you have an account? <a href="/users/login">Login</a></p>
 
                 </form>
             </div>

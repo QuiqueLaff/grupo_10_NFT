@@ -3,8 +3,7 @@ const db = require("../database/models")
 
 module.exports = {
     home: (req, res) => {
-        
-
+    
 
         db.Products.findAll({ include: "productCategory" })
             .then((product) => {
@@ -124,7 +123,7 @@ module.exports = {
                 })
             }).then(()=>{
                 
-                return res.render("compraRealizada")
+                return res.render("home")
             })
             
         }else{

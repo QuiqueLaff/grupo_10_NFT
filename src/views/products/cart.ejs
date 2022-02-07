@@ -52,7 +52,7 @@
                     <span>Number of Items</span>
                     <span><%=products.length %></span>
                 </p>
-                <form action="/compraRealizada" method="POST">
+                <form action="/compraRealizada" class="confirmar" method="POST">
                     <button value="<%= products.length %>" name="owner"> Confirm order </button>
                 </form>
             </div>
@@ -60,6 +60,8 @@
     </div>
 </body>
 <%-include('../partials/footer')%>
+<script src="/js/confirmar.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </html>
 
