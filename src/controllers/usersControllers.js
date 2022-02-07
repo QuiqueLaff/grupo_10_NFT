@@ -66,7 +66,6 @@ module.exports = {
             .then((userToLog)=> {
                 db.Orders.create()
                     .then(data => {
-                        console.log(data);
                         req.session.order = data
                         if(userToLog !== null && bcrypt.compareSync(req.body.password, userToLog.dataValues.pass )){
                             req.session.loggedUser = userToLog;

@@ -23,7 +23,13 @@
                 <img src="/images/<%= product.image %>" class="product-img" alt="WYP">
             </div>
           </div>
+
+          <% if (typeof (myArray) !== "undefined") { %>
+
           <h1 class="similar">See more:</h1>
+
+          <% } %>
+
 
           <div class = "img-select">
                 <% if (typeof (myArray) !== "undefined") { %>

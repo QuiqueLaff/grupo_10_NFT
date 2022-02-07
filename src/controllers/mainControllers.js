@@ -33,26 +33,54 @@ module.exports = {
             })
     },
     cart: (req, res) => {
-        let total = 0 
        
-        if (req.body.product){
+        if(req.body.remove){
+            db.Products.update({
+                order_id : null
+            },{
+                where:{id : req.body.remove}
+            }).then(()=>{
+                db.Products.findAll({
+                    where:{
+                        order_id:req.session.order.id
+                    }
+                }).then(products =>{
+
+                    total=0; 
+                    for(let i = 0; i< products.length; i++){
+                        total = total + products[i].price
+                    }
+                    
+                    res.render("products/cart",{products, total })
+
+                }).catch((error)=>{
+                    res.send(error)
+                })
+                
+            }).catch((e)=>{
+                res.send(e)
+            })
+        }
+        else if (req.body.product){
             db.Products.update({
                 order_id : req.session.order.id
             },{
                 where:{id : req.body.product}
-            }).then((data)=>{
+            }).then(()=>{
                 
                 db.Products.findAll({
                     where:{
                         order_id:req.session.order.id
                     }
                 }).then(products =>{
-                    total = total + products.price
-                    console.log(total , "total")
-                    console.log(products.price, "products.price")
-                    console.log(products);
-                    console.log(products[0]);
-                    res.render("products/cart",{products, total})
+
+                    total=0; 
+                    for(let i = 0; i< products.length; i++){
+                        total = total + products[i].price
+                    }
+                    
+                    res.render("products/cart",{products, total })
+
                 }).catch((error)=>{
                     res.send(error)
                 })
