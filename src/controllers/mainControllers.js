@@ -98,7 +98,7 @@ module.exports = {
     },
 
     compra: (req,res) =>{
-        
+        console.log(req.body.owner);
         
         if(req.body.owner){
             db.Cart.create({
@@ -123,11 +123,11 @@ module.exports = {
                 })
             }).then(()=>{
                 
-                return res.render("home")
+                return res.redirect("/")
             })
             
         }else{
-            return res.render("/")
+            return res.redirect("/")
         }
         
     }
